@@ -22,7 +22,7 @@ Over the last year, **482 unique branch names appeared in both repos**, represen
 
 ## The Question
 
-**How often do PRs in murally and mural-api share the same branch name?** This determines how frequently developers work on features that span both repos simultaneously — a key input for environment deduplication, provisioning strategies, and cross-repo coordination tooling.
+**How often do PRs in murally and mural-api share the same branch name?** This determines how frequently developers work on features that span both repos simultaneously — a key input for decisions about merge and deployment tooling.
 
 ---
 

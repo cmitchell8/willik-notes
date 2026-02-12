@@ -1,0 +1,162 @@
+======================================================================
+CROSS-REPO BRANCH MATCHES (within time window)
+======================================================================
+
+Branch: add/add-collapse-count
+  - murally PR #44180, created 2025-05-30 (1 PR(s) total)
+  - mural-api PR #13773, created 2025-05-30 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/admin-self-serve-conf
+  - murally PR #43144, created 2025-03-07 (1 PR(s) total)
+  - mural-api PR #13189, created 2025-03-07 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/ai-agent-inspector-tool
+  - murally PR #46450, created 2025-12-10 (1 PR(s) total)
+  - mural-api PR #15051, created 2025-12-12 (1 PR(s) total)
+  - Delta: 2 day(s) (MATCHED)
+
+Branch: add/ai-ce-mural-summary
+  - murally PR #43829, created 2025-04-25 (1 PR(s) total)
+  - mural-api PR #13570, created 2025-04-25 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/ai-change-summary-changes
+  - murally PR #43611, created 2025-04-04 (1 PR(s) total)
+  - mural-api PR #13431, created 2025-04-04 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/ai-debug-mode
+  - murally PR #42739, created 2025-02-05 (1 PR(s) total)
+  - mural-api PR #12979, created 2025-02-05 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/ai-mural-title-updates
+  - murally PR #42741, created 2025-02-05 (1 PR(s) total)
+  - mural-api PR #12983, created 2025-02-05 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/ai-no-input-widget-error
+  - murally PR #42866, created 2025-02-14 (1 PR(s) total)
+  - mural-api PR #13061, created 2025-02-14 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/ai-spellcheck-streaming
+  - murally PR #45264, created 2025-09-04 (1 PR(s) total)
+  - mural-api PR #14347, created 2025-09-04 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/ai-summary-feature
+  - murally PR #43690, created 2025-04-11 (1 PR(s) total)
+  - mural-api PR #13489, created 2025-04-11 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/ai-tracking-to-facilitation-logging
+  - murally PR #44554, created 2025-07-08 (1 PR(s) total)
+  - mural-api PR #13970, created 2025-07-08 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/app-request
+  - murally PR #44329, created 2025-06-13 (1 PR(s) total)
+  - mural-api PR #13867, created 2025-06-13 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/av-sso-validation
+  - murally PR #44221, created 2025-06-03 (1 PR(s) total)
+  - mural-api PR #13790, created 2025-06-03 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/bam-filtering-feature-flag
+  - murally PR #44066, created 2025-05-20 (1 PR(s) total)
+  - mural-api PR #13708, created 2025-05-20 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/be-tracking-summon
+  - murally PR #43466, created 2025-03-26 (1 PR(s) total)
+  - mural-api PR #13359, created 2025-03-26 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/branch-color
+  - murally PR #44182, created 2025-05-30 (1 PR(s) total)
+  - mural-api PR #13775, created 2025-05-30 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/bright-data-integration-live-api
+  - murally PR #42725, created 2025-02-04 (1 PR(s) total)
+  - mural-api PR #12965, created 2025-02-04 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/can-7419
+  - murally PR #44246, created 2025-06-05 (1 PR(s) total)
+  - mural-api PR #13805, created 2025-06-04 (1 PR(s) total)
+  - Delta: 0 day(s) (MATCHED)
+
+Branch: add/can-7868
+  - murally PR #45652, created 2025-10-13 (1 PR(s) total)
+  - mural-api PR #14638, created 2025-10-13 (1 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+Branch: add/can-8160
+  - murally PR #46275, created 2025-11-27 (1 PR(s) total)
+  - mural-api PR #14980, created 2025-11-28 (2 PR(s) total)
+  - Delta: 1 day(s) (MATCHED)
+
+... and 407 more matched branches
+
+
+======================================================================
+COINCIDENTAL NAMING (same branch name, but >window apart)
+======================================================================
+
+Branch: fix/semantic-company-flags
+  - murally PR #46803, created 2026-01-16
+  - mural-api PR #15171, created 2026-01-13
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: add/ticket-source
+  - murally PR #42963, created 2025-02-21
+  - mural-api PR #13114, created 2025-02-24
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: add/scqm-706-kill-bert
+  - murally PR #43622, created 2025-04-07
+  - mural-api PR #13430, created 2025-04-04
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: add/test-ci-arc
+  - murally PR #46901, created 2026-01-26
+  - mural-api PR #15282, created 2026-01-28
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: beta-fix/cwi-2169
+  - murally PR #45315, created 2025-09-10
+  - mural-api PR #14400, created 2025-09-12
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: add/cwi-1859
+  - murally PR #44198, created 2025-06-02
+  - mural-api PR #13806, created 2025-06-04
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: update/en-3116
+  - murally PR #43395, created 2025-03-21
+  - mural-api PR #13332, created 2025-03-24
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: add/play-506-v2
+  - murally PR #44937, created 2025-08-08
+  - mural-api PR #14176, created 2025-08-11
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: add/scqm-1056-ai-diagram-form
+  - murally PR #44773, created 2025-07-28
+  - mural-api PR #14124, created 2025-07-31
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+Branch: add/stt-87-presentation-settings
+  - murally PR #43237, created 2025-03-13
+  - mural-api PR #13210, created 2025-03-10
+  - Delta: 3 day(s) (NOT MATCHED - coincidental)
+
+... and 45 more coincidental branches

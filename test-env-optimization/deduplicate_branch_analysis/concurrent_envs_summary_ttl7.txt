@@ -1,0 +1,56 @@
+============================================================
+CONCURRENT ENVIRONMENT ANALYSIS
+============================================================
+
+TTL Cap Applied: 7 days (168 hours)
+(Environment lifespans capped at TTL, modeling inactivity expiry)
+
+PR Lifespan Statistics (effective, with TTL cap):
+------------------------------
+Murally PRs analyzed:          4,301
+  Median lifespan:             23.9 hours
+  90th percentile:             168.0 hours
+  95th percentile:             168.0 hours
+  Max lifespan:                168.0 hours (7.0 days)
+
+mural-api PRs analyzed:        2,381
+  Median lifespan:             28.0 hours
+  90th percentile:             168.0 hours
+  95th percentile:             168.0 hours
+  Max lifespan:                168.0 hours (7.0 days)
+
+Concurrent Environment Statistics:
+------------------------------
+Peak concurrent (naive):       76
+Peak concurrent (deduplicated):69
+Average concurrent:            41.2
+Median concurrent (P50):       42.0
+P95 concurrent:                55.0
+Min concurrent:                1
+
+Peak occurred at:              2025-07-29T19:37:12
+
+Cross-Repo Concurrency:
+------------------------------
+Max branches active in both:   10
+Avg branches active in both:   4.3
+Deduplication savings:         9.4% reduction
+
+Long-lived PRs (>30 days):
+------------------------------
+Murally long-lived PRs:        258
+mural-api long-lived PRs:      238
+
+Top 5 longest-lived PRs:
+  - murally #42959: 346.2 days (OPEN)
+    Branch: add/sso-virality-backward
+  - mural-api #13108: 346.2 days (OPEN)
+    Branch: add/sso-virality-backward
+  - murally #45061: 167.4 days (OPEN)
+    Branch: add/transform-proto
+  - mural-api #13628: 164.5 days (CLOSED)
+    Branch: add/data-ret-sched
+  - mural-api #14289: 150.9 days (CLOSED)
+    Branch: cwi-2139-bing-tou-updates
+
+============================================================
