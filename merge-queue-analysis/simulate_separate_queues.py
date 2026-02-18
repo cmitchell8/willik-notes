@@ -20,9 +20,11 @@ import argparse
 import csv
 import json
 import os
+import random
 import sys
 from collections import defaultdict
 from datetime import datetime, timedelta
+from enum import Enum
 from typing import Any, Optional
 
 try:
@@ -33,6 +35,13 @@ except ImportError:
 
 
 FALLBACK_CI_SECONDS = 15 * 60
+FRONT_OF_QUEUE_THRESHOLD_S = 60
+
+
+class ProcessingTimeMode(Enum):
+    CONSTANT = "constant"
+    OBSERVED = "observed"
+    SAMPLED = "sampled"
 
 
 def parse_ts(ts_str: str) -> datetime:
@@ -94,9 +103,61 @@ def load_timeline(data_dir: str) -> list[dict[str, Any]]:
     return events
 
 
+def build_processing_time_distribution(
+    events: list[dict[str, Any]],
+    ci_estimates: dict[str, float],
+    threshold_s: float = FRONT_OF_QUEUE_THRESHOLD_S,
+) -> dict[str, list[float]]:
+    """Collect observed CI durations from front-of-queue merged events.
+
+    For merged events with queue_wait_s < threshold, total_time_s approximates
+    actual CI duration. Returns repo -> list of observed processing times.
+    """
+    repo_times: dict[str, list[float]] = defaultdict(list)
+    for e in events:
+        if e["terminal_type"] != "merged":
+            continue
+        if e["queue_wait_s"] >= threshold_s:
+            continue
+        if e.get("is_effort") and e["effort_size"] > 1:
+            for r in e["effort_repos"]:
+                repo_times[r].append(e["total_time_s"])
+        else:
+            repo_times[e["repo"]].append(e["total_time_s"])
+    return dict(repo_times)
+
+
+def _get_processing_time(
+    event: dict[str, Any],
+    repo: str,
+    mode: ProcessingTimeMode,
+    ci_estimates: dict[str, float],
+    distributions: dict[str, list[float]] | None,
+    rng: random.Random | None,
+) -> float:
+    ci = ci_estimates.get(repo, FALLBACK_CI_SECONDS)
+    if mode == ProcessingTimeMode.CONSTANT:
+        return ci
+    if mode == ProcessingTimeMode.OBSERVED:
+        if (
+            event["terminal_type"] == "merged"
+            and event["queue_wait_s"] < FRONT_OF_QUEUE_THRESHOLD_S
+        ):
+            return event["processing_time_s"]
+        return ci
+    if mode == ProcessingTimeMode.SAMPLED and distributions and repo in distributions:
+        times = distributions[repo]
+        if len(times) >= 5 and rng is not None:
+            return rng.choice(times)
+    return ci
+
+
 def expand_efforts_to_separate_entries(
     events: list[dict[str, Any]],
     ci_estimates: dict[str, float],
+    mode: ProcessingTimeMode = ProcessingTimeMode.CONSTANT,
+    processing_distributions: dict[str, list[float]] | None = None,
+    rng: random.Random | None = None,
 ) -> list[dict[str, Any]]:
     """For cross-repo efforts, create separate entries for each repo.
 
@@ -111,7 +172,10 @@ def expand_efforts_to_separate_entries(
             if event["terminal_type"] in ("failed", "cancelled"):
                 proposed_time = event["total_time_s"]
             else:
-                proposed_time = ci_estimates.get(repo, FALLBACK_CI_SECONDS)
+                proposed_time = _get_processing_time(
+                    event, repo, mode, ci_estimates,
+                    processing_distributions, rng,
+                )
             expanded.append(
                 {
                     **event,
@@ -134,7 +198,10 @@ def expand_efforts_to_separate_entries(
             if time_per_repo is not None:
                 proc_time = time_per_repo
             else:
-                proc_time = ci_estimates.get(repo, FALLBACK_CI_SECONDS)
+                proc_time = _get_processing_time(
+                    event, repo, mode, ci_estimates,
+                    processing_distributions, rng,
+                )
             expanded.append(
                 {
                     **event,
@@ -612,6 +679,96 @@ def print_comparison(comparison: dict[str, Any]) -> None:
         )
 
 
+def write_sensitivity_comparison(
+    const: dict[str, Any],
+    observed: dict[str, Any],
+    sampled: dict[str, Any],
+    output_dir: str,
+) -> str:
+    """Write side-by-side comparison of all three processing modes."""
+    filepath = os.path.join(output_dir, "sensitivity_comparison.json")
+
+    def _delta(variable: dict, constant: dict) -> dict[str, float]:
+        result = {}
+        for metric in ("mean", "median", "p95"):
+            var_val = variable["wait_time_comparison"][metric]["proposed_min"]
+            const_val = constant["wait_time_comparison"][metric]["proposed_min"]
+            result[f"{metric}_wait_increase_min"] = round(var_val - const_val, 2)
+            const_imp = constant["wait_time_comparison"][metric]["improvement_pct"]
+            var_imp = variable["wait_time_comparison"][metric]["improvement_pct"]
+            result[f"{metric}_improvement_pct_change"] = round(var_imp - const_imp, 2)
+        return result
+
+    output = {
+        "constant": const,
+        "observed": observed,
+        "sampled": sampled,
+        "delta_observed_vs_constant": _delta(observed, const),
+        "delta_sampled_vs_constant": _delta(sampled, const),
+    }
+    with open(filepath, "w") as f:
+        json.dump(output, f, indent=2)
+    return filepath
+
+
+def print_sensitivity_summary(
+    const: dict[str, Any],
+    observed: dict[str, Any],
+    sampled: dict[str, Any],
+) -> None:
+    print(f"\n{'='*70}")
+    print("SENSITIVITY ANALYSIS: Processing Time Variance")
+    print("=" * 70)
+    print(
+        "\nCompares three processing time modes for the proposed separate queues."
+    )
+    print("Current-state metrics are identical across modes.\n")
+
+    header = (
+        f"{'Metric':<20} {'Constant':>12} {'Observed':>12} {'Sampled':>12} "
+        f"{'Current':>12}"
+    )
+    print(header)
+    print("-" * len(header))
+
+    for label in ("mean", "median", "p95"):
+        c = const["wait_time_comparison"][label]
+        o = observed["wait_time_comparison"][label]
+        s = sampled["wait_time_comparison"][label]
+        print(
+            f"{label + ' wait':<20} "
+            f"{c['proposed_min']:>10.1f}m "
+            f"{o['proposed_min']:>10.1f}m "
+            f"{s['proposed_min']:>10.1f}m "
+            f"{c['current_min']:>10.1f}m"
+        )
+
+    print()
+    for label in ("mean", "median", "p95"):
+        c = const["wait_time_comparison"][label]
+        o = observed["wait_time_comparison"][label]
+        s = sampled["wait_time_comparison"][label]
+        print(
+            f"{label + ' improvement':<20} "
+            f"{c['improvement_pct']:>10.1f}% "
+            f"{o['improvement_pct']:>10.1f}% "
+            f"{s['improvement_pct']:>10.1f}%"
+        )
+
+    print(f"\n--- Distribution Sample Sizes ---")
+    # Print from observed/sampled repo breakdown
+    for repo in sorted(const["repo_breakdown"].keys()):
+        count = const["repo_breakdown"][repo]["count"]
+        if count > 50:
+            print(f"  {repo}: {count} events")
+
+    print(
+        "\nConstant = best-case (P25 CI estimate, deterministic)."
+        "\nObserved = uses actual CI time for front-of-queue items."
+        "\nSampled = draws from empirical distribution of front-of-queue times."
+    )
+
+
 def main():
     parser = argparse.ArgumentParser(
         description="Simulate separate merge queues vs single queue"
@@ -627,6 +784,18 @@ def main():
         type=str,
         default=".",
         help="Output directory for results (default: .)",
+    )
+    parser.add_argument(
+        "--processing-mode",
+        type=str,
+        choices=["constant", "observed", "sampled"],
+        default="constant",
+        help="Processing time mode: constant (CI estimate), observed (timeline when reliable), sampled (empirical dist)",
+    )
+    parser.add_argument(
+        "--run-both",
+        action="store_true",
+        help="Run all three modes (constant, observed, sampled) and output comparison",
     )
     args = parser.parse_args()
 
@@ -645,38 +814,100 @@ def main():
     print("\nLoading timeline data...")
     timeline = load_timeline(args.data_dir)
 
-    print(f"\nExpanding cross-repo efforts into separate entries...")
-    expanded = expand_efforts_to_separate_entries(timeline, ci_estimates)
-    n_original = len(timeline)
-    n_expanded = len(expanded)
-    n_added = n_expanded - n_original
-    print(f"  {n_original} events -> {n_expanded} events (+{n_added} from effort expansion)")
+    mode = ProcessingTimeMode(args.processing_mode)
+    distributions: dict[str, list[float]] | None = None
+    rng: random.Random | None = None
 
-    print(f"\nSimulating separate queues...")
-    results = simulate_separate_queues(expanded)
+    if args.run_both or mode in (ProcessingTimeMode.OBSERVED, ProcessingTimeMode.SAMPLED):
+        print(f"\nBuilding empirical processing time distributions...")
+        distributions = build_processing_time_distribution(timeline, ci_estimates)
+        for repo, times in sorted(distributions.items(), key=lambda x: -len(x[1])):
+            if len(times) >= 5:
+                mean_t = sum(times) / len(times)
+                print(f"  {repo}: {len(times)} samples, mean={mean_t/60:.1f}m, "
+                      f"min={min(times)/60:.1f}m, max={max(times)/60:.1f}m")
+            else:
+                print(f"  {repo}: {len(times)} samples (< 5, will use CI estimate)")
 
-    print(f"\nComputing comparison metrics...")
-    comparison = compute_comparison(results, timeline)
+    if mode == ProcessingTimeMode.SAMPLED or args.run_both:
+        rng = random.Random(42)
 
-    sim_csv = write_simulation_csv(results, args.output_dir)
-    print(f"\nSimulation CSV: {sim_csv}")
+    def _run_mode(run_mode: ProcessingTimeMode, label: str) -> tuple[list[dict], dict]:
+        nonlocal rng
+        if run_mode == ProcessingTimeMode.SAMPLED:
+            rng = random.Random(42)
+        print(f"\n--- Running {label} mode ---")
+        expanded = expand_efforts_to_separate_entries(
+            timeline, ci_estimates, run_mode, distributions, rng,
+        )
+        n_original = len(timeline)
+        n_expanded = len(expanded)
+        print(f"  {n_original} events -> {n_expanded} events (+{n_expanded - n_original} from effort expansion)")
+        print(f"  Simulating separate queues...")
+        results = simulate_separate_queues(expanded)
+        print(f"  Computing comparison metrics...")
+        comparison = compute_comparison(results, timeline)
+        return results, comparison
 
-    weekly_csv = write_weekly_summary(results, args.output_dir)
-    print(f"Weekly summary CSV: {weekly_csv}")
+    if args.run_both:
+        results_const, comp_const = _run_mode(ProcessingTimeMode.CONSTANT, "constant")
+        results_obs, comp_obs = _run_mode(ProcessingTimeMode.OBSERVED, "observed")
+        results_sampled, comp_sampled = _run_mode(ProcessingTimeMode.SAMPLED, "sampled")
 
-    dist_csv = write_wait_time_distribution(results, args.output_dir)
-    print(f"Wait time distribution CSV: {dist_csv}")
+        sim_csv = write_simulation_csv(results_const, args.output_dir)
+        print(f"\nSimulation CSV (constant): {sim_csv}")
+        weekly_csv = write_weekly_summary(results_const, args.output_dir)
+        print(f"Weekly summary CSV: {weekly_csv}")
+        dist_csv = write_wait_time_distribution(results_const, args.output_dir)
+        print(f"Wait time distribution CSV: {dist_csv}")
+        print(f"\nComputing queue depth timeseries (this may take a moment)...")
+        depth_csv = write_queue_depth_timeseries(results_const, args.output_dir)
+        print(f"Queue depth timeseries CSV: {depth_csv}")
 
-    print(f"\nComputing queue depth timeseries (this may take a moment)...")
-    depth_csv = write_queue_depth_timeseries(results, args.output_dir)
-    print(f"Queue depth timeseries CSV: {depth_csv}")
+        comparison_path = os.path.join(args.output_dir, "simulation_comparison.json")
+        with open(comparison_path, "w") as f:
+            json.dump(comp_const, f, indent=2)
+        print(f"Comparison JSON (constant): {comparison_path}")
 
-    comparison_path = os.path.join(args.output_dir, "simulation_comparison.json")
-    with open(comparison_path, "w") as f:
-        json.dump(comparison, f, indent=2)
-    print(f"Comparison JSON: {comparison_path}")
+        sensitivity_path = write_sensitivity_comparison(
+            comp_const, comp_obs, comp_sampled, args.output_dir,
+        )
+        print(f"Sensitivity comparison JSON: {sensitivity_path}")
 
-    print_comparison(comparison)
+        print_comparison(comp_const)
+        print_sensitivity_summary(comp_const, comp_obs, comp_sampled)
+    else:
+        print(f"\nExpanding cross-repo efforts into separate entries ({mode.value} mode)...")
+        expanded = expand_efforts_to_separate_entries(
+            timeline, ci_estimates, mode, distributions, rng,
+        )
+        n_original = len(timeline)
+        n_expanded = len(expanded)
+        n_added = n_expanded - n_original
+        print(f"  {n_original} events -> {n_expanded} events (+{n_added} from effort expansion)")
+
+        print(f"\nSimulating separate queues...")
+        results = simulate_separate_queues(expanded)
+
+        print(f"\nComputing comparison metrics...")
+        comparison = compute_comparison(results, timeline)
+
+        sim_csv = write_simulation_csv(results, args.output_dir)
+        print(f"\nSimulation CSV: {sim_csv}")
+        weekly_csv = write_weekly_summary(results, args.output_dir)
+        print(f"Weekly summary CSV: {weekly_csv}")
+        dist_csv = write_wait_time_distribution(results, args.output_dir)
+        print(f"Wait time distribution CSV: {dist_csv}")
+        print(f"\nComputing queue depth timeseries (this may take a moment)...")
+        depth_csv = write_queue_depth_timeseries(results, args.output_dir)
+        print(f"Queue depth timeseries CSV: {depth_csv}")
+
+        comparison_path = os.path.join(args.output_dir, "simulation_comparison.json")
+        with open(comparison_path, "w") as f:
+            json.dump(comparison, f, indent=2)
+        print(f"Comparison JSON: {comparison_path}")
+
+        print_comparison(comparison)
 
     print(f"\n{'='*60}")
     print("Simulation complete!")
@@ -687,6 +918,8 @@ def main():
     print(f"  wait_time_distribution.csv  — histogram of wait times")
     print(f"  queue_depth_timeseries.csv  — hourly queue depth by repo")
     print(f"  simulation_comparison.json  — full comparison metrics")
+    if args.run_both:
+        print(f"  sensitivity_comparison.json — constant vs observed vs sampled")
 
 
 if __name__ == "__main__":

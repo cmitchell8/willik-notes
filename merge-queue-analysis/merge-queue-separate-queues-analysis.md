@@ -18,6 +18,8 @@ Separate merge queues for each repo would reduce mean queue wait time by **81.3%
 
 **Key insight**: The single queue forces 5,204 items through one pipe serially. murally (70% of volume) and mural-api (25%) block each other despite having independent CI pipelines. Separating them eliminates nearly all cross-repo blocking. The 118 additional queue entries from expanding cross-repo efforts are negligible at 2.3% overhead.
 
+**Sensitivity to processing time assumptions**: The headline numbers use a constant CI estimate (P25 of total shipit time). A [sensitivity analysis](#sensitivity-analysis-processing-time-variance) using three processing time models shows the mean wait improvement ranges from **81.3% to 87.0%** and P95 improvement from **69.1% to 79.8%** depending on assumptions. The constant estimate is the most conservative — using observed or sampled CI times produces even larger improvements.
+
 **Recommendation**: Proceed with queue separation. The ~8.0% of queue events that are cross-repo efforts will require two separate shipit invocations, but developers save an average of 19.2 minutes of wait time per PR — totaling 1,688 hours of eliminated developer wait time over the past year.
 
 ---
@@ -123,6 +125,54 @@ The 9.6% failure rate means roughly 1 in 10 queue items fails CI after entering 
 
 ---
 
+## Sensitivity Analysis: Processing Time Variance
+
+The baseline simulation uses a **constant** processing time per repo (the P25 CI estimate). In queuing theory, deterministic service times produce the minimum possible wait for a given arrival rate (M/D/1 < M/G/1). To understand how processing time variance affects the results, we ran the simulation under three modes:
+
+| Mode | Description | Processing Time Source |
+|------|-------------|----------------------|
+| **Constant** | Every event uses the P25 CI estimate for its repo | `ci_estimates.json` (9.8 min murally, 14.2 min mural-api) |
+| **Observed** | Front-of-queue merged events (queue_wait < 60s) use their actual `processing_time_s`; others use CI estimate | Timeline data — directly observed CI duration |
+| **Sampled** | Each event draws from the empirical distribution of front-of-queue CI times for its repo (seed=42) | Per-repo distributions built from front-of-queue events |
+
+### Empirical CI Distributions
+
+Front-of-queue events (queue_wait < 60s, merged only) provide a proxy for actual CI duration:
+
+| Repository | Samples | Mean CI | Min | Max |
+|------------|:---:|:---:|:---:|:---:|
+| murally | 1,022 | 6.3 min | 0.2 min | 15.0 min |
+| mural-api | 364 | 5.3 min | 0.2 min | 15.2 min |
+| pdf-import | 38 | 0.8 min | 0.2 min | 1.3 min |
+| mural-integrations | 32 | 0.8 min | 0.3 min | 1.7 min |
+| mural-render | 18 | 0.8 min | 0.2 min | 1.3 min |
+
+The observed mean CI times (6.3 min for murally, 5.3 min for mural-api) are **lower** than the P25 CI estimates (9.8 min, 14.2 min). This is expected: the P25 of *total shipit time* includes some residual queue wait even at the 25th percentile. Front-of-queue items reveal that actual CI processing is shorter than the estimate.
+
+### Three-Mode Comparison
+
+| Metric | Constant | Observed | Sampled | Current |
+|--------|:---:|:---:|:---:|:---:|
+| Mean proposed wait | 3.7 min | 3.5 min | 2.6 min | 19.9 min |
+| Median proposed wait | 0.0 min | 0.0 min | 0.0 min | 3.7 min |
+| P95 proposed wait | 15.7 min | 15.5 min | 10.3 min | 50.9 min |
+| **Mean improvement** | **81.3%** | **82.2%** | **87.0%** | — |
+| **Median improvement** | **100.0%** | **100.0%** | **100.0%** | — |
+| **P95 improvement** | **69.1%** | **69.5%** | **79.8%** | — |
+| Total time saved | 1,688 hours | 1,704 hours | 1,789 hours | — |
+
+### Interpretation
+
+The constant mode produces the **most conservative** improvement estimate (81.3% mean), not the most optimistic. This is counterintuitive — the plan hypothesized that processing time variance would increase wait times. Two factors explain why the variable modes show *better* results:
+
+1. **CI estimate overestimates actual CI time.** The P25 CI estimate (derived from total shipit time, which includes some queue wait) is systematically higher than the true CI duration. Using shorter observed times reduces queue congestion.
+
+2. **Variance effect is small at low utilization.** With separate queues, per-repo utilization is low enough that the variance penalty (M/G/1 vs M/D/1) is negligible compared to the level shift from shorter mean processing times.
+
+The improvement range of **81–87% for mean wait** and **69–80% for P95 wait** is robust across all three processing time assumptions. The constant mode (used in the headline numbers) is the conservative bound.
+
+---
+
 ## Supporting Analysis
 
 ### Weekly Trends
@@ -219,7 +269,7 @@ The mural-api P25 estimate (14.2 min) is lower than measured CI time (20–21 mi
 ### Assumptions
 
 1. **Queue is FIFO** — priority exceptions are rare and not modeled
-2. **Processing time per repo is approximately constant** — estimated from merged-event P25 total shipit times
+2. **Processing time per repo is approximately constant** — estimated from merged-event P25 total shipit times (sensitivity analysis with variable processing times shows results are robust: 81–87% improvement across modes)
 3. **Shipit comment timestamps accurately reflect enqueue/merge times** — the bot posts at each lifecycle event
 4. **Failed/cancelled items consumed queue time** — included in the timeline (500 failures, 26 cancellations)
 5. **Enqueue-to-terminal pairing uses LIFO** — for PRs with multiple enqueue cycles, each terminal pairs with the most recent preceding enqueue; unpaired enqueues (118 total) are dropped
@@ -260,6 +310,7 @@ All scripts are in this directory:
 | `wait_time_distribution.csv` | Histogram of wait times (current vs proposed) |
 | `queue_depth_timeseries.csv` | Hourly queue depth by repo |
 | `simulation_comparison.json` | Full comparison metrics |
+| `sensitivity_comparison.json` | Constant vs observed vs sampled processing time comparison |
 
 ## Appendix C: Reproducibility
 
@@ -281,5 +332,8 @@ python analyze_queue_timeline.py
 # Step 3: Simulate separate queues
 python simulate_separate_queues.py
 
-# Results in simulation_comparison.json and CSV files
+# Step 3b: Run sensitivity analysis (constant vs observed vs sampled)
+python simulate_separate_queues.py --run-both
+
+# Results in simulation_comparison.json, sensitivity_comparison.json, and CSV files
 ```
