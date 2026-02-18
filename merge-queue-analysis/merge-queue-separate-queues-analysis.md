@@ -93,26 +93,6 @@ In the proposed model, cross-repo efforts become separate queue entries — one 
 | % increase in queue entries | 2.3% |
 | Net impact | 16.2 min saved per PR despite 2.3% more entries |
 
-#### Reconciliation: Shipit Efforts vs. Branch-Name Matching
-
-The 8.0% effort rate from shipit comment links is lower than the 14.4% found via branch-name matching in the [cross-repo branch analysis](cross-repo-branch-match-analysis.md). A reconciliation cross-referencing both datasets (restricted to their common date range, Feb 18 2025 – Feb 3 2026) explains the gap:
-
-| Category | Count |
-|----------|------:|
-| Shipit effort pairs (murally + mural-api only) | 351 |
-| Branch-matched pairs (3-day window) | 420 |
-| **Overlap** (appear in both datasets) | 318 |
-| Branch match but NOT shipped as effort | 102 |
-| Shipped as effort but NOT branch-matched | 33 |
-
-**Why branch matches exceed efforts (102 pairs).** These 102 pairs had the same branch name in both repos within 3 days, but were shipped independently — separate shipit invocations rather than a single bundled effort. Branch matching is a *structural* signal (developer intent to do cross-repo work), while effort linking is a *behavioral* signal (developer chose to bundle). About 24% of branch-matched pairs were never bundled.
-
-**Why some efforts aren't branch-matched (33 pairs).** All 33 had the same branch name in both repos, but the PRs fell outside the 3-day creation window used by the branch analysis (or one PR was outside the branch analysis date range). Zero efforts used different branch names across repos.
-
-**Impact on the analysis:** Only the 318 truly bundled efforts affect queue modeling. The 102 branch-match-only pairs were shipped independently and would remain separate queue entries in both the current and proposed models — they do not inflate the effort overhead. Even if all 420 branch-matched pairs were treated as efforts, the additional queue entries would increase by ~4–5%, still negligible compared to the **94.7% wait time reduction** from queue separation.
-
-See [reconciliation_report.md](reconciliation_report.md) for full detail including sample PR pairs.
-
 ### Event Outcomes
 
 | Outcome | Count | % |
@@ -127,7 +107,7 @@ The 9.6% failure rate means roughly 1 in 10 queue items fails CI after entering 
 
 ## Sensitivity Analysis: Processing Time Variance
 
-The baseline simulation uses a **constant** processing time per repo (the P25 CI estimate). In queuing theory, deterministic service times produce the minimum possible wait for a given arrival rate (M/D/1 < M/G/1). To understand how processing time variance affects the results, we ran the simulation under three modes:
+The baseline simulation uses a **constant** processing time per repo (the P25 CI estimate). In queuing theory, constant service times produce the minimum possible wait for a given arrival rate — adding variance always increases wait (see [Appendix D](#appendix-d-queuing-theory-note)). To understand how processing time variance affects the results, we ran the simulation under three modes:
 
 | Mode | Description | Processing Time Source |
 |------|-------------|----------------------|
@@ -167,7 +147,7 @@ The constant mode produces the **most conservative** improvement estimate (81.3%
 
 1. **CI estimate overestimates actual CI time.** The P25 CI estimate (derived from total shipit time, which includes some queue wait) is systematically higher than the true CI duration. Using shorter observed times reduces queue congestion.
 
-2. **Variance effect is small at low utilization.** With separate queues, per-repo utilization is low enough that the variance penalty (M/G/1 vs M/D/1) is negligible compared to the level shift from shorter mean processing times.
+2. **Variance effect is small at low utilization.** With separate queues, per-repo utilization is low enough that the variance penalty from non-constant processing times (see [Appendix D](#appendix-d-queuing-theory-note)) is negligible compared to the level shift from shorter mean processing times.
 
 The improvement range of **81–87% for mean wait** and **69–80% for P95 wait** is robust across all three processing time assumptions. The constant mode (used in the headline numbers) is the conservative bound.
 
@@ -337,3 +317,23 @@ python simulate_separate_queues.py --run-both
 
 # Results in simulation_comparison.json, sensitivity_comparison.json, and CSV files
 ```
+
+## Appendix D: Queuing Theory Note
+
+This analysis models each merge queue as a single-server FIFO queue: PRs arrive, wait if the server (CI pipeline) is busy, and depart after processing. Queuing theory provides well-known results for how wait times depend on arrival rate, processing time, and processing time *variance*.
+
+**Key result used in this analysis:** For a single-server queue with random (Poisson) arrivals, wait time increases as processing time variance increases — all else equal. A queue where every item takes exactly 10 minutes produces shorter waits than one where items take between 2 and 18 minutes (even if the average is still 10 minutes). This is because variable processing times create unpredictable gaps and bursts that increase congestion.
+
+In queuing notation, this is expressed as M/D/1 < M/G/1: a queue with **D**eterministic (constant) service times has lower wait than one with **G**eneral (variable) service times, given the same arrival rate and mean service time. The **M** denotes memoryless (Poisson) arrivals, and **1** denotes a single server.
+
+The Pollaczek-Khinchine formula quantifies this. For a single-server queue with utilization ρ (fraction of time the server is busy) and coefficient of variation C_s (std dev / mean of service time):
+
+```
+Mean wait = ρ / (1 - ρ) × (1 + C_s²) / 2 × mean_service_time
+```
+
+When C_s = 0 (constant service), the `(1 + C_s²) / 2` term equals 0.5 — the minimum. As variance increases, so does wait. But critically, the entire expression is proportional to `ρ / (1 - ρ)`, which is small when utilization is low. With separate queues, per-repo utilization drops well below 50%, making the variance penalty negligible in practice.
+
+**References:**
+- Gross, D., Shortle, J.F., Thompson, J.M., & Harris, C.M. (2008). *Fundamentals of Queueing Theory*, 4th ed. Wiley.
+- Kleinrock, L. (1975). *Queueing Systems, Volume 1: Theory*. Wiley.
