@@ -1,0 +1,75 @@
+{
+  "bot_username": "mural-shipit2",
+  "discovered_at": "2026-02-18T18:40:41.639356Z",
+  "sample_size": 50,
+  "audit_size": 200,
+  "format_audit": {
+    "total_comments": 499,
+    "categories": {
+      "enqueued": {
+        "count": 254,
+        "shapes": {
+          "\u23f1 Your Pull Requests has been enqueued [+7 lines]": 208,
+          "\ud83d\ude80 **Your Pull Request has been prioritized** [+11 lines]": 25,
+          "\u23f1 Your Pull Requests has been enqueued [+9 lines]": 20,
+          "\u23f1 Your Pull Requests has been enqueued [+11 lines]": 1
+        }
+      },
+      "failed": {
+        "count": 50,
+        "shapes": {
+          "Merge failed \ud83d\ude22 [+3 lines]": 34,
+          "Merge failed \ud83d\ude22 [+2 lines]": 8,
+          "Merge failed \ud83d\ude22 [+6 lines]": 7,
+          "Merge failed \ud83d\ude22 [+4 lines]": 1
+        }
+      },
+      "merged": {
+        "count": 172,
+        "shapes": {
+          "\u2705 Your Pull Requests has been merged": 172
+        }
+      },
+      "cancelled": {
+        "count": 2,
+        "shapes": {
+          "\u26a0\ufe0f Your Pull Requests has been cancelled": 2
+        }
+      },
+      "not_enqueued": {
+        "count": 18,
+        "shapes": {
+          "### \ud83d\udd34  Your pull request was not enqueued. [+4 lines]": 10,
+          "### \ud83d\udd34  Your pull request was not enqueued. [+3 lines]": 8
+        }
+      },
+      "error": {
+        "count": 3,
+        "shapes": {
+          "\u274c There was an error processing your request: non-200 OK status code: 401 Unauthorized body: \"{\\r\\n ": 1,
+          "\u274c There was an error processing your request: non-200 OK status code: 503 Service Unavailable body: ": 1,
+          "\u274c There was an error processing your request: Something went wrong while executing your query on 202": 1
+        }
+      }
+    },
+    "monthly_counts": {
+      "2026-01": {
+        "enqueued": 58,
+        "merged": 38,
+        "not_enqueued": 3,
+        "failed": 13,
+        "error": 1
+      },
+      "2026-02": {
+        "enqueued": 196,
+        "failed": 37,
+        "merged": 134,
+        "cancelled": 2,
+        "not_enqueued": 15,
+        "error": 2
+      }
+    },
+    "format_drift_detected": false,
+    "unknown_comments": []
+  }
+}

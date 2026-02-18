@@ -1,0 +1,3499 @@
+{
+  "repository": "mural-integrations",
+  "fetched_at": "2026-02-18T18:43:32.977469Z",
+  "bot_username": "mural-shipit2",
+  "date_range": {
+    "start": "2025-02-18T00:00:00",
+    "end": "2026-02-18T00:00:00"
+  },
+  "pull_requests": [
+    {
+      "number": 1686,
+      "branch": "add/last-visited-check-to-picker-sf",
+      "created_at": "2026-02-17T23:08:54Z",
+      "merged_at": "2026-02-18T17:49:49Z",
+      "closed_at": "2026-02-18T17:49:49Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1686\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-02-18T17:34:50Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-02-18T17:49:52Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-02-18T17:34:50Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1686
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-02-18T17:49:52Z"
+        }
+      ]
+    },
+    {
+      "number": 1685,
+      "branch": "beta-fix/cwi-2453",
+      "created_at": "2026-02-12T20:27:13Z",
+      "merged_at": "2026-02-13T13:08:26Z",
+      "closed_at": "2026-02-13T13:08:26Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1685\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-02-13T13:07:56Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-02-13T13:08:29Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-02-13T13:07:56Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1685
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-02-13T13:08:29Z"
+        }
+      ]
+    },
+    {
+      "number": 1683,
+      "branch": "fix/cwi-2505",
+      "created_at": "2026-02-12T13:36:05Z",
+      "merged_at": "2026-02-13T14:28:32Z",
+      "closed_at": "2026-02-13T14:28:32Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1682,
+      "branch": "fix/sf-canvas-int-session",
+      "created_at": "2026-02-07T00:14:00Z",
+      "merged_at": "2026-02-10T17:08:20Z",
+      "closed_at": "2026-02-10T17:08:21Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1682\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-02-10T17:00:18Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-02-10T17:08:24Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-02-10T17:00:18Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1682
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-02-10T17:08:24Z"
+        }
+      ]
+    },
+    {
+      "number": 1681,
+      "branch": "fix/cwi-2599",
+      "created_at": "2026-02-06T20:56:25Z",
+      "merged_at": "2026-02-09T18:28:24Z",
+      "closed_at": "2026-02-09T18:28:24Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1681\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-02-09T16:52:30Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "Merge failed \ud83d\ude22\n\n\u274c [Pull request tactivos/mural-integrations#1681](https://github.com/tactivos/mural-integrations/pull/1681) check: `Test` was not successful (SKIPPED).\nCheck the job for [more details](https://github.com/tactivos/mural-integrations/actions/runs/21833501095/job/62998499208)\n\n\u274c [Pull request tactivos/mural-integrations#1681](https://github.com/tactivos/mural-integrations/pull/1681) check: `figma-test` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/mural-integrations/actions/runs/21833501853/job/62997973960)\n",
+          "created_at": "2026-02-09T16:59:25Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1681\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-02-09T18:00:15Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-02-09T18:28:27Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-02-09T16:52:30Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1681
+            }
+          ]
+        },
+        {
+          "type": "failed",
+          "timestamp": "2026-02-09T16:59:25Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2026-02-09T18:00:15Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1681
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-02-09T18:28:27Z"
+        }
+      ]
+    },
+    {
+      "number": 1680,
+      "branch": "migrate/node22",
+      "created_at": "2026-02-06T15:36:00Z",
+      "merged_at": "2026-02-06T21:22:36Z",
+      "closed_at": "2026-02-06T21:22:36Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1680\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-02-06T21:13:43Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-02-06T21:22:39Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-02-06T21:13:43Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1680
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-02-06T21:22:39Z"
+        }
+      ]
+    },
+    {
+      "number": 1679,
+      "branch": "beta-fix/cwi-2572",
+      "created_at": "2026-02-06T14:09:07Z",
+      "merged_at": "2026-02-06T17:05:31Z",
+      "closed_at": "2026-02-06T17:05:31Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1677,
+      "branch": "remove/cwi-2477",
+      "created_at": "2026-02-05T14:12:15Z",
+      "merged_at": "2026-02-05T22:48:24Z",
+      "closed_at": "2026-02-05T22:48:24Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1676,
+      "branch": "beta-fix/cwi-2582-key-detection",
+      "created_at": "2026-02-03T18:30:10Z",
+      "merged_at": "2026-02-03T19:06:20Z",
+      "closed_at": "2026-02-03T19:06:20Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1676\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-02-03T18:49:59Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-02-03T19:06:23Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-02-03T18:49:59Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1676
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-02-03T19:06:23Z"
+        }
+      ]
+    },
+    {
+      "number": 1674,
+      "branch": "fix/cwi-2442-story-point-ranking",
+      "created_at": "2026-01-27T19:40:48Z",
+      "merged_at": "2026-01-28T15:21:49Z",
+      "closed_at": "2026-01-28T15:21:49Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1674\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-28T15:15:52Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-28T15:21:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-28T15:15:52Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1674
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-28T15:21:53Z"
+        }
+      ]
+    },
+    {
+      "number": 1673,
+      "branch": "fix/cwi-2553",
+      "created_at": "2026-01-22T15:13:07Z",
+      "merged_at": "2026-01-22T16:22:20Z",
+      "closed_at": "2026-01-22T16:22:20Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1673\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-22T16:21:29Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-22T16:22:23Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-22T16:21:29Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1673
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-22T16:22:23Z"
+        }
+      ]
+    },
+    {
+      "number": 1671,
+      "branch": "fix/sf-account-record",
+      "created_at": "2026-01-08T22:34:27Z",
+      "merged_at": "2026-01-09T17:12:54Z",
+      "closed_at": "2026-01-09T17:12:54Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1671\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-09T17:11:57Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-09T17:12:57Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-09T17:11:57Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1671
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-09T17:12:57Z"
+        }
+      ]
+    },
+    {
+      "number": 1670,
+      "branch": "beta-fix/ms-login-phoenix",
+      "created_at": "2026-01-08T13:22:37Z",
+      "merged_at": "2026-01-08T13:28:48Z",
+      "closed_at": "2026-01-08T13:28:48Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1670\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-08T13:27:07Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-08T13:28:51Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-08T13:27:07Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1670
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-08T13:28:51Z"
+        }
+      ]
+    },
+    {
+      "number": 1669,
+      "branch": "fix/cwi-2442",
+      "created_at": "2026-01-06T15:02:42Z",
+      "merged_at": "2026-01-06T15:34:02Z",
+      "closed_at": "2026-01-06T15:34:02Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1669\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-06T15:33:40Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-06T15:34:05Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-06T15:33:40Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1669
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-06T15:34:05Z"
+        }
+      ]
+    },
+    {
+      "number": 1668,
+      "branch": "remove/kubeval",
+      "created_at": "2026-01-05T17:43:17Z",
+      "merged_at": "2026-01-05T22:16:51Z",
+      "closed_at": "2026-01-05T22:16:51Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/mural-integrations#1668](https://github.com/tactivos/mural-integrations/pull/1668)has 1 or more outstanding required reviews\n",
+          "created_at": "2026-01-05T22:14:54Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1668\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-05T22:16:33Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-05T22:16:54Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2026-01-05T22:14:54Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-05T22:16:33Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1668
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-05T22:16:54Z"
+        }
+      ]
+    },
+    {
+      "number": 1667,
+      "branch": "fix/cwi-2453",
+      "created_at": "2026-01-05T15:52:08Z",
+      "merged_at": "2026-01-06T14:15:44Z",
+      "closed_at": "2026-01-06T14:15:44Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1667\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-06T13:56:05Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-06T14:15:48Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-06T13:56:05Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1667
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-06T14:15:48Z"
+        }
+      ]
+    },
+    {
+      "number": 1666,
+      "branch": "add/back-button-sf-no-mural",
+      "created_at": "2025-12-18T20:29:56Z",
+      "merged_at": "2025-12-18T22:11:40Z",
+      "closed_at": "2025-12-18T22:11:40Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1666\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-18T22:01:48Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-18T22:11:42Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-18T22:01:48Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1666
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-18T22:11:42Z"
+        }
+      ]
+    },
+    {
+      "number": 1665,
+      "branch": "add/cwi-2480",
+      "created_at": "2025-12-17T21:12:03Z",
+      "merged_at": "2025-12-18T14:28:59Z",
+      "closed_at": "2025-12-18T14:28:59Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1665\n\n* https://github.com/tactivos/murally/pull/46567\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-18T14:19:20Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-18T14:29:05Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-18T14:19:20Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1665
+            },
+            {
+              "repository": "tactivos/murally",
+              "pr_number": 46567
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-18T14:29:05Z"
+        }
+      ]
+    },
+    {
+      "number": 1664,
+      "branch": "add/cwi-2479",
+      "created_at": "2025-12-17T19:02:45Z",
+      "merged_at": "2025-12-17T20:40:28Z",
+      "closed_at": "2025-12-17T20:40:28Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1664\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-17T20:40:07Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-17T20:40:30Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-17T20:40:07Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1664
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-17T20:40:30Z"
+        }
+      ]
+    },
+    {
+      "number": 1663,
+      "branch": "play-796-update-sf-package-v4",
+      "created_at": "2025-12-16T22:41:23Z",
+      "merged_at": "2025-12-17T13:30:20Z",
+      "closed_at": "2025-12-17T13:30:20Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1663\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-17T13:23:21Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-17T13:30:23Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-17T13:23:21Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1663
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-17T13:30:23Z"
+        }
+      ]
+    },
+    {
+      "number": 1662,
+      "branch": "fix/cwi-2263-cache",
+      "created_at": "2025-12-16T21:56:07Z",
+      "merged_at": "2025-12-17T17:10:06Z",
+      "closed_at": "2025-12-17T17:10:06Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1662\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-17T17:00:42Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-17T17:10:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-17T17:00:42Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1662
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-17T17:10:09Z"
+        }
+      ]
+    },
+    {
+      "number": 1661,
+      "branch": "fix/salesforce-use-canvaslink",
+      "created_at": "2025-12-16T20:10:20Z",
+      "merged_at": "2025-12-16T22:15:19Z",
+      "closed_at": "2025-12-16T22:15:19Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1661\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-16T22:06:10Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-16T22:15:22Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-16T22:06:10Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1661
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-16T22:15:22Z"
+        }
+      ]
+    },
+    {
+      "number": 1660,
+      "branch": "fix/pe-6040",
+      "created_at": "2025-12-16T20:02:36Z",
+      "merged_at": "2025-12-16T20:16:10Z",
+      "closed_at": "2025-12-16T20:16:10Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1660\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-16T20:08:04Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-16T20:16:13Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-16T20:08:04Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1660
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-16T20:16:13Z"
+        }
+      ]
+    },
+    {
+      "number": 1659,
+      "branch": "update/cwi-2476-giphy-rating",
+      "created_at": "2025-12-16T17:38:26Z",
+      "merged_at": "2025-12-18T17:20:05Z",
+      "closed_at": "2025-12-18T17:20:05Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1659\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-18T17:10:59Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-18T17:20:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-18T17:10:59Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1659
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-18T17:20:09Z"
+        }
+      ]
+    },
+    {
+      "number": 1656,
+      "branch": "beta-fix/cwi-2448-jdc-err",
+      "created_at": "2025-12-11T21:29:04Z",
+      "merged_at": "2025-12-12T14:06:17Z",
+      "closed_at": "2025-12-12T14:06:17Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1656\n\n* https://github.com/tactivos/murally/pull/46477\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-12T14:00:02Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-12T14:06:22Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-12T14:00:02Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1656
+            },
+            {
+              "repository": "tactivos/murally",
+              "pr_number": 46477
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-12T14:06:22Z"
+        }
+      ]
+    },
+    {
+      "number": 1655,
+      "branch": "fix/cwi-2382",
+      "created_at": "2025-12-05T19:06:18Z",
+      "merged_at": "2025-12-05T19:22:50Z",
+      "closed_at": "2025-12-05T19:22:50Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-05T19:16:58Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "Merge failed \ud83d\ude22\n\n\u274c Branch changed after queuing... did you commit after sending `shipit`?\n",
+          "created_at": "2025-12-05T19:17:35Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1655\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-05T19:21:52Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-05T19:22:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-05T19:16:58Z",
+          "effort_prs": []
+        },
+        {
+          "type": "failed",
+          "timestamp": "2025-12-05T19:17:35Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-05T19:21:52Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1655
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-05T19:22:53Z"
+        }
+      ]
+    },
+    {
+      "number": 1654,
+      "branch": "fix/cwi-2448-logging",
+      "created_at": "2025-12-02T19:18:36Z",
+      "merged_at": "2025-12-02T20:37:43Z",
+      "closed_at": "2025-12-02T20:37:43Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1654\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-02T20:34:45Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-02T20:37:46Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-02T20:34:45Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1654
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-02T20:37:46Z"
+        }
+      ]
+    },
+    {
+      "number": 1653,
+      "branch": "rm/adobe-configs",
+      "created_at": "2025-11-27T20:56:59Z",
+      "merged_at": "2025-12-01T19:44:27Z",
+      "closed_at": "2025-12-01T19:44:27Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1652,
+      "branch": "add/cwi-2381",
+      "created_at": "2025-11-26T21:20:15Z",
+      "merged_at": "2025-12-01T20:12:25Z",
+      "closed_at": "2025-12-01T20:12:25Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/mural-integrations#1652](https://github.com/tactivos/mural-integrations/pull/1652) check: `Test` was not successful (SKIPPED).\nCheck the job for [more details](https://github.com/tactivos/mural-integrations/actions/runs/19717677913/job/56493876905)\n",
+          "created_at": "2025-12-01T16:18:24Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1652\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-01T20:02:59Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-01T20:12:28Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-12-01T16:18:24Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-01T20:02:59Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1652
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-01T20:12:28Z"
+        }
+      ]
+    },
+    {
+      "number": 1651,
+      "branch": "fix/prevent-mural-picker-flash-on-redirect",
+      "created_at": "2025-11-25T22:51:03Z",
+      "merged_at": "2025-11-26T16:01:55Z",
+      "closed_at": "2025-11-26T16:01:55Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1651\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-26T16:01:07Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-26T16:01:58Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-26T16:01:07Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1651
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-26T16:01:58Z"
+        }
+      ]
+    },
+    {
+      "number": 1649,
+      "branch": "fix/cwi-2308",
+      "created_at": "2025-11-25T19:00:04Z",
+      "merged_at": "2025-11-25T20:41:44Z",
+      "closed_at": "2025-11-25T20:41:44Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1649\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-25T20:40:54Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-25T20:41:46Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-25T20:40:54Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1649
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-25T20:41:46Z"
+        }
+      ]
+    },
+    {
+      "number": 1648,
+      "branch": "add/cwi-2387",
+      "created_at": "2025-11-24T21:57:41Z",
+      "merged_at": "2025-11-25T14:04:50Z",
+      "closed_at": "2025-11-25T14:04:50Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1648\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-25T13:56:17Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-25T14:04:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-25T13:56:17Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1648
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-25T14:04:53Z"
+        }
+      ]
+    },
+    {
+      "number": 1647,
+      "branch": "beta-fix/picker-hook-usage",
+      "created_at": "2025-11-21T17:32:35Z",
+      "merged_at": "2025-11-21T18:26:23Z",
+      "closed_at": "2025-11-21T18:26:23Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1647\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-21T18:25:42Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-21T18:26:26Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-21T18:25:42Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1647
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-21T18:26:26Z"
+        }
+      ]
+    },
+    {
+      "number": 1645,
+      "branch": "update-salesforce-readme",
+      "created_at": "2025-11-21T16:25:39Z",
+      "merged_at": "2025-11-21T16:54:01Z",
+      "closed_at": "2025-11-21T16:54:01Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1645\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-21T16:51:27Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-21T16:54:03Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-21T16:51:27Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1645
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-21T16:54:03Z"
+        }
+      ]
+    },
+    {
+      "number": 1644,
+      "branch": "fix/cwi-2415-expiration-window",
+      "created_at": "2025-11-19T17:54:52Z",
+      "merged_at": "2025-12-01T16:07:07Z",
+      "closed_at": "2025-12-01T16:07:07Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1642,
+      "branch": "remove/cwi-2345",
+      "created_at": "2025-11-17T20:55:39Z",
+      "merged_at": "2025-11-18T00:30:51Z",
+      "closed_at": "2025-11-18T00:30:51Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1642\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-18T00:30:05Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-18T00:30:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-18T00:30:05Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1642
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-18T00:30:53Z"
+        }
+      ]
+    },
+    {
+      "number": 1640,
+      "branch": "play-732",
+      "created_at": "2025-11-13T17:02:59Z",
+      "merged_at": "2025-11-13T19:02:06Z",
+      "closed_at": "2025-11-13T19:02:06Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1640\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-13T18:08:39Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-13T19:02:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-13T18:08:39Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1640
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-13T19:02:09Z"
+        }
+      ]
+    },
+    {
+      "number": 1639,
+      "branch": "play-735",
+      "created_at": "2025-11-12T19:56:11Z",
+      "merged_at": "2025-11-12T21:55:01Z",
+      "closed_at": "2025-11-12T21:55:01Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1639\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-12T21:18:33Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-12T21:55:04Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-12T21:18:33Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1639
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-12T21:55:04Z"
+        }
+      ]
+    },
+    {
+      "number": 1638,
+      "branch": "add/cwi-2360",
+      "created_at": "2025-11-10T18:10:12Z",
+      "merged_at": "2025-11-13T15:22:39Z",
+      "closed_at": "2025-11-13T15:22:39Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1637,
+      "branch": "add/datadog-entity",
+      "created_at": "2025-11-10T14:30:06Z",
+      "merged_at": "2025-11-10T14:46:49Z",
+      "closed_at": "2025-11-10T14:46:49Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1636,
+      "branch": "add/salesforce-datadog-entities",
+      "created_at": "2025-11-06T20:56:17Z",
+      "merged_at": "2025-11-06T21:05:49Z",
+      "closed_at": "2025-11-06T21:05:49Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1636\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-06T20:57:59Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-06T21:05:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-06T20:57:59Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1636
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-06T21:05:53Z"
+        }
+      ]
+    },
+    {
+      "number": 1635,
+      "branch": "update/mong-driver",
+      "created_at": "2025-11-06T16:15:30Z",
+      "merged_at": "2025-11-06T19:52:19Z",
+      "closed_at": "2025-11-06T19:52:19Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1635\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-06T19:51:40Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-06T19:52:22Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-06T19:51:40Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1635
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-06T19:52:22Z"
+        }
+      ]
+    },
+    {
+      "number": 1634,
+      "branch": "add/salesforce-datadog-entities",
+      "created_at": "2025-11-05T15:27:01Z",
+      "merged_at": "2025-11-06T15:14:06Z",
+      "closed_at": "2025-11-06T15:14:06Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1634\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-06T15:06:20Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-06T15:14:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-06T15:06:20Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1634
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-06T15:14:09Z"
+        }
+      ]
+    },
+    {
+      "number": 1633,
+      "branch": "beta-fix/google-meet-auth",
+      "created_at": "2025-11-04T17:03:19Z",
+      "merged_at": "2025-11-04T18:41:00Z",
+      "closed_at": "2025-11-04T18:41:00Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1633\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-04T17:12:08Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-04T18:41:03Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-04T17:12:08Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1633
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-04T18:41:03Z"
+        }
+      ]
+    },
+    {
+      "number": 1632,
+      "branch": "beta-fix/google-meet-auth-exchange",
+      "created_at": "2025-11-03T21:10:33Z",
+      "merged_at": null,
+      "closed_at": "2025-11-04T17:03:45Z",
+      "state": "CLOSED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/mural-integrations#1632](https://github.com/tactivos/mural-integrations/pull/1632) check: `Test` was not successful (CANCELLED).\nCheck the job for [more details](https://github.com/tactivos/mural-integrations/actions/runs/19049410684/job/54405795481)\n\n\u274c [Pull request tactivos/mural-integrations#1632](https://github.com/tactivos/mural-integrations/pull/1632) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/mural-integrations/actions/runs/19049414767/job/54405683307)\n",
+          "created_at": "2025-11-04T16:24:04Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-11-04T16:24:04Z"
+        }
+      ]
+    },
+    {
+      "number": 1630,
+      "branch": "stable-fix/revert-google-auth-change",
+      "created_at": "2025-10-31T18:04:15Z",
+      "merged_at": "2025-10-31T18:24:19Z",
+      "closed_at": "2025-10-31T18:24:20Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1628,
+      "branch": "add/cwi-2342",
+      "created_at": "2025-10-31T13:07:12Z",
+      "merged_at": "2025-11-03T20:59:55Z",
+      "closed_at": "2025-11-03T20:59:55Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1627,
+      "branch": "stable-fix/cwi-2172-auth-url",
+      "created_at": "2025-10-30T18:03:19Z",
+      "merged_at": "2025-10-30T19:07:56Z",
+      "closed_at": "2025-10-30T19:07:56Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1625,
+      "branch": "update/salesforce-pkg-version",
+      "created_at": "2025-10-29T17:55:52Z",
+      "merged_at": "2025-10-29T18:14:36Z",
+      "closed_at": "2025-10-29T18:14:36Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1625\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-29T18:06:22Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-29T18:14:39Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-29T18:06:22Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1625
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-29T18:14:39Z"
+        }
+      ]
+    },
+    {
+      "number": 1624,
+      "branch": "add/cwi-2356-modal-event",
+      "created_at": "2025-10-29T16:06:56Z",
+      "merged_at": "2025-10-29T16:23:36Z",
+      "closed_at": "2025-10-29T16:23:36Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1624\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-29T16:18:26Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-29T16:23:39Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-29T16:18:26Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1624
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-29T16:23:39Z"
+        }
+      ]
+    },
+    {
+      "number": 1622,
+      "branch": "beta-fix/get-state-from-settings",
+      "created_at": "2025-10-28T21:27:57Z",
+      "merged_at": "2025-10-29T13:43:58Z",
+      "closed_at": "2025-10-29T13:43:58Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1622\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-29T13:43:31Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-29T13:44:01Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-29T13:43:31Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1622
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-29T13:44:01Z"
+        }
+      ]
+    },
+    {
+      "number": 1618,
+      "branch": "feature/salesforce-record-mural-mappings",
+      "created_at": "2025-10-24T16:27:53Z",
+      "merged_at": "2025-10-28T18:38:40Z",
+      "closed_at": "2025-10-28T18:38:40Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1618\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-28T18:30:48Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-28T18:38:43Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-28T18:30:48Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1618
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-28T18:38:43Z"
+        }
+      ]
+    },
+    {
+      "number": 1617,
+      "branch": "stable-fix/salesforce-enabled",
+      "created_at": "2025-10-23T17:19:52Z",
+      "merged_at": "2025-10-23T17:34:55Z",
+      "closed_at": "2025-10-23T17:34:55Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1616,
+      "branch": "add/record-id-storage",
+      "created_at": "2025-10-22T17:15:05Z",
+      "merged_at": "2025-10-22T20:12:51Z",
+      "closed_at": "2025-10-22T20:12:51Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1616\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-22T19:50:09Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-22T20:12:54Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-22T19:50:09Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1616
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-22T20:12:54Z"
+        }
+      ]
+    },
+    {
+      "number": 1615,
+      "branch": "fix/cwi-2172",
+      "created_at": "2025-10-21T20:55:20Z",
+      "merged_at": "2025-10-22T16:00:44Z",
+      "closed_at": "2025-10-22T16:00:44Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1615\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-22T16:00:07Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-22T16:00:48Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-22T16:00:07Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1615
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-22T16:00:48Z"
+        }
+      ]
+    },
+    {
+      "number": 1614,
+      "branch": "add/cwi-1052-select-parent",
+      "created_at": "2025-10-17T19:47:08Z",
+      "merged_at": "2025-10-21T18:52:20Z",
+      "closed_at": "2025-10-21T18:52:20Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1614\n\n* https://github.com/tactivos/murally/pull/45728\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-21T18:28:07Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-21T18:52:25Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-21T18:28:07Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1614
+            },
+            {
+              "repository": "tactivos/murally",
+              "pr_number": 45728
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-21T18:52:25Z"
+        }
+      ]
+    },
+    {
+      "number": 1613,
+      "branch": "add/salesforce-package",
+      "created_at": "2025-10-16T15:38:24Z",
+      "merged_at": "2025-10-21T14:34:15Z",
+      "closed_at": "2025-10-21T14:34:15Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1613\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-21T14:17:42Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-21T14:34:18Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-21T14:17:42Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1613
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-21T14:34:18Z"
+        }
+      ]
+    },
+    {
+      "number": 1612,
+      "branch": "add/mural-in-salesforce",
+      "created_at": "2025-10-10T19:29:55Z",
+      "merged_at": "2025-10-20T20:17:50Z",
+      "closed_at": "2025-10-20T20:17:50Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1612\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-20T19:51:36Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-20T20:17:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-20T19:51:36Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1612
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-20T20:17:53Z"
+        }
+      ]
+    },
+    {
+      "number": 1606,
+      "branch": "update/codeowners",
+      "created_at": "2025-09-24T17:45:03Z",
+      "merged_at": "2025-09-24T19:23:06Z",
+      "closed_at": "2025-09-24T19:23:06Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1606\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-24T19:22:05Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-24T19:23:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-24T19:22:05Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1606
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-24T19:23:09Z"
+        }
+      ]
+    },
+    {
+      "number": 1605,
+      "branch": "add/cwi-2247",
+      "created_at": "2025-09-23T19:03:34Z",
+      "merged_at": "2025-09-24T17:36:00Z",
+      "closed_at": "2025-09-24T17:36:00Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1605\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-24T17:22:56Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-24T17:36:02Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-24T17:22:56Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1605
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-24T17:36:02Z"
+        }
+      ]
+    },
+    {
+      "number": 1604,
+      "branch": "stable-fix/cwi-2242",
+      "created_at": "2025-09-19T12:37:26Z",
+      "merged_at": "2025-09-19T12:54:21Z",
+      "closed_at": "2025-09-19T12:54:21Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1603,
+      "branch": "del/push-test-envs-integrations",
+      "created_at": "2025-09-17T18:59:24Z",
+      "merged_at": "2025-09-17T19:39:06Z",
+      "closed_at": "2025-09-17T19:39:06Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1603\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-17T19:21:35Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-17T19:39:08Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-17T19:21:35Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1603
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-17T19:39:08Z"
+        }
+      ]
+    },
+    {
+      "number": 1601,
+      "branch": "fix/cwi-2208",
+      "created_at": "2025-09-11T19:39:30Z",
+      "merged_at": "2025-09-12T15:12:33Z",
+      "closed_at": "2025-09-12T15:12:33Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1601\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-12T15:11:49Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-12T15:12:36Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-12T15:11:49Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1601
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-12T15:12:36Z"
+        }
+      ]
+    },
+    {
+      "number": 1600,
+      "branch": "beta-fix/cwi-2208",
+      "created_at": "2025-09-09T13:02:09Z",
+      "merged_at": "2025-09-09T13:52:00Z",
+      "closed_at": "2025-09-09T13:52:00Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1600\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-09T13:39:42Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-09T13:52:02Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-09T13:39:42Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1600
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-09T13:52:02Z"
+        }
+      ]
+    },
+    {
+      "number": 1599,
+      "branch": "beta-fix/cwi-2169",
+      "created_at": "2025-09-04T18:41:39Z",
+      "merged_at": "2025-09-05T13:23:04Z",
+      "closed_at": "2025-09-05T13:23:04Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1599\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-05T13:22:22Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-05T13:23:06Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-05T13:22:22Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1599
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-05T13:23:06Z"
+        }
+      ]
+    },
+    {
+      "number": 1598,
+      "branch": "update/cwi-2192",
+      "created_at": "2025-08-29T17:18:42Z",
+      "merged_at": "2025-09-02T15:19:56Z",
+      "closed_at": "2025-09-02T15:19:56Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1598\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-02T14:48:47Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-02T15:19:58Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-02T14:48:47Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1598
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-02T15:19:58Z"
+        }
+      ]
+    },
+    {
+      "number": 1597,
+      "branch": "update/cwi-2169",
+      "created_at": "2025-08-29T13:55:55Z",
+      "merged_at": "2025-09-02T15:11:24Z",
+      "closed_at": "2025-09-02T15:11:24Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1597\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-02T14:48:43Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-02T15:11:27Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-02T14:48:43Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1597
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-02T15:11:27Z"
+        }
+      ]
+    },
+    {
+      "number": 1596,
+      "branch": "stable-fix/jira-jdc-wrong-helper",
+      "created_at": "2025-08-22T18:56:35Z",
+      "merged_at": "2025-08-22T19:11:34Z",
+      "closed_at": "2025-08-22T19:11:34Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1592,
+      "branch": "stable-fix/jira-deprecated-endpoint",
+      "created_at": "2025-08-21T19:20:06Z",
+      "merged_at": "2025-08-21T19:31:08Z",
+      "closed_at": "2025-08-21T19:31:08Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1590,
+      "branch": "update/cwi-2023",
+      "created_at": "2025-08-20T18:03:40Z",
+      "merged_at": "2025-08-21T15:40:07Z",
+      "closed_at": "2025-08-21T15:40:07Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1589,
+      "branch": "fix/cwi-1505-allow-visitors",
+      "created_at": "2025-08-11T19:53:14Z",
+      "merged_at": "2025-08-11T20:54:07Z",
+      "closed_at": "2025-08-11T20:54:07Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1589\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-08-11T20:42:02Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-08-11T20:54:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-08-11T20:42:02Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1589
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-08-11T20:54:09Z"
+        }
+      ]
+    },
+    {
+      "number": 1583,
+      "branch": "fix/codeowners-mural-integrations",
+      "created_at": "2025-07-29T14:35:57Z",
+      "merged_at": "2025-08-05T17:46:40Z",
+      "closed_at": "2025-08-05T17:46:40Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1583\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-08-05T17:46:05Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-08-05T17:46:43Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-08-05T17:46:05Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1583
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-08-05T17:46:43Z"
+        }
+      ]
+    },
+    {
+      "number": 1582,
+      "branch": "fix/cwi-2006",
+      "created_at": "2025-07-21T18:47:04Z",
+      "merged_at": "2025-07-21T19:28:06Z",
+      "closed_at": "2025-07-21T19:28:06Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1582\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-21T19:26:16Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-21T19:28:08Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-21T19:26:16Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1582
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-21T19:28:08Z"
+        }
+      ]
+    },
+    {
+      "number": 1581,
+      "branch": "fix/cwi-1894-new-status-id",
+      "created_at": "2025-07-17T15:32:01Z",
+      "merged_at": "2025-07-23T17:43:05Z",
+      "closed_at": "2025-07-23T17:43:05Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1580,
+      "branch": "fix/cwi-1930-xhr-cancel",
+      "created_at": "2025-07-14T20:36:54Z",
+      "merged_at": "2025-07-15T17:18:28Z",
+      "closed_at": "2025-07-15T17:18:28Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1580\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-15T17:08:08Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-15T17:18:31Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-15T17:08:08Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1580
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-15T17:18:31Z"
+        }
+      ]
+    },
+    {
+      "number": 1579,
+      "branch": "fix/cwi-91",
+      "created_at": "2025-07-11T17:07:15Z",
+      "merged_at": "2025-07-11T17:22:55Z",
+      "closed_at": "2025-07-11T17:22:55Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1579\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-11T17:22:08Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-11T17:22:58Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-11T17:22:08Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1579
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-11T17:22:58Z"
+        }
+      ]
+    },
+    {
+      "number": 1578,
+      "branch": "stable-fix/cwi-1835",
+      "created_at": "2025-07-09T18:33:19Z",
+      "merged_at": "2025-07-09T18:52:21Z",
+      "closed_at": "2025-07-09T18:52:21Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1576,
+      "branch": "fix/cwi-1996-move-policy",
+      "created_at": "2025-07-08T20:02:35Z",
+      "merged_at": "2025-07-09T14:25:14Z",
+      "closed_at": "2025-07-09T14:25:14Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1574,
+      "branch": "beta-fix/cwi-1956-webex-tracking",
+      "created_at": "2025-06-24T17:42:59Z",
+      "merged_at": "2025-06-24T17:58:08Z",
+      "closed_at": "2025-06-24T17:58:08Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1574\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-06-24T17:46:25Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u274c There was an error processing your request: non-200 OK status code: 503 Service Unavailable body: \"upstream connect error or disconnect/reset before headers. retried and the latest reset reason: remote connection failure, transport failure reason: delayed connect error: Connection refused\"",
+          "created_at": "2025-06-24T17:46:57Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1574\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-06-24T17:57:52Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-06-24T17:58:10Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-06-24T17:46:25Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1574
+            }
+          ]
+        },
+        {
+          "type": "error",
+          "timestamp": "2025-06-24T17:46:57Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-06-24T17:57:52Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1574
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-06-24T17:58:10Z"
+        }
+      ]
+    },
+    {
+      "number": 1573,
+      "branch": "beta-fix/cwi-1954-empty-projects",
+      "created_at": "2025-06-24T16:05:38Z",
+      "merged_at": "2025-06-24T16:23:05Z",
+      "closed_at": "2025-06-24T16:23:05Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1573\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-06-24T16:22:17Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-06-24T16:23:07Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-06-24T16:22:17Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1573
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-06-24T16:23:07Z"
+        }
+      ]
+    },
+    {
+      "number": 1572,
+      "branch": "beta-fix/cwi-1930-jira-fields",
+      "created_at": "2025-06-18T18:07:08Z",
+      "merged_at": "2025-06-18T18:22:22Z",
+      "closed_at": "2025-06-18T18:22:22Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1572\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-06-18T18:21:39Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-06-18T18:22:24Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-06-18T18:21:39Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1572
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-06-18T18:22:24Z"
+        }
+      ]
+    },
+    {
+      "number": 1571,
+      "branch": "beta-fix/cwi-1930-undefined-field",
+      "created_at": "2025-06-18T14:11:12Z",
+      "merged_at": null,
+      "closed_at": "2025-06-18T18:05:37Z",
+      "state": "CLOSED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/mural-integrations#1571](https://github.com/tactivos/mural-integrations/pull/1571) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/mural-integrations/actions/runs/15735094037/job/44345566492)\n",
+          "created_at": "2025-06-18T17:30:26Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/mural-integrations#1571](https://github.com/tactivos/mural-integrations/pull/1571) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/mural-integrations/actions/runs/15735094037/job/44345566492)\n",
+          "created_at": "2025-06-18T18:03:16Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-06-18T17:30:26Z"
+        },
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-06-18T18:03:16Z"
+        }
+      ]
+    },
+    {
+      "number": 1569,
+      "branch": "fix/cwi-1809",
+      "created_at": "2025-06-12T12:57:14Z",
+      "merged_at": "2025-06-12T14:23:02Z",
+      "closed_at": "2025-06-12T14:23:02Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1569\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-06-12T14:11:46Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-06-12T14:23:04Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-06-12T14:11:46Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1569
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-06-12T14:23:04Z"
+        }
+      ]
+    },
+    {
+      "number": 1568,
+      "branch": "fix/cwi-1866-pagination",
+      "created_at": "2025-06-10T17:48:04Z",
+      "merged_at": "2025-06-17T14:10:51Z",
+      "closed_at": "2025-06-17T14:10:51Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1568\n\n* https://github.com/tactivos/murally/pull/44282\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-06-17T13:54:42Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-06-17T14:10:56Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-06-17T13:54:42Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1568
+            },
+            {
+              "repository": "tactivos/murally",
+              "pr_number": 44282
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-06-17T14:10:56Z"
+        }
+      ]
+    },
+    {
+      "number": 1567,
+      "branch": "upd/mongo-v8",
+      "created_at": "2025-05-29T16:50:56Z",
+      "merged_at": "2025-05-29T19:08:03Z",
+      "closed_at": "2025-05-29T19:08:03Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1565,
+      "branch": "feature/check-branch-private-action",
+      "created_at": "2025-05-15T21:01:03Z",
+      "merged_at": "2025-05-20T14:31:48Z",
+      "closed_at": "2025-05-20T14:31:49Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1564,
+      "branch": "fix/send-jira-error-handling",
+      "created_at": "2025-05-14T15:45:10Z",
+      "merged_at": "2025-05-14T19:35:14Z",
+      "closed_at": "2025-05-14T19:35:14Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1564\n\n* https://github.com/tactivos/murally/pull/44002\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-05-14T18:13:45Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "Merge failed \ud83d\ude22\n\n\u274c [Pull request tactivos/murally#44002](https://github.com/tactivos/murally/pull/44002) check: `build / QA / Package tests` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/murally/actions/runs/15028027494/job/42233955722)\n",
+          "created_at": "2025-05-14T18:30:17Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1564\n\n* https://github.com/tactivos/murally/pull/44002\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-05-14T19:15:09Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-05-14T19:35:18Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-05-14T18:13:45Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1564
+            },
+            {
+              "repository": "tactivos/murally",
+              "pr_number": 44002
+            }
+          ]
+        },
+        {
+          "type": "failed",
+          "timestamp": "2025-05-14T18:30:17Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-05-14T19:15:09Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1564
+            },
+            {
+              "repository": "tactivos/murally",
+              "pr_number": 44002
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-05-14T19:35:18Z"
+        }
+      ]
+    },
+    {
+      "number": 1563,
+      "branch": "improve-cors-multiline",
+      "created_at": "2025-05-09T16:00:12Z",
+      "merged_at": "2025-05-12T18:34:24Z",
+      "closed_at": "2025-05-12T18:34:24Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1562,
+      "branch": "add/cwi-1796",
+      "created_at": "2025-05-01T17:52:05Z",
+      "merged_at": "2025-05-06T17:23:31Z",
+      "closed_at": "2025-05-06T17:23:31Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1561,
+      "branch": "remove/cwi-1397",
+      "created_at": "2025-04-29T20:08:55Z",
+      "merged_at": "2025-05-07T16:51:47Z",
+      "closed_at": "2025-05-07T16:51:48Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1560,
+      "branch": "fix/cwi-1764",
+      "created_at": "2025-04-25T20:57:29Z",
+      "merged_at": "2025-04-28T22:36:49Z",
+      "closed_at": "2025-04-28T22:36:50Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1560\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-04-28T20:46:24Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-04-28T22:36:52Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-04-28T20:46:24Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1560
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-04-28T22:36:52Z"
+        }
+      ]
+    },
+    {
+      "number": 1559,
+      "branch": "fix/cwi-1791",
+      "created_at": "2025-04-25T17:48:22Z",
+      "merged_at": "2025-04-25T18:17:09Z",
+      "closed_at": "2025-04-25T18:17:10Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1559\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-04-25T18:16:25Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-04-25T18:17:12Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-04-25T18:16:25Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1559
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-04-25T18:17:12Z"
+        }
+      ]
+    },
+    {
+      "number": 1558,
+      "branch": "fix/cwi-1275",
+      "created_at": "2025-04-23T15:00:50Z",
+      "merged_at": "2025-04-23T17:53:28Z",
+      "closed_at": "2025-04-23T17:53:28Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1558\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-04-23T17:52:51Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-04-23T17:53:30Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-04-23T17:52:51Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1558
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-04-23T17:53:30Z"
+        }
+      ]
+    },
+    {
+      "number": 1557,
+      "branch": "fix/cwi-1771",
+      "created_at": "2025-04-22T20:21:35Z",
+      "merged_at": "2025-04-23T13:09:26Z",
+      "closed_at": "2025-04-23T13:09:26Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1557\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-04-23T13:08:30Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-04-23T13:09:29Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-04-23T13:08:30Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1557
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-04-23T13:09:29Z"
+        }
+      ]
+    },
+    {
+      "number": 1556,
+      "branch": "update/cwi-1766",
+      "created_at": "2025-04-16T15:42:52Z",
+      "merged_at": "2025-04-22T14:11:41Z",
+      "closed_at": "2025-04-22T14:11:41Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1555,
+      "branch": "update/cwi-1760",
+      "created_at": "2025-04-15T15:34:03Z",
+      "merged_at": "2025-04-15T19:16:49Z",
+      "closed_at": "2025-04-15T19:16:49Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1554,
+      "branch": "update/cwi-1759",
+      "created_at": "2025-04-14T12:54:20Z",
+      "merged_at": "2025-04-15T15:34:36Z",
+      "closed_at": "2025-04-15T15:34:36Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1553,
+      "branch": "update/cwi-1756",
+      "created_at": "2025-04-11T13:12:13Z",
+      "merged_at": "2025-04-11T15:32:37Z",
+      "closed_at": "2025-04-11T15:32:37Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1552,
+      "branch": "fix/cwi-1654",
+      "created_at": "2025-04-09T18:39:11Z",
+      "merged_at": "2025-04-10T15:25:34Z",
+      "closed_at": "2025-04-10T15:25:34Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1552\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-04-10T15:05:52Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-04-10T15:25:37Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-04-10T15:05:52Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1552
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-04-10T15:25:37Z"
+        }
+      ]
+    },
+    {
+      "number": 1551,
+      "branch": "add/node-consistency",
+      "created_at": "2025-04-04T14:33:18Z",
+      "merged_at": "2025-04-04T18:05:16Z",
+      "closed_at": "2025-04-04T18:05:16Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/mural-api#13425](https://github.com/tactivos/mural-api/pull/13425) is a draft \n\n\u274c [Pull request tactivos/mural-api#13425](https://github.com/tactivos/mural-api/pull/13425)has 1 or more outstanding required reviews\n\n\u274c [Pull request tactivos/mural-integrations#1551](https://github.com/tactivos/mural-integrations/pull/1551)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-04-04T15:09:30Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-api/pull/13425\n\n* https://github.com/tactivos/mural-integrations/pull/1551\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-04-04T15:18:23Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "Merge failed \ud83d\ude22\n\n\u274c Something failed after merging base branch to the PR... maybe timed out. Please, retry or #ask-developer-velocity\n",
+          "created_at": "2025-04-04T15:33:20Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-04-04T15:09:30Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-04-04T15:18:23Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-api",
+              "pr_number": 13425
+            },
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1551
+            }
+          ]
+        },
+        {
+          "type": "failed",
+          "timestamp": "2025-04-04T15:33:20Z"
+        }
+      ]
+    },
+    {
+      "number": 1550,
+      "branch": "fix/node-version",
+      "created_at": "2025-04-02T13:50:37Z",
+      "merged_at": "2025-04-02T15:24:26Z",
+      "closed_at": "2025-04-02T15:24:26Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/mural-integrations#1550](https://github.com/tactivos/mural-integrations/pull/1550)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-04-02T15:18:42Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1550\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-04-02T15:23:33Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-04-02T15:24:29Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-04-02T15:18:42Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-04-02T15:23:33Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1550
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-04-02T15:24:29Z"
+        }
+      ]
+    },
+    {
+      "number": 1549,
+      "branch": "remove/rollbar",
+      "created_at": "2025-04-01T15:59:45Z",
+      "merged_at": "2025-04-03T15:28:48Z",
+      "closed_at": "2025-04-03T15:28:48Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1549\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-04-03T15:28:16Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-04-03T15:28:51Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-04-03T15:28:16Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1549
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-04-03T15:28:51Z"
+        }
+      ]
+    },
+    {
+      "number": 1546,
+      "branch": "add/cwi-1721",
+      "created_at": "2025-03-28T13:19:15Z",
+      "merged_at": "2025-05-12T18:52:30Z",
+      "closed_at": "2025-05-12T18:52:31Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1543,
+      "branch": "update/node-version-22.14.0",
+      "created_at": "2025-03-20T16:45:38Z",
+      "merged_at": "2025-03-26T16:41:10Z",
+      "closed_at": "2025-03-26T16:41:10Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 1542,
+      "branch": "update/cwi-1712",
+      "created_at": "2025-03-13T12:26:32Z",
+      "merged_at": "2025-03-13T13:10:10Z",
+      "closed_at": "2025-03-13T13:10:11Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1542\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-03-13T13:08:57Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-03-13T13:10:15Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-03-13T13:08:57Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1542
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-03-13T13:10:15Z"
+        }
+      ]
+    },
+    {
+      "number": 1541,
+      "branch": "enjoy-the-silence",
+      "created_at": "2025-03-12T19:46:24Z",
+      "merged_at": "2025-03-12T20:20:48Z",
+      "closed_at": "2025-03-12T20:20:48Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1541\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-03-12T20:01:20Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-03-12T20:20:50Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-03-12T20:01:20Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1541
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-03-12T20:20:50Z"
+        }
+      ]
+    },
+    {
+      "number": 1540,
+      "branch": "remove/powerplays",
+      "created_at": "2025-03-07T22:00:24Z",
+      "merged_at": "2025-03-10T13:21:27Z",
+      "closed_at": "2025-03-10T13:21:27Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1540\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-03-10T13:11:40Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-03-10T13:21:29Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-03-10T13:11:40Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1540
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-03-10T13:21:29Z"
+        }
+      ]
+    },
+    {
+      "number": 1539,
+      "branch": "fix/cwi-1466",
+      "created_at": "2025-03-07T18:38:11Z",
+      "merged_at": "2025-03-10T19:42:03Z",
+      "closed_at": "2025-03-10T19:42:03Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1539\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-03-10T19:24:20Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-03-10T19:42:05Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-03-10T19:24:20Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1539
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-03-10T19:42:05Z"
+        }
+      ]
+    },
+    {
+      "number": 1538,
+      "branch": "beta-fix/cwi-1691-validator",
+      "created_at": "2025-03-06T19:13:44Z",
+      "merged_at": "2025-03-06T19:56:26Z",
+      "closed_at": "2025-03-06T19:56:26Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1538\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-03-06T19:56:01Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-03-06T19:56:28Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-03-06T19:56:01Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1538
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-03-06T19:56:28Z"
+        }
+      ]
+    },
+    {
+      "number": 1537,
+      "branch": "beta-fix/cwi-1691",
+      "created_at": "2025-03-06T15:59:10Z",
+      "merged_at": "2025-03-06T16:21:10Z",
+      "closed_at": "2025-03-06T16:21:10Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1537\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-03-06T16:20:54Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-03-06T16:21:12Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-03-06T16:20:54Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1537
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-03-06T16:21:12Z"
+        }
+      ]
+    },
+    {
+      "number": 1536,
+      "branch": "fix/byebyerollbar",
+      "created_at": "2025-03-05T19:13:44Z",
+      "merged_at": "2025-03-19T17:06:53Z",
+      "closed_at": "2025-03-19T17:06:53Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1536\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-03-19T17:02:43Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-03-19T17:06:56Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-03-19T17:02:43Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1536
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-03-19T17:06:56Z"
+        }
+      ]
+    },
+    {
+      "number": 1534,
+      "branch": "sec-update-0325-07",
+      "created_at": "2025-03-05T18:43:42Z",
+      "merged_at": "2025-03-11T12:34:40Z",
+      "closed_at": "2025-03-11T12:34:40Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1534\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-03-11T12:33:55Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-03-11T12:34:43Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-03-11T12:33:55Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1534
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-03-11T12:34:43Z"
+        }
+      ]
+    },
+    {
+      "number": 1532,
+      "branch": "fix/test-config-setup",
+      "created_at": "2025-02-19T17:58:33Z",
+      "merged_at": "2025-02-19T19:56:47Z",
+      "closed_at": "2025-02-19T19:56:47Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-integrations/pull/1532\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-02-19T19:45:55Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-02-19T19:56:50Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-02-19T19:45:55Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1532
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-02-19T19:56:50Z"
+        }
+      ]
+    },
+    {
+      "number": 1530,
+      "branch": "fix/share-types",
+      "created_at": "2025-02-18T18:57:20Z",
+      "merged_at": "2025-02-18T21:29:35Z",
+      "closed_at": "2025-02-18T21:29:35Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-api/pull/13077\n\n* https://github.com/tactivos/mural-integrations/pull/1530\n\n\nView the status of the queue here (requires VPN):\nhttps://backstage.mural.engineering/merge-queue",
+          "created_at": "2025-02-18T21:14:37Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-02-18T21:29:38Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-02-18T21:14:37Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-api",
+              "pr_number": 13077
+            },
+            {
+              "repository": "tactivos/mural-integrations",
+              "pr_number": 1530
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-02-18T21:29:38Z"
+        }
+      ]
+    }
+  ]
+}

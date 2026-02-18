@@ -1,0 +1,67 @@
+{
+  "repository": "haproxy-realtime",
+  "fetched_at": "2026-02-18T18:41:29.597837Z",
+  "bot_username": "mural-shipit2",
+  "date_range": {
+    "start": "2025-02-18T00:00:00",
+    "end": "2026-02-18T00:00:00"
+  },
+  "pull_requests": [
+    {
+      "number": 21,
+      "branch": "add/codeowners-linter-haproxy-realtime",
+      "created_at": "2026-01-20T16:11:55Z",
+      "merged_at": "2026-01-20T16:56:31Z",
+      "closed_at": "2026-01-20T16:56:31Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 19,
+      "branch": "bump/security",
+      "created_at": "2025-09-19T13:13:46Z",
+      "merged_at": "2026-01-12T19:47:56Z",
+      "closed_at": "2026-01-12T19:47:56Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 18,
+      "branch": "security/bump",
+      "created_at": "2025-08-04T13:32:01Z",
+      "merged_at": "2025-09-04T13:17:52Z",
+      "closed_at": "2025-09-04T13:17:52Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/haproxy-realtime/pull/18\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-04T13:17:22Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-04T13:17:56Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-04T13:17:22Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/haproxy-realtime",
+              "pr_number": 18
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-04T13:17:56Z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "overview": {
+    "total_queue_entries_current": 5252,
+    "total_queue_entries_proposed": 5370,
+    "effort_entries_added": 118,
+    "date_range_days": 365.2
+  },
+  "wait_time_comparison": {
+    "mean": {
+      "current_min": 35.6,
+      "proposed_min": 1.9,
+      "improvement_min": 33.7,
+      "improvement_pct": 94.7
+    },
+    "median": {
+      "current_min": 3.8,
+      "proposed_min": 0.0,
+      "improvement_min": 3.8,
+      "improvement_pct": 100.0
+    },
+    "p95": {
+      "current_min": 59.3,
+      "proposed_min": 11.1,
+      "improvement_min": 48.1,
+      "improvement_pct": 81.2
+    }
+  },
+  "total_time_comparison": {
+    "mean": {
+      "current_min": 44.8,
+      "proposed_min": 12.5
+    },
+    "median": {
+      "current_min": 15.0,
+      "proposed_min": 9.9
+    }
+  },
+  "time_saved": {
+    "mean_min": 33.7,
+    "median_min": 3.0,
+    "p95_min": 55.3,
+    "total_hours": 3018.7
+  },
+  "repo_breakdown": {
+    "murally": {
+      "count": 3770,
+      "current_mean_min": 36.9,
+      "proposed_mean_min": 2.3,
+      "current_median_min": 3.9,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 93.8
+    },
+    "mural-api": {
+      "count": 1339,
+      "current_mean_min": 33.4,
+      "proposed_mean_min": 1.2,
+      "current_median_min": 3.7,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 96.4
+    },
+    "mural-integrations": {
+      "count": 86,
+      "current_mean_min": 10.6,
+      "proposed_mean_min": 0.0,
+      "current_median_min": 6.1,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 99.9
+    },
+    "pdf-import": {
+      "count": 76,
+      "current_mean_min": 37.8,
+      "proposed_mean_min": 0.0,
+      "current_median_min": 0.4,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 100.0
+    },
+    "mural-render": {
+      "count": 55,
+      "current_mean_min": 35.6,
+      "proposed_mean_min": 0.1,
+      "current_median_min": 10.6,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 99.8
+    },
+    "mural-upload": {
+      "count": 14,
+      "current_mean_min": 4.4,
+      "proposed_mean_min": 0.0,
+      "current_median_min": 0.2,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 100.0
+    },
+    "mural-seeder": {
+      "count": 12,
+      "current_mean_min": 136.0,
+      "proposed_mean_min": 0.0,
+      "current_median_min": 3.3,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 100.0
+    },
+    "mural-notifier": {
+      "count": 8,
+      "current_mean_min": 6.3,
+      "proposed_mean_min": 0.0,
+      "current_median_min": 0.2,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 100.0
+    },
+    "mural-realtime": {
+      "count": 7,
+      "current_mean_min": 10.8,
+      "proposed_mean_min": 0.0,
+      "current_median_min": 0.3,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 100.0
+    },
+    "mural-lb": {
+      "count": 2,
+      "current_mean_min": 60.2,
+      "proposed_mean_min": 0.0,
+      "current_median_min": 60.2,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 100.0
+    },
+    "haproxy-realtime": {
+      "count": 1,
+      "current_mean_min": 0.0,
+      "proposed_mean_min": 0.0,
+      "current_median_min": 0.0,
+      "proposed_median_min": 0.0,
+      "improvement_pct": 0
+    }
+  }
+}

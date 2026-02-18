@@ -1,0 +1,4534 @@
+{
+  "repository": "pdf-import",
+  "fetched_at": "2026-02-18T18:47:46.683794Z",
+  "bot_username": "mural-shipit2",
+  "date_range": {
+    "start": "2025-02-18T00:00:00",
+    "end": "2026-02-18T00:00:00"
+  },
+  "pull_requests": [
+    {
+      "number": 292,
+      "branch": "add/manifest-lint",
+      "created_at": "2026-01-20T16:59:12Z",
+      "merged_at": "2026-01-20T18:21:35Z",
+      "closed_at": "2026-01-20T18:21:35Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/292\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-20T17:18:07Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-20T18:21:36Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-20T17:18:07Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 292
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-20T18:21:36Z"
+        }
+      ]
+    },
+    {
+      "number": 290,
+      "branch": "master-fix/conflict-d293bd8-a954209",
+      "created_at": "2025-12-22T21:50:08Z",
+      "merged_at": "2025-12-22T22:03:42Z",
+      "closed_at": "2025-12-22T22:03:43Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 289,
+      "branch": "stable-fix/board-name-prefix",
+      "created_at": "2025-12-22T21:39:30Z",
+      "merged_at": "2025-12-22T21:48:51Z",
+      "closed_at": "2025-12-22T21:48:51Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 287,
+      "branch": "master-fix/conflict-fd6fda1-5724bc7",
+      "created_at": "2025-12-19T20:02:03Z",
+      "merged_at": "2025-12-19T20:08:27Z",
+      "closed_at": "2025-12-19T20:08:27Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 286,
+      "branch": "stable-fix/board-name",
+      "created_at": "2025-12-19T16:31:15Z",
+      "merged_at": "2025-12-19T19:59:57Z",
+      "closed_at": "2025-12-19T19:59:57Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 285,
+      "branch": "master-fix/conflict-6a44ec9-aec9e7a",
+      "created_at": "2025-12-15T17:58:36Z",
+      "merged_at": "2025-12-15T19:51:34Z",
+      "closed_at": "2025-12-15T19:51:34Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 284,
+      "branch": "stable-fix/connector-logic",
+      "created_at": "2025-12-15T16:21:00Z",
+      "merged_at": "2025-12-15T17:57:41Z",
+      "closed_at": "2025-12-15T17:57:41Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 283,
+      "branch": "master-fix/conflict-d8fbffb-aec9e7a",
+      "created_at": "2025-12-12T17:13:44Z",
+      "merged_at": "2025-12-15T19:51:36Z",
+      "closed_at": "2025-12-15T19:51:36Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 282,
+      "branch": "stable-fix/font-size",
+      "created_at": "2025-12-12T16:28:08Z",
+      "merged_at": "2025-12-12T17:12:27Z",
+      "closed_at": "2025-12-12T17:12:27Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 281,
+      "branch": "master-fix/conflict-235cff0-e9211fe",
+      "created_at": "2025-12-11T14:53:44Z",
+      "merged_at": "2025-12-11T15:05:56Z",
+      "closed_at": "2025-12-11T15:05:56Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 280,
+      "branch": "stable-fix/batch-errors",
+      "created_at": "2025-12-11T14:46:29Z",
+      "merged_at": "2025-12-11T14:52:27Z",
+      "closed_at": "2025-12-11T14:52:27Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 279,
+      "branch": "master-fix/conflict-0c80f19-1cfad18",
+      "created_at": "2025-12-09T19:04:27Z",
+      "merged_at": "2025-12-10T15:21:17Z",
+      "closed_at": "2025-12-10T15:21:17Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 278,
+      "branch": "stable-fix/all_elements",
+      "created_at": "2025-12-09T18:53:48Z",
+      "merged_at": "2025-12-09T19:03:09Z",
+      "closed_at": "2025-12-09T19:03:09Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 277,
+      "branch": "master-fix/conflict-8b354ff-2f0b94d",
+      "created_at": "2025-12-09T18:23:36Z",
+      "merged_at": "2025-12-09T18:33:46Z",
+      "closed_at": "2025-12-09T18:33:46Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 276,
+      "branch": "stable-fix/duplicates-from-table-text",
+      "created_at": "2025-12-08T16:14:29Z",
+      "merged_at": "2025-12-09T18:22:42Z",
+      "closed_at": "2025-12-09T18:22:42Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 275,
+      "branch": "master-fix/conflict-220abac-c63e813",
+      "created_at": "2025-12-08T14:18:10Z",
+      "merged_at": "2025-12-08T14:53:31Z",
+      "closed_at": "2025-12-08T14:53:31Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 274,
+      "branch": "stable-fix/emojy-can-handle-error",
+      "created_at": "2025-12-08T14:12:31Z",
+      "merged_at": "2025-12-08T14:17:13Z",
+      "closed_at": "2025-12-08T14:17:13Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 273,
+      "branch": "master-fix/conflict-90ab0c5-139e24c",
+      "created_at": "2025-12-04T21:24:36Z",
+      "merged_at": "2025-12-05T13:25:14Z",
+      "closed_at": "2025-12-05T13:25:14Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 272,
+      "branch": "stable-fix/reduce-foreign-object",
+      "created_at": "2025-12-04T20:28:12Z",
+      "merged_at": "2025-12-04T21:23:18Z",
+      "closed_at": "2025-12-04T21:23:18Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 271,
+      "branch": "master-fix/conflict-4d86ab2-7c5a730",
+      "created_at": "2025-12-04T16:43:48Z",
+      "merged_at": "2025-12-04T17:10:33Z",
+      "closed_at": "2025-12-04T17:10:33Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 270,
+      "branch": "stable-fix/associate-text-perc",
+      "created_at": "2025-12-04T15:56:53Z",
+      "merged_at": "2025-12-04T16:42:28Z",
+      "closed_at": "2025-12-04T16:42:29Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 268,
+      "branch": "master-fix/conflict-6d80af9-b0413ae",
+      "created_at": "2025-12-03T20:02:14Z",
+      "merged_at": "2025-12-03T20:08:10Z",
+      "closed_at": "2025-12-03T20:08:10Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 267,
+      "branch": "stable-fix/table-metadata-fix",
+      "created_at": "2025-12-03T18:19:01Z",
+      "merged_at": "2025-12-03T20:00:56Z",
+      "closed_at": "2025-12-03T20:00:56Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 266,
+      "branch": "master-fix/conflict-9cc5160-b0413ae",
+      "created_at": "2025-12-03T16:43:48Z",
+      "merged_at": "2025-12-03T20:08:12Z",
+      "closed_at": "2025-12-03T20:08:12Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 264,
+      "branch": "stable-fix/text-in-table",
+      "created_at": "2025-12-03T16:08:33Z",
+      "merged_at": "2025-12-03T16:42:29Z",
+      "closed_at": "2025-12-03T16:42:29Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 263,
+      "branch": "stable-fix/stale-process",
+      "created_at": "2025-12-03T14:07:35Z",
+      "merged_at": "2025-12-03T16:30:56Z",
+      "closed_at": "2025-12-03T16:30:56Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 262,
+      "branch": "master-fix/conflict-b790797-e4f337e",
+      "created_at": "2025-12-03T12:51:55Z",
+      "merged_at": "2025-12-03T12:59:21Z",
+      "closed_at": "2025-12-03T12:59:21Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 261,
+      "branch": "stable-fix/max-widget-size-scale",
+      "created_at": "2025-12-02T20:38:30Z",
+      "merged_at": "2025-12-03T12:50:35Z",
+      "closed_at": "2025-12-03T12:50:35Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 260,
+      "branch": "master-fix/conflict-de1b2d6-b5dab63",
+      "created_at": "2025-12-02T18:13:35Z",
+      "merged_at": "2025-12-02T18:21:15Z",
+      "closed_at": "2025-12-02T18:21:15Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/260\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-02T18:20:20Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-02T18:21:16Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-02T18:20:20Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 260
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-02T18:21:16Z"
+        }
+      ]
+    },
+    {
+      "number": 259,
+      "branch": "stable-fix/refine-widget-scale-criteria",
+      "created_at": "2025-12-02T16:44:58Z",
+      "merged_at": "2025-12-02T18:12:16Z",
+      "closed_at": "2025-12-02T18:12:16Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 258,
+      "branch": "fix/natural-image-get",
+      "created_at": "2025-12-01T17:21:36Z",
+      "merged_at": "2025-12-01T17:36:17Z",
+      "closed_at": "2025-12-01T17:36:17Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/258\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-12-01T17:35:14Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-12-01T17:36:19Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-12-01T17:35:14Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 258
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-12-01T17:36:19Z"
+        }
+      ]
+    },
+    {
+      "number": 257,
+      "branch": "master-fix/conflict-81e9e4e-71f6402",
+      "created_at": "2025-12-01T14:07:33Z",
+      "merged_at": "2025-12-01T14:17:16Z",
+      "closed_at": "2025-12-01T14:17:16Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 256,
+      "branch": "stable-fix/log-and-task-timeout",
+      "created_at": "2025-12-01T13:40:21Z",
+      "merged_at": "2025-12-01T14:06:39Z",
+      "closed_at": "2025-12-01T14:06:39Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 255,
+      "branch": "master-fix/conflict-e5a17a6-fab0885",
+      "created_at": "2025-11-28T15:15:16Z",
+      "merged_at": "2025-11-28T15:21:32Z",
+      "closed_at": "2025-11-28T15:21:32Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 254,
+      "branch": "stable-fix/process-image-enh",
+      "created_at": "2025-11-28T14:48:38Z",
+      "merged_at": "2025-11-28T15:13:58Z",
+      "closed_at": "2025-11-28T15:13:58Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 253,
+      "branch": "master-fix/conflict-3b8f4c9-e2afc3f",
+      "created_at": "2025-11-27T14:37:27Z",
+      "merged_at": "2025-11-27T14:43:38Z",
+      "closed_at": "2025-11-27T14:43:38Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 252,
+      "branch": "stable-fix/incr-server-timeout",
+      "created_at": "2025-11-27T14:03:08Z",
+      "merged_at": "2025-11-27T14:36:33Z",
+      "closed_at": "2025-11-27T14:36:33Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 250,
+      "branch": "master-fix/conflict-d9d00e8-73941cb",
+      "created_at": "2025-11-26T16:29:15Z",
+      "merged_at": "2025-11-26T16:37:44Z",
+      "closed_at": "2025-11-26T16:37:45Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 249,
+      "branch": "stable-fix/optimize-cairo-processing",
+      "created_at": "2025-11-26T16:11:39Z",
+      "merged_at": "2025-11-26T16:28:21Z",
+      "closed_at": "2025-11-26T16:28:21Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 248,
+      "branch": "master-fix/conflict-25472d9-800ad78",
+      "created_at": "2025-11-25T19:34:45Z",
+      "merged_at": "2025-11-25T19:46:25Z",
+      "closed_at": "2025-11-25T19:46:25Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 247,
+      "branch": "master-fix/conflict-4deb701-deadb22",
+      "created_at": "2025-11-21T17:33:11Z",
+      "merged_at": "2025-11-21T17:40:56Z",
+      "closed_at": "2025-11-21T17:40:56Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 246,
+      "branch": "stable-fix/escape-text",
+      "created_at": "2025-11-21T17:23:08Z",
+      "merged_at": "2025-11-21T17:32:17Z",
+      "closed_at": "2025-11-21T17:32:17Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 245,
+      "branch": "stable-fix/optimized-image-processing",
+      "created_at": "2025-11-20T18:11:23Z",
+      "merged_at": "2025-11-25T19:33:25Z",
+      "closed_at": "2025-11-25T19:33:25Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 243,
+      "branch": "master-fix/conflict-26deef2-64e218b",
+      "created_at": "2025-11-18T15:14:53Z",
+      "merged_at": "2025-11-18T15:22:05Z",
+      "closed_at": "2025-11-18T15:22:05Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 242,
+      "branch": "master-fix/conflict-72b2759-572789a",
+      "created_at": "2025-11-18T14:30:52Z",
+      "merged_at": "2025-11-18T14:47:05Z",
+      "closed_at": "2025-11-18T14:47:05Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 241,
+      "branch": "stable-fix/memory-errors",
+      "created_at": "2025-11-18T13:59:25Z",
+      "merged_at": "2025-11-18T14:29:35Z",
+      "closed_at": "2025-11-18T14:29:35Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 240,
+      "branch": "stable-fix/incr-timeout",
+      "created_at": "2025-11-18T12:03:30Z",
+      "merged_at": "2025-11-18T15:13:36Z",
+      "closed_at": "2025-11-18T15:13:36Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 238,
+      "branch": "master-fix/conflict-53f35df-f9d2d38",
+      "created_at": "2025-11-17T20:01:10Z",
+      "merged_at": "2025-11-17T20:17:12Z",
+      "closed_at": "2025-11-17T20:17:13Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 237,
+      "branch": "stable-fix/dashed-arrow",
+      "created_at": "2025-11-17T19:48:59Z",
+      "merged_at": "2025-11-17T19:59:53Z",
+      "closed_at": "2025-11-17T19:59:53Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 236,
+      "branch": "master-fix/conflict-6db3fe9-7fd5863",
+      "created_at": "2025-11-17T18:06:14Z",
+      "merged_at": "2025-11-17T18:12:07Z",
+      "closed_at": "2025-11-17T18:12:08Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 235,
+      "branch": "stable-fix/layering-issues",
+      "created_at": "2025-11-17T17:40:20Z",
+      "merged_at": "2025-11-17T18:04:57Z",
+      "closed_at": "2025-11-17T18:04:57Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 234,
+      "branch": "master-fix/conflict-3bba982-3163373",
+      "created_at": "2025-11-14T14:08:27Z",
+      "merged_at": "2025-11-14T14:14:32Z",
+      "closed_at": "2025-11-14T14:14:32Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 233,
+      "branch": "stable-fix/handle-massive-image-with-clip-path",
+      "created_at": "2025-11-14T04:06:07Z",
+      "merged_at": "2025-11-14T14:07:09Z",
+      "closed_at": "2025-11-14T14:07:09Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 232,
+      "branch": "master-fix/conflict-7cf2874-19ae2ef",
+      "created_at": "2025-11-12T19:46:24Z",
+      "merged_at": "2025-11-12T20:05:16Z",
+      "closed_at": "2025-11-12T20:05:16Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 231,
+      "branch": "stable-fix/center-text",
+      "created_at": "2025-11-12T19:11:07Z",
+      "merged_at": "2025-11-12T19:45:05Z",
+      "closed_at": "2025-11-12T19:45:05Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 230,
+      "branch": "master-fix/conflict-8035a5c-9e36c4d",
+      "created_at": "2025-11-12T15:59:59Z",
+      "merged_at": "2025-11-12T16:14:06Z",
+      "closed_at": "2025-11-12T16:14:06Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 229,
+      "branch": "master-fix/conflict-e4ea811-64aee26",
+      "created_at": "2025-11-11T12:48:07Z",
+      "merged_at": "2025-11-11T12:54:02Z",
+      "closed_at": "2025-11-11T12:54:02Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 228,
+      "branch": "stable-fix/layering-and-inking-widget",
+      "created_at": "2025-11-10T19:02:23Z",
+      "merged_at": "2025-11-12T15:58:40Z",
+      "closed_at": "2025-11-12T15:58:40Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 227,
+      "branch": "stable-fix/playwright-corrupted-images",
+      "created_at": "2025-11-10T18:53:11Z",
+      "merged_at": "2025-11-11T12:47:14Z",
+      "closed_at": "2025-11-11T12:47:14Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 226,
+      "branch": "master-fix/conflict-55091d9-f39aa15",
+      "created_at": "2025-11-10T13:34:47Z",
+      "merged_at": "2025-11-10T13:39:47Z",
+      "closed_at": "2025-11-10T13:39:47Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 225,
+      "branch": "stable-fix/calculate-dimensions",
+      "created_at": "2025-11-06T15:52:55Z",
+      "merged_at": "2025-11-10T13:33:52Z",
+      "closed_at": "2025-11-10T13:33:52Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 224,
+      "branch": "master-fix/conflict-d261073-4bf5645",
+      "created_at": "2025-11-05T20:25:04Z",
+      "merged_at": "2025-11-06T12:46:50Z",
+      "closed_at": "2025-11-06T12:46:50Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 223,
+      "branch": "stable-fix/server-timeout-inc",
+      "created_at": "2025-11-05T20:19:54Z",
+      "merged_at": "2025-11-05T20:23:47Z",
+      "closed_at": "2025-11-05T20:23:47Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 222,
+      "branch": "master-fix/conflict-2e546c6-349fb50",
+      "created_at": "2025-11-05T19:00:36Z",
+      "merged_at": "2025-11-05T19:53:45Z",
+      "closed_at": "2025-11-05T19:53:45Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 221,
+      "branch": "stable-fix/increase-payload-size",
+      "created_at": "2025-11-05T18:55:09Z",
+      "merged_at": "2025-11-05T18:59:43Z",
+      "closed_at": "2025-11-05T18:59:43Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 219,
+      "branch": "master-fix/conflict-d81a478-594545d",
+      "created_at": "2025-11-05T18:08:38Z",
+      "merged_at": "2025-11-05T18:14:31Z",
+      "closed_at": "2025-11-05T18:14:31Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 218,
+      "branch": "stable-fix/increase-timeout",
+      "created_at": "2025-11-05T17:47:52Z",
+      "merged_at": "2025-11-05T18:07:19Z",
+      "closed_at": "2025-11-05T18:07:19Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 217,
+      "branch": "master-fix/conflict-2a5fa1b-061056b",
+      "created_at": "2025-11-05T16:52:42Z",
+      "merged_at": "2025-11-05T17:04:05Z",
+      "closed_at": "2025-11-05T17:04:06Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 216,
+      "branch": "stable-fix/text-update",
+      "created_at": "2025-11-05T16:44:19Z",
+      "merged_at": "2025-11-05T16:51:25Z",
+      "closed_at": "2025-11-05T16:51:25Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 215,
+      "branch": "master-fix/conflict-39d3876-61ed001",
+      "created_at": "2025-11-05T16:15:03Z",
+      "merged_at": "2025-11-05T16:25:35Z",
+      "closed_at": "2025-11-05T16:25:35Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/215\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-05T16:21:57Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "Merge failed \ud83d\ude22\n\n\u274c Branch changed after queuing... did you commit after sending `shipit`?\n",
+          "created_at": "2025-11-05T17:10:43Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-05T16:21:57Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 215
+            }
+          ]
+        },
+        {
+          "type": "failed",
+          "timestamp": "2025-11-05T17:10:43Z"
+        }
+      ]
+    },
+    {
+      "number": 214,
+      "branch": "stable-fix/clip-path",
+      "created_at": "2025-11-05T15:49:20Z",
+      "merged_at": "2025-11-05T16:13:18Z",
+      "closed_at": "2025-11-05T16:13:18Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 213,
+      "branch": "master-fix/conflict-d7fc7a3-31a2e04",
+      "created_at": "2025-11-05T15:09:11Z",
+      "merged_at": "2025-11-05T15:14:46Z",
+      "closed_at": "2025-11-05T15:14:46Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 212,
+      "branch": "stable-fix/lost-commits",
+      "created_at": "2025-11-04T21:42:44Z",
+      "merged_at": "2025-11-05T15:08:15Z",
+      "closed_at": "2025-11-05T15:08:15Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 211,
+      "branch": "master-fix/conflict-872e646-29c22da",
+      "created_at": "2025-11-04T18:14:27Z",
+      "merged_at": "2025-11-04T18:34:13Z",
+      "closed_at": "2025-11-04T18:34:13Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 210,
+      "branch": "stable-fix/scale-widgets",
+      "created_at": "2025-11-04T18:03:46Z",
+      "merged_at": "2025-11-04T18:13:09Z",
+      "closed_at": "2025-11-04T18:13:09Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 209,
+      "branch": "stable-fix/associate-text-optimization-2",
+      "created_at": "2025-11-04T17:50:58Z",
+      "merged_at": "2025-11-05T15:08:18Z",
+      "closed_at": "2025-11-05T15:08:18Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 208,
+      "branch": "stable-fix/associate-text-optimization",
+      "created_at": "2025-11-04T15:57:40Z",
+      "merged_at": "2025-11-04T17:46:07Z",
+      "closed_at": "2025-11-04T17:46:06Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 207,
+      "branch": "master-fix/conflict-4fde2b4-9e0ea93",
+      "created_at": "2025-11-04T15:06:02Z",
+      "merged_at": "2025-11-04T15:22:54Z",
+      "closed_at": "2025-11-04T15:22:54Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/207\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-04T15:13:08Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-04T15:22:55Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-04T15:13:08Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 207
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-04T15:22:55Z"
+        }
+      ]
+    },
+    {
+      "number": 206,
+      "branch": "master-fix/conflict-91900f6-9e0ea93",
+      "created_at": "2025-11-04T12:58:34Z",
+      "merged_at": "2025-11-04T15:05:24Z",
+      "closed_at": "2025-11-04T15:05:24Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 205,
+      "branch": "master-fix/conflict-db0c47e-6761530",
+      "created_at": "2025-11-04T12:44:15Z",
+      "merged_at": "2025-11-04T12:57:46Z",
+      "closed_at": "2025-11-04T12:57:46Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 204,
+      "branch": "stable-fix/trim-space-error",
+      "created_at": "2025-11-04T10:59:44Z",
+      "merged_at": "2025-11-04T12:42:57Z",
+      "closed_at": "2025-11-04T12:42:57Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 203,
+      "branch": "stable-fix/image-fixes",
+      "created_at": "2025-11-04T01:30:18Z",
+      "merged_at": "2025-11-04T15:04:32Z",
+      "closed_at": "2025-11-04T15:04:32Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 202,
+      "branch": "stable-fix/swim-lane-text-width-fix",
+      "created_at": "2025-11-04T01:26:57Z",
+      "merged_at": "2025-11-04T12:57:13Z",
+      "closed_at": "2025-11-04T12:57:13Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 201,
+      "branch": "master-fix/conflict-b06553c-dd6350e",
+      "created_at": "2025-11-03T21:30:27Z",
+      "merged_at": "2025-11-03T21:43:31Z",
+      "closed_at": "2025-11-03T21:43:31Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/201\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-11-03T21:42:30Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-11-03T21:43:32Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-11-03T21:42:30Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 201
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-11-03T21:43:32Z"
+        }
+      ]
+    },
+    {
+      "number": 200,
+      "branch": "stable-fix/font-size-scaling",
+      "created_at": "2025-11-03T21:17:11Z",
+      "merged_at": "2025-11-03T21:29:09Z",
+      "closed_at": "2025-11-03T21:29:09Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 199,
+      "branch": "master-fix/conflict-6aa8381-7c1105f",
+      "created_at": "2025-11-03T18:15:58Z",
+      "merged_at": "2025-11-03T19:12:22Z",
+      "closed_at": "2025-11-03T19:12:22Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 198,
+      "branch": "stable-fix/missing-path-issue",
+      "created_at": "2025-11-03T17:14:15Z",
+      "merged_at": "2025-11-03T18:14:41Z",
+      "closed_at": "2025-11-03T18:14:41Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 197,
+      "branch": "master-fix/conflict-61b065d-7c1105f",
+      "created_at": "2025-10-31T20:13:03Z",
+      "merged_at": "2025-11-03T19:12:24Z",
+      "closed_at": "2025-11-03T19:12:24Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 196,
+      "branch": "stable-fix/return-white-color",
+      "created_at": "2025-10-31T20:02:29Z",
+      "merged_at": "2025-10-31T20:11:47Z",
+      "closed_at": "2025-10-31T20:11:47Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c Invalid base branch [stable](stable)\n",
+          "created_at": "2025-10-31T20:08:42Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-10-31T20:08:42Z"
+        }
+      ]
+    },
+    {
+      "number": 195,
+      "branch": "master-fix/conflict-7f8833d-7499a18",
+      "created_at": "2025-10-30T15:52:40Z",
+      "merged_at": "2025-10-30T16:33:35Z",
+      "closed_at": "2025-10-30T16:33:36Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/195\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-30T16:33:13Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-30T16:33:37Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-30T16:33:13Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 195
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-30T16:33:37Z"
+        }
+      ]
+    },
+    {
+      "number": 194,
+      "branch": "master-fix/conflict-c1ee761-81e41e5",
+      "created_at": "2025-10-30T14:14:27Z",
+      "merged_at": "2025-10-30T14:25:23Z",
+      "closed_at": "2025-10-30T14:25:23Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/194\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-30T14:19:40Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-30T14:25:25Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-30T14:19:40Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 194
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-30T14:25:25Z"
+        }
+      ]
+    },
+    {
+      "number": 193,
+      "branch": "beta-fix/do-not-remove-transparent-objects",
+      "created_at": "2025-10-30T13:14:39Z",
+      "merged_at": "2025-10-30T14:13:19Z",
+      "closed_at": "2025-10-30T14:13:19Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/193\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-30T14:12:14Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-30T14:13:20Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-30T14:12:14Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 193
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-30T14:13:20Z"
+        }
+      ]
+    },
+    {
+      "number": 192,
+      "branch": "master-fix/conflict-a674ef5-c5d3fe9",
+      "created_at": "2025-10-29T13:13:54Z",
+      "merged_at": "2025-10-29T13:32:43Z",
+      "closed_at": "2025-10-29T13:32:43Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/192\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-29T13:20:58Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-29T13:32:44Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-29T13:20:58Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 192
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-29T13:32:44Z"
+        }
+      ]
+    },
+    {
+      "number": 191,
+      "branch": "beta-fix/object-has-no-attribute",
+      "created_at": "2025-10-29T13:01:01Z",
+      "merged_at": "2025-10-29T13:12:47Z",
+      "closed_at": "2025-10-29T13:12:48Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/191\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-29T13:06:59Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-29T13:12:49Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-29T13:06:59Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 191
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-29T13:12:49Z"
+        }
+      ]
+    },
+    {
+      "number": 190,
+      "branch": "beta-fix/image-tracking",
+      "created_at": "2025-10-29T10:09:09Z",
+      "merged_at": "2025-10-30T15:51:17Z",
+      "closed_at": "2025-10-30T15:51:17Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 189,
+      "branch": "master-fix/conflict-56fb7df-762df07",
+      "created_at": "2025-10-28T12:34:52Z",
+      "merged_at": "2025-10-28T13:11:44Z",
+      "closed_at": "2025-10-28T13:11:44Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#189](https://github.com/tactivos/pdf-import/pull/189)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-10-28T12:42:25Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-10-28T12:42:25Z"
+        }
+      ]
+    },
+    {
+      "number": 188,
+      "branch": "master-fix/conflict-d15badd-c3fef8b",
+      "created_at": "2025-10-27T18:23:31Z",
+      "merged_at": "2025-10-27T18:28:17Z",
+      "closed_at": "2025-10-27T18:28:17Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 187,
+      "branch": "beta-fix/fix-font-size",
+      "created_at": "2025-10-27T18:00:35Z",
+      "merged_at": "2025-10-27T18:22:49Z",
+      "closed_at": "2025-10-27T18:22:49Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/187\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-27T18:22:24Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-27T18:22:50Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-27T18:22:24Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 187
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-27T18:22:50Z"
+        }
+      ]
+    },
+    {
+      "number": 186,
+      "branch": "beta-fix/playwright-svg-rasterization",
+      "created_at": "2025-10-27T16:54:16Z",
+      "merged_at": "2025-10-28T12:33:45Z",
+      "closed_at": "2025-10-28T12:33:45Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/186\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-28T12:27:53Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-28T12:33:47Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-28T12:27:53Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 186
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-28T12:33:47Z"
+        }
+      ]
+    },
+    {
+      "number": 185,
+      "branch": "add/svg-manifests",
+      "created_at": "2025-10-27T13:38:08Z",
+      "merged_at": "2025-10-27T13:42:37Z",
+      "closed_at": "2025-10-27T13:42:37Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/185\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-27T13:41:21Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-27T13:42:39Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-27T13:41:21Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 185
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-27T13:42:39Z"
+        }
+      ]
+    },
+    {
+      "number": 183,
+      "branch": "master-fix/conflict-303476a-c7a8570",
+      "created_at": "2025-10-23T15:14:41Z",
+      "merged_at": "2025-10-23T15:34:53Z",
+      "closed_at": "2025-10-23T15:34:53Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/183\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-23T15:34:11Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-23T15:34:54Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-23T15:34:11Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 183
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-23T15:34:54Z"
+        }
+      ]
+    },
+    {
+      "number": 182,
+      "branch": "beta-fix/cluster-hierarchy",
+      "created_at": "2025-10-23T14:07:28Z",
+      "merged_at": "2025-10-23T15:13:35Z",
+      "closed_at": "2025-10-23T15:13:35Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/182\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-23T15:00:27Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-23T15:13:36Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-23T15:00:27Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 182
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-23T15:13:36Z"
+        }
+      ]
+    },
+    {
+      "number": 181,
+      "branch": "master-fix/conflict-e9bee42-bfe84e4",
+      "created_at": "2025-10-23T13:28:30Z",
+      "merged_at": "2025-10-23T14:06:26Z",
+      "closed_at": "2025-10-23T14:06:26Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#181](https://github.com/tactivos/pdf-import/pull/181)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-10-23T13:39:18Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#181](https://github.com/tactivos/pdf-import/pull/181)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-10-23T13:39:43Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/181\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-23T14:06:05Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-23T14:06:27Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-10-23T13:39:18Z"
+        },
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-10-23T13:39:43Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-23T14:06:05Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 181
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-23T14:06:27Z"
+        }
+      ]
+    },
+    {
+      "number": 180,
+      "branch": "master-fix/conflict-cd2e3ae-e66f399",
+      "created_at": "2025-10-22T19:49:49Z",
+      "merged_at": "2025-10-22T19:59:12Z",
+      "closed_at": "2025-10-22T19:59:12Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 179,
+      "branch": "beta-fix/text-alignment",
+      "created_at": "2025-10-22T16:20:43Z",
+      "merged_at": "2025-10-22T19:48:44Z",
+      "closed_at": "2025-10-22T19:48:44Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/179\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-22T19:26:30Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-22T19:48:45Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-22T19:26:30Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 179
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-22T19:48:45Z"
+        }
+      ]
+    },
+    {
+      "number": 178,
+      "branch": "master-fix/conflict-a13117b-f2bfee0",
+      "created_at": "2025-10-22T14:46:33Z",
+      "merged_at": "2025-10-22T15:10:28Z",
+      "closed_at": "2025-10-22T15:10:28Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 177,
+      "branch": "beta-fix/table-size-scaling",
+      "created_at": "2025-10-22T13:55:59Z",
+      "merged_at": "2025-10-22T14:45:27Z",
+      "closed_at": "2025-10-22T14:45:27Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/177\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-22T14:44:20Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-22T14:45:29Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-22T14:44:20Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 177
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-22T14:45:29Z"
+        }
+      ]
+    },
+    {
+      "number": 176,
+      "branch": "beta-fix/wireframe-images",
+      "created_at": "2025-10-21T20:38:47Z",
+      "merged_at": "2025-10-23T13:27:07Z",
+      "closed_at": "2025-10-23T13:27:07Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-api/pull/14702\n\n* https://github.com/tactivos/pdf-import/pull/176\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-22T19:59:29Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "Merge failed \ud83d\ude22\n\n\u274c Failed to update your branch with bfe84e433f16ca083b467ffa6e318dad76ab616f: Failed to merge: \"Merge conflict\"\n",
+          "created_at": "2025-10-22T21:03:07Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-api/pull/14702\n\n* https://github.com/tactivos/pdf-import/pull/176\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-23T13:18:53Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-23T13:27:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-22T19:59:29Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-api",
+              "pr_number": 14702
+            },
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 176
+            }
+          ]
+        },
+        {
+          "type": "failed",
+          "timestamp": "2025-10-22T21:03:07Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-23T13:18:53Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-api",
+              "pr_number": 14702
+            },
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 176
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-23T13:27:09Z"
+        }
+      ]
+    },
+    {
+      "number": 175,
+      "branch": "master-fix/conflict-f57cf7a-9f5e111",
+      "created_at": "2025-10-21T19:50:50Z",
+      "merged_at": "2025-10-21T20:13:22Z",
+      "closed_at": "2025-10-21T20:13:22Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 174,
+      "branch": "beta-fix/connector-points-reduction",
+      "created_at": "2025-10-21T18:45:30Z",
+      "merged_at": "2025-10-21T19:49:46Z",
+      "closed_at": "2025-10-21T19:49:46Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#174](https://github.com/tactivos/pdf-import/pull/174) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/pdf-import/actions/runs/18694178459/job/53307173965)\n\n\u274c [Pull request tactivos/pdf-import#174](https://github.com/tactivos/pdf-import/pull/174) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/pdf-import/actions/runs/18694214171/job/53307298361)\n",
+          "created_at": "2025-10-21T19:21:07Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-10-21T19:21:07Z"
+        }
+      ]
+    },
+    {
+      "number": 170,
+      "branch": "master-fix/conflict-d2805ef-a75b943",
+      "created_at": "2025-10-21T17:03:37Z",
+      "merged_at": "2025-10-21T17:42:37Z",
+      "closed_at": "2025-10-21T17:42:37Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 169,
+      "branch": "beta-fix/card-background",
+      "created_at": "2025-10-21T16:46:30Z",
+      "merged_at": "2025-10-21T17:02:32Z",
+      "closed_at": "2025-10-21T17:02:32Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/169\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-21T17:01:36Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-21T17:02:34Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-21T17:01:36Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 169
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-21T17:02:34Z"
+        }
+      ]
+    },
+    {
+      "number": 168,
+      "branch": "fix/mark-text",
+      "created_at": "2025-10-21T15:11:54Z",
+      "merged_at": "2025-10-21T15:39:35Z",
+      "closed_at": "2025-10-21T15:39:35Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/168\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-21T15:38:24Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-21T15:39:36Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-21T15:38:24Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 168
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-21T15:39:36Z"
+        }
+      ]
+    },
+    {
+      "number": 167,
+      "branch": "master-fix/conflict-e2c586e-bfc2ac0",
+      "created_at": "2025-10-21T12:58:09Z",
+      "merged_at": "2025-10-21T13:13:00Z",
+      "closed_at": "2025-10-21T13:13:00Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 166,
+      "branch": "beta-fix/add-upload-metrics",
+      "created_at": "2025-10-20T20:57:52Z",
+      "merged_at": "2025-10-21T12:57:02Z",
+      "closed_at": "2025-10-21T12:57:02Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/166\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-21T12:55:49Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-21T12:57:04Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-21T12:55:49Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 166
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-21T12:57:04Z"
+        }
+      ]
+    },
+    {
+      "number": 165,
+      "branch": "fix/missing-elem",
+      "created_at": "2025-10-20T19:30:39Z",
+      "merged_at": "2025-10-21T14:24:22Z",
+      "closed_at": "2025-10-21T14:24:22Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#165](https://github.com/tactivos/pdf-import/pull/165)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-10-21T13:47:37Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#165](https://github.com/tactivos/pdf-import/pull/165)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-10-21T13:48:49Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/165\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-21T14:06:31Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-21T14:24:24Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-10-21T13:47:37Z"
+        },
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-10-21T13:48:49Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-21T14:06:31Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 165
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-21T14:24:24Z"
+        }
+      ]
+    },
+    {
+      "number": 164,
+      "branch": "fix/remove-debugging-code",
+      "created_at": "2025-10-20T18:45:24Z",
+      "merged_at": "2025-10-20T19:10:39Z",
+      "closed_at": "2025-10-20T19:10:39Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/164\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-20T18:57:16Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-20T19:10:40Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-20T18:57:16Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 164
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-20T19:10:40Z"
+        }
+      ]
+    },
+    {
+      "number": 163,
+      "branch": "fix/fill-opacity",
+      "created_at": "2025-10-20T17:03:15Z",
+      "merged_at": "2025-10-20T18:41:43Z",
+      "closed_at": "2025-10-20T18:41:43Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/163\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-20T18:41:26Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/163\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-20T18:41:30Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-20T18:41:44Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "Merge failed \ud83d\ude22\n\n\u274c Branch changed after queuing... did you commit after sending `shipit`?\n",
+          "created_at": "2025-10-20T18:41:48Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-20T18:41:26Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 163
+            }
+          ]
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-20T18:41:30Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 163
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-20T18:41:44Z"
+        },
+        {
+          "type": "failed",
+          "timestamp": "2025-10-20T18:41:48Z"
+        }
+      ]
+    },
+    {
+      "number": 161,
+      "branch": "master-fix/conflict-644cbb5-966f39b",
+      "created_at": "2025-10-20T15:16:34Z",
+      "merged_at": "2025-10-20T15:21:39Z",
+      "closed_at": "2025-10-20T15:21:39Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 160,
+      "branch": "stable-fix/text-associator",
+      "created_at": "2025-10-20T14:22:08Z",
+      "merged_at": "2025-10-20T15:15:15Z",
+      "closed_at": "2025-10-20T15:15:15Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 158,
+      "branch": "fix/table-detection",
+      "created_at": "2025-10-17T16:00:57Z",
+      "merged_at": "2025-10-20T14:24:31Z",
+      "closed_at": "2025-10-20T14:24:31Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/158\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-20T14:23:39Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-20T14:24:33Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-20T14:23:39Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 158
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-20T14:24:33Z"
+        }
+      ]
+    },
+    {
+      "number": 157,
+      "branch": "fix/text-breaking",
+      "created_at": "2025-10-16T15:18:08Z",
+      "merged_at": "2025-10-20T15:50:08Z",
+      "closed_at": "2025-10-20T15:50:08Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/157\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-20T15:49:34Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-20T15:50:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-20T15:49:34Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 157
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-20T15:50:09Z"
+        }
+      ]
+    },
+    {
+      "number": 156,
+      "branch": "master-fix/conflict-721b8fd-b2f017a",
+      "created_at": "2025-10-16T12:29:40Z",
+      "merged_at": "2025-10-16T13:21:57Z",
+      "closed_at": "2025-10-16T13:21:57Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 154,
+      "branch": "beta-fix/image-cropping",
+      "created_at": "2025-10-16T10:55:08Z",
+      "merged_at": "2025-10-16T12:28:33Z",
+      "closed_at": "2025-10-16T12:28:34Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/154\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-16T12:23:48Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-16T12:28:35Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-16T12:23:48Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 154
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-16T12:28:35Z"
+        }
+      ]
+    },
+    {
+      "number": 153,
+      "branch": "fix/text-shape-association",
+      "created_at": "2025-10-15T16:13:07Z",
+      "merged_at": "2025-10-15T18:01:30Z",
+      "closed_at": "2025-10-15T18:01:30Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/153\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-15T17:01:28Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-15T18:01:31Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-15T17:01:28Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 153
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-15T18:01:31Z"
+        }
+      ]
+    },
+    {
+      "number": 152,
+      "branch": "master-fix/conflict-c5f4c96-fa28a00",
+      "created_at": "2025-10-15T14:26:58Z",
+      "merged_at": "2025-10-15T20:38:16Z",
+      "closed_at": "2025-10-15T20:38:17Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 151,
+      "branch": "beta-fix/fix-arrow-disabled",
+      "created_at": "2025-10-15T14:12:42Z",
+      "merged_at": "2025-10-15T14:25:51Z",
+      "closed_at": "2025-10-15T14:25:51Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/151\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-15T14:20:08Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-15T14:25:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-15T14:20:08Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 151
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-15T14:25:53Z"
+        }
+      ]
+    },
+    {
+      "number": 150,
+      "branch": "master-fix/conflict-745df10-83f45d6",
+      "created_at": "2025-10-15T13:04:18Z",
+      "merged_at": "2025-10-15T13:09:40Z",
+      "closed_at": "2025-10-15T13:09:40Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 149,
+      "branch": "beta-fix/disable-arrow-connection",
+      "created_at": "2025-10-15T12:12:17Z",
+      "merged_at": "2025-10-15T13:03:34Z",
+      "closed_at": "2025-10-15T13:03:34Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/149\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-15T13:02:58Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-15T13:03:36Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-15T13:02:58Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 149
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-15T13:03:36Z"
+        }
+      ]
+    },
+    {
+      "number": 147,
+      "branch": "fix/emoji-xy-computation",
+      "created_at": "2025-10-14T17:02:44Z",
+      "merged_at": "2025-10-14T17:36:41Z",
+      "closed_at": "2025-10-14T17:36:41Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/147\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-14T17:07:08Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-14T17:36:43Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-14T17:07:08Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 147
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-14T17:36:43Z"
+        }
+      ]
+    },
+    {
+      "number": 146,
+      "branch": "fix/layering-order-image-shape",
+      "created_at": "2025-10-10T14:54:35Z",
+      "merged_at": "2025-10-14T15:56:28Z",
+      "closed_at": "2025-10-14T15:56:28Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#146](https://github.com/tactivos/pdf-import/pull/146)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-10-14T15:16:25Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/146\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-14T15:51:04Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-14T15:56:30Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-10-14T15:16:25Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-14T15:51:04Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 146
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-14T15:56:30Z"
+        }
+      ]
+    },
+    {
+      "number": 145,
+      "branch": "fix/broken-pipe-error",
+      "created_at": "2025-10-09T16:14:40Z",
+      "merged_at": "2025-10-14T14:02:13Z",
+      "closed_at": "2025-10-14T14:02:13Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 143,
+      "branch": "fix/text-width-issue",
+      "created_at": "2025-10-08T22:16:45Z",
+      "merged_at": "2025-10-09T14:56:20Z",
+      "closed_at": "2025-10-09T14:56:20Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 142,
+      "branch": "add/widget-o11y-stats-only",
+      "created_at": "2025-10-08T20:19:43Z",
+      "merged_at": "2025-10-08T22:13:27Z",
+      "closed_at": "2025-10-08T22:13:27Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 141,
+      "branch": "add/widget-o11y",
+      "created_at": "2025-10-08T18:16:35Z",
+      "merged_at": "2025-10-09T16:06:13Z",
+      "closed_at": "2025-10-09T16:06:13Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/141\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-09T15:49:31Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-09T16:06:15Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-09T15:49:31Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 141
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-09T16:06:15Z"
+        }
+      ]
+    },
+    {
+      "number": 139,
+      "branch": "add/import-pdf-single-process",
+      "created_at": "2025-10-07T13:51:28Z",
+      "merged_at": "2025-10-08T14:16:41Z",
+      "closed_at": "2025-10-08T14:16:41Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 138,
+      "branch": "master-fix/conflict-f0d4749-4ef03d7",
+      "created_at": "2025-10-06T19:12:11Z",
+      "merged_at": "2025-10-06T19:27:25Z",
+      "closed_at": "2025-10-06T19:27:25Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 137,
+      "branch": "beta-fix/image-multithread",
+      "created_at": "2025-10-06T11:54:17Z",
+      "merged_at": "2025-10-06T19:11:05Z",
+      "closed_at": "2025-10-06T19:11:05Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/137\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-06T19:10:34Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-06T19:11:06Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-06T19:10:34Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 137
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-06T19:11:06Z"
+        }
+      ]
+    },
+    {
+      "number": 136,
+      "branch": "master-fix/conflict-8984e70-6cb6c2d",
+      "created_at": "2025-10-06T08:48:06Z",
+      "merged_at": "2025-10-06T08:56:00Z",
+      "closed_at": "2025-10-06T08:56:00Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 135,
+      "branch": "add/add-icon-to-tag-criteria",
+      "created_at": "2025-10-03T16:52:59Z",
+      "merged_at": "2025-10-06T19:17:49Z",
+      "closed_at": "2025-10-06T19:17:49Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/135\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-06T19:13:34Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-06T19:17:50Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-06T19:13:34Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 135
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-06T19:17:50Z"
+        }
+      ]
+    },
+    {
+      "number": 134,
+      "branch": "master-fix/conflict-76241b3-1445fcc",
+      "created_at": "2025-10-02T22:26:07Z",
+      "merged_at": "2025-10-02T22:39:26Z",
+      "closed_at": "2025-10-02T22:39:26Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 131,
+      "branch": "beta-fix/avoid-oom-crashing",
+      "created_at": "2025-10-02T16:22:30Z",
+      "merged_at": "2025-10-02T22:25:02Z",
+      "closed_at": "2025-10-02T22:25:02Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/131\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-02T22:23:11Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-02T22:25:03Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-02T22:23:11Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 131
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-02T22:25:03Z"
+        }
+      ]
+    },
+    {
+      "number": 129,
+      "branch": "master-fix/conflict-e0dbe3b-e3e0071",
+      "created_at": "2025-10-02T15:32:19Z",
+      "merged_at": "2025-10-02T15:57:08Z",
+      "closed_at": "2025-10-02T15:57:08Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 128,
+      "branch": "beta-fix/missing-image-resource-log",
+      "created_at": "2025-10-02T14:55:41Z",
+      "merged_at": "2025-10-02T15:31:12Z",
+      "closed_at": "2025-10-02T15:31:12Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/128\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-02T15:02:06Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-02T15:31:14Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-02T15:02:06Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 128
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-02T15:31:14Z"
+        }
+      ]
+    },
+    {
+      "number": 127,
+      "branch": "beta-fix/remome-extra-code",
+      "created_at": "2025-10-02T13:38:03Z",
+      "merged_at": "2025-10-06T08:46:59Z",
+      "closed_at": "2025-10-06T08:46:59Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/127\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-06T08:46:14Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-06T08:47:01Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-06T08:46:14Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 127
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-06T08:47:01Z"
+        }
+      ]
+    },
+    {
+      "number": 126,
+      "branch": "master-fix/conflict-c06958a-f1e3139",
+      "created_at": "2025-10-02T12:29:58Z",
+      "merged_at": "2025-10-02T12:35:10Z",
+      "closed_at": "2025-10-02T12:35:10Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 125,
+      "branch": "beta-fix/shutdown-on-timeout",
+      "created_at": "2025-10-02T11:26:18Z",
+      "merged_at": "2025-10-02T12:28:52Z",
+      "closed_at": "2025-10-02T12:28:52Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/125\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-02T12:28:27Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-02T12:28:54Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-02T12:28:27Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 125
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-02T12:28:54Z"
+        }
+      ]
+    },
+    {
+      "number": 120,
+      "branch": "add/jira-link",
+      "created_at": "2025-10-01T21:57:22Z",
+      "merged_at": "2025-10-03T14:23:02Z",
+      "closed_at": "2025-10-03T14:23:02Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 118,
+      "branch": "master-fix/conflict-d5b7462-a6a3f5b",
+      "created_at": "2025-10-01T16:40:26Z",
+      "merged_at": "2025-10-01T16:50:15Z",
+      "closed_at": "2025-10-01T16:50:15Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 117,
+      "branch": "beta-fix/handle-clip-error",
+      "created_at": "2025-10-01T15:40:47Z",
+      "merged_at": "2025-10-01T16:39:19Z",
+      "closed_at": "2025-10-01T16:39:20Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/117\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-01T16:38:41Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-01T16:39:22Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-01T16:38:41Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 117
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-01T16:39:22Z"
+        }
+      ]
+    },
+    {
+      "number": 116,
+      "branch": "master-fix/conflict-ddf3401-14902e9",
+      "created_at": "2025-10-01T14:56:49Z",
+      "merged_at": "2025-10-01T15:35:08Z",
+      "closed_at": "2025-10-01T15:35:08Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 114,
+      "branch": "master-fix/conflict-ddc0030-d2ab0b1",
+      "created_at": "2025-10-01T14:16:32Z",
+      "merged_at": "2025-10-01T14:22:03Z",
+      "closed_at": "2025-10-01T14:22:03Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 113,
+      "branch": "master-fix/conflict-9c9e635-7bd5822",
+      "created_at": "2025-10-01T13:57:48Z",
+      "merged_at": "2025-10-01T14:09:44Z",
+      "closed_at": "2025-10-01T14:09:44Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 112,
+      "branch": "beta-fix/empty-arrow",
+      "created_at": "2025-10-01T13:08:19Z",
+      "merged_at": "2025-10-01T14:15:26Z",
+      "closed_at": "2025-10-01T14:15:26Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/112\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-01T14:10:56Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-01T14:15:28Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-01T14:10:56Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 112
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-01T14:15:28Z"
+        }
+      ]
+    },
+    {
+      "number": 111,
+      "branch": "beta-fix/text-width-fix",
+      "created_at": "2025-09-30T17:53:27Z",
+      "merged_at": "2025-10-01T13:56:41Z",
+      "closed_at": "2025-10-01T13:56:41Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/111\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-01T13:51:55Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-01T13:56:43Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-01T13:51:55Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 111
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-01T13:56:43Z"
+        }
+      ]
+    },
+    {
+      "number": 110,
+      "branch": "master-fix/conflict-fa83bff-9bb53e6",
+      "created_at": "2025-09-30T17:08:08Z",
+      "merged_at": "2025-09-30T18:43:01Z",
+      "closed_at": "2025-09-30T18:43:01Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/110\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-30T18:42:10Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-30T18:43:02Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-30T18:42:10Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 110
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-30T18:43:02Z"
+        }
+      ]
+    },
+    {
+      "number": 109,
+      "branch": "beta-fix/rgbtohex",
+      "created_at": "2025-09-30T16:32:49Z",
+      "merged_at": "2025-09-30T17:07:01Z",
+      "closed_at": "2025-09-30T17:07:01Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/109\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-30T17:03:00Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-30T17:07:03Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-30T17:03:00Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 109
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-30T17:07:03Z"
+        }
+      ]
+    },
+    {
+      "number": 108,
+      "branch": "master-fix/conflict-b5963a5-061c100",
+      "created_at": "2025-09-30T15:58:18Z",
+      "merged_at": "2025-09-30T16:09:11Z",
+      "closed_at": "2025-09-30T16:09:11Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 107,
+      "branch": "master-fix/conflict-41343f9-af5d51e",
+      "created_at": "2025-09-30T15:26:18Z",
+      "merged_at": "2025-09-30T15:38:32Z",
+      "closed_at": "2025-09-30T15:38:32Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 106,
+      "branch": "beta-fix/clip-path-svg",
+      "created_at": "2025-09-30T14:45:23Z",
+      "merged_at": "2025-09-30T15:25:35Z",
+      "closed_at": "2025-09-30T15:25:35Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/106\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-30T15:24:50Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-30T15:25:37Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-30T15:24:50Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 106
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-30T15:25:37Z"
+        }
+      ]
+    },
+    {
+      "number": 105,
+      "branch": "beta-fix/trim-empty-space",
+      "created_at": "2025-09-30T14:35:43Z",
+      "merged_at": "2025-09-30T15:57:12Z",
+      "closed_at": "2025-09-30T15:57:12Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/105\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-30T15:55:11Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-30T15:57:14Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-30T15:55:11Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 105
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-30T15:57:14Z"
+        }
+      ]
+    },
+    {
+      "number": 104,
+      "branch": "beta-fix/img-alpha-and-refs",
+      "created_at": "2025-09-30T07:06:28Z",
+      "merged_at": "2025-10-01T14:55:27Z",
+      "closed_at": "2025-10-01T14:55:27Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-api/pull/14544\n\n* https://github.com/tactivos/pdf-import/pull/104\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-01T14:36:56Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-01T14:55:28Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-01T14:36:56Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-api",
+              "pr_number": 14544
+            },
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 104
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-01T14:55:28Z"
+        }
+      ]
+    },
+    {
+      "number": 103,
+      "branch": "add/enforce-one-import",
+      "created_at": "2025-09-29T18:19:56Z",
+      "merged_at": "2025-09-30T13:09:24Z",
+      "closed_at": "2025-09-30T13:09:24Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#103](https://github.com/tactivos/pdf-import/pull/103)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-09-30T12:51:05Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/103\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-30T13:08:42Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-30T13:09:26Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-09-30T12:51:05Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-30T13:08:42Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 103
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-30T13:09:26Z"
+        }
+      ]
+    },
+    {
+      "number": 100,
+      "branch": "add/clusterhierarchylogic",
+      "created_at": "2025-09-24T18:15:28Z",
+      "merged_at": null,
+      "closed_at": "2025-09-24T21:13:42Z",
+      "state": "CLOSED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#100](https://github.com/tactivos/pdf-import/pull/100) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/pdf-import/actions/runs/17981847827/job/51149718660)\n\n\u274c [Pull request tactivos/pdf-import#100](https://github.com/tactivos/pdf-import/pull/100) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/pdf-import/actions/runs/17981974042/job/51150185209)\n",
+          "created_at": "2025-09-24T19:24:56Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-09-24T19:24:56Z"
+        }
+      ]
+    },
+    {
+      "number": 99,
+      "branch": "add/clusterhierarchylogic",
+      "created_at": "2025-09-24T15:47:29Z",
+      "merged_at": null,
+      "closed_at": "2025-09-24T18:14:42Z",
+      "state": "CLOSED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#99](https://github.com/tactivos/pdf-import/pull/99) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/pdf-import/actions/runs/17981847827/job/51149718660)\n\n\u274c [Pull request tactivos/pdf-import#99](https://github.com/tactivos/pdf-import/pull/99) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/pdf-import/actions/runs/17981974042/job/51150185209)\n",
+          "created_at": "2025-09-24T17:59:47Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#99](https://github.com/tactivos/pdf-import/pull/99) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/pdf-import/actions/runs/17981847827/job/51149718660)\n\n\u274c [Pull request tactivos/pdf-import#99](https://github.com/tactivos/pdf-import/pull/99) check: `Validate branch name` was not successful (FAILURE).\nCheck the job for [more details](https://github.com/tactivos/pdf-import/actions/runs/17981974042/job/51150185209)\n",
+          "created_at": "2025-09-24T18:14:19Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-09-24T17:59:47Z"
+        },
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-09-24T18:14:19Z"
+        }
+      ]
+    },
+    {
+      "number": 96,
+      "branch": "add/mural-trim-empty",
+      "created_at": "2025-09-23T12:38:51Z",
+      "merged_at": "2025-09-23T19:17:50Z",
+      "closed_at": "2025-09-23T19:17:51Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/96\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-23T19:16:47Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-23T19:17:52Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-23T19:16:47Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 96
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-23T19:17:52Z"
+        }
+      ]
+    },
+    {
+      "number": 95,
+      "branch": "add/cairo-clip-path",
+      "created_at": "2025-09-23T09:44:32Z",
+      "merged_at": "2025-09-25T19:37:30Z",
+      "closed_at": "2025-09-25T19:37:30Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#95](https://github.com/tactivos/pdf-import/pull/95)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-09-25T15:25:54Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/pdf-import#95](https://github.com/tactivos/pdf-import/pull/95)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-09-25T18:37:25Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-api/pull/14493\n\n* https://github.com/tactivos/pdf-import/pull/95\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-25T18:45:44Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-25T19:37:31Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-09-25T15:25:54Z"
+        },
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-09-25T18:37:25Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-25T18:45:44Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-api",
+              "pr_number": 14493
+            },
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 95
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-25T19:37:31Z"
+        }
+      ]
+    },
+    {
+      "number": 94,
+      "branch": "master-fix/conflict-c734fee-d28453b",
+      "created_at": "2025-09-19T12:46:35Z",
+      "merged_at": "2025-09-19T12:49:36Z",
+      "closed_at": "2025-09-19T12:49:36Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 93,
+      "branch": "beta-fix/delete-file-write",
+      "created_at": "2025-09-19T12:42:38Z",
+      "merged_at": "2025-09-19T12:45:54Z",
+      "closed_at": "2025-09-19T12:45:54Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/93\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-19T12:44:43Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-19T12:45:55Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-19T12:44:43Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 93
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-19T12:45:55Z"
+        }
+      ]
+    },
+    {
+      "number": 92,
+      "branch": "fix/hyperlink",
+      "created_at": "2025-09-18T19:35:20Z",
+      "merged_at": "2025-09-18T19:46:31Z",
+      "closed_at": "2025-09-18T19:46:31Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/92\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-18T19:45:33Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-18T19:46:32Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-18T19:45:33Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 92
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-18T19:46:32Z"
+        }
+      ]
+    },
+    {
+      "number": 91,
+      "branch": "fix/widget-scaling",
+      "created_at": "2025-09-18T03:07:54Z",
+      "merged_at": "2025-09-18T16:40:58Z",
+      "closed_at": "2025-09-18T16:40:58Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/91\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-18T16:35:17Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-18T16:40:59Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-18T16:35:17Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 91
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-18T16:40:59Z"
+        }
+      ]
+    },
+    {
+      "number": 90,
+      "branch": "fix/layering",
+      "created_at": "2025-09-16T19:27:44Z",
+      "merged_at": "2025-09-18T19:24:15Z",
+      "closed_at": "2025-09-18T19:24:15Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/90\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-18T19:23:25Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-18T19:24:16Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-18T19:23:25Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 90
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-18T19:24:16Z"
+        }
+      ]
+    },
+    {
+      "number": 88,
+      "branch": "add/scale-up-widgets",
+      "created_at": "2025-09-15T16:38:46Z",
+      "merged_at": "2025-09-15T20:50:33Z",
+      "closed_at": "2025-09-15T20:50:33Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/88\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-15T20:37:47Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-15T20:50:34Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-15T20:37:47Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 88
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-15T20:50:34Z"
+        }
+      ]
+    },
+    {
+      "number": 87,
+      "branch": "add/image-from-style-bg-url",
+      "created_at": "2025-09-15T12:56:00Z",
+      "merged_at": "2025-09-16T14:15:26Z",
+      "closed_at": "2025-09-16T14:15:26Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 86,
+      "branch": "master-fix/conflict-8a9f403-336ba15",
+      "created_at": "2025-09-11T21:14:33Z",
+      "merged_at": "2025-09-11T21:18:08Z",
+      "closed_at": "2025-09-11T21:18:08Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/86\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-11T21:17:06Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-11T21:18:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-11T21:17:06Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 86
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-11T21:18:09Z"
+        }
+      ]
+    },
+    {
+      "number": 84,
+      "branch": "beta-fix/tableparentid",
+      "created_at": "2025-09-11T20:35:29Z",
+      "merged_at": "2025-09-11T21:13:52Z",
+      "closed_at": "2025-09-11T21:13:52Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/84\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-11T20:41:40Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "Merge failed \ud83d\ude22\n\n\u274c Something failed after merging base branch to the PR... maybe timed out. Please, retry or #ask-developer-velocity\n",
+          "created_at": "2025-09-11T20:44:24Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c too many pull requests for repository\n",
+          "created_at": "2025-09-11T20:45:36Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/84\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-11T21:12:40Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/84\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-11T21:13:32Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u26a0\ufe0f Your Pull Requests has been cancelled",
+          "created_at": "2025-09-11T21:13:39Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-11T21:13:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-11T20:41:40Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 84
+            }
+          ]
+        },
+        {
+          "type": "failed",
+          "timestamp": "2025-09-11T20:44:24Z"
+        },
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-09-11T20:45:36Z"
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-11T21:12:40Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 84
+            }
+          ]
+        },
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-11T21:13:32Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 84
+            }
+          ]
+        },
+        {
+          "type": "cancelled",
+          "timestamp": "2025-09-11T21:13:39Z"
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-11T21:13:53Z"
+        }
+      ]
+    },
+    {
+      "number": 82,
+      "branch": "fix/center-widgets",
+      "created_at": "2025-09-11T01:41:58Z",
+      "merged_at": "2025-09-11T12:31:25Z",
+      "closed_at": "2025-09-11T12:31:25Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/82\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-11T12:30:43Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-11T12:31:27Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-11T12:30:43Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 82
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-11T12:31:27Z"
+        }
+      ]
+    },
+    {
+      "number": 81,
+      "branch": "add/demo-changes",
+      "created_at": "2025-09-09T13:45:04Z",
+      "merged_at": "2025-09-10T17:46:04Z",
+      "closed_at": "2025-09-10T17:46:04Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 80,
+      "branch": "add/center-widget-logic",
+      "created_at": "2025-09-05T20:52:27Z",
+      "merged_at": "2025-09-08T13:51:12Z",
+      "closed_at": "2025-09-08T13:51:12Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/80\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-08T13:50:03Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-08T13:51:13Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-08T13:50:03Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 80
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-08T13:51:13Z"
+        }
+      ]
+    },
+    {
+      "number": 79,
+      "branch": "master-fix/conflict-f98b889-cbabd1b",
+      "created_at": "2025-08-19T15:35:52Z",
+      "merged_at": "2025-08-19T15:37:51Z",
+      "closed_at": "2025-08-19T15:37:51Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 78,
+      "branch": "stable-fix/pop-error-because-array-isempty",
+      "created_at": "2025-08-19T15:13:23Z",
+      "merged_at": "2025-08-19T15:34:59Z",
+      "closed_at": "2025-08-19T15:34:59Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 77,
+      "branch": "fix/table-texts",
+      "created_at": "2025-08-14T12:42:22Z",
+      "merged_at": "2025-08-14T16:55:03Z",
+      "closed_at": "2025-08-14T16:55:03Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/77\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-08-14T16:45:17Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-08-14T16:55:04Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-08-14T16:45:17Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 77
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-08-14T16:55:04Z"
+        }
+      ]
+    },
+    {
+      "number": 76,
+      "branch": "master-fix/conflict-b6191c7-2da21a2",
+      "created_at": "2025-08-07T19:21:36Z",
+      "merged_at": "2025-08-07T19:48:40Z",
+      "closed_at": "2025-08-07T19:48:40Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/76\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-08-07T19:48:17Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-08-07T19:48:41Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-08-07T19:48:17Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 76
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-08-07T19:48:41Z"
+        }
+      ]
+    },
+    {
+      "number": 75,
+      "branch": "beta-fix/cwi-2001",
+      "created_at": "2025-08-06T19:36:44Z",
+      "merged_at": "2025-08-07T19:20:55Z",
+      "closed_at": "2025-08-07T19:20:55Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/75\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-08-07T19:06:27Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-08-07T19:20:57Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-08-07T19:06:27Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 75
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-08-07T19:20:57Z"
+        }
+      ]
+    },
+    {
+      "number": 71,
+      "branch": "add/uv",
+      "created_at": "2025-07-25T19:13:06Z",
+      "merged_at": "2025-07-29T21:57:11Z",
+      "closed_at": "2025-07-29T21:57:12Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/71\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-29T21:56:17Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-29T21:57:12Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-29T21:56:17Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 71
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-29T21:57:12Z"
+        }
+      ]
+    },
+    {
+      "number": 70,
+      "branch": "remove/unused-attributes",
+      "created_at": "2025-07-24T14:18:06Z",
+      "merged_at": "2025-07-24T21:11:42Z",
+      "closed_at": "2025-07-24T21:11:42Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/70\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-24T21:04:57Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-24T21:11:43Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-24T21:04:57Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 70
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-24T21:11:43Z"
+        }
+      ]
+    },
+    {
+      "number": 68,
+      "branch": "add/persist-labels-import-files-op",
+      "created_at": "2025-07-24T12:37:00Z",
+      "merged_at": "2025-07-31T15:44:08Z",
+      "closed_at": "2025-07-31T15:44:08Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-api/pull/14066\n\n* https://github.com/tactivos/pdf-import/pull/68\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-31T15:18:33Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-31T15:44:09Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-31T15:18:33Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-api",
+              "pr_number": 14066
+            },
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 68
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-31T15:44:09Z"
+        }
+      ]
+    },
+    {
+      "number": 67,
+      "branch": "add/wire-image-upload-to-svg-processor",
+      "created_at": "2025-07-22T14:12:59Z",
+      "merged_at": "2025-07-23T15:40:48Z",
+      "closed_at": "2025-07-23T15:40:48Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/67\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-23T15:40:33Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-23T15:40:49Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-23T15:40:33Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 67
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-23T15:40:49Z"
+        }
+      ]
+    },
+    {
+      "number": 65,
+      "branch": "add/parse-svg-impl",
+      "created_at": "2025-07-17T16:42:32Z",
+      "merged_at": "2025-07-18T18:55:39Z",
+      "closed_at": "2025-07-18T18:55:39Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/65\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-18T18:52:37Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-18T18:55:40Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-18T18:52:37Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 65
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-18T18:55:40Z"
+        }
+      ]
+    },
+    {
+      "number": 64,
+      "branch": "add/import-by-page-range",
+      "created_at": "2025-07-16T13:36:59Z",
+      "merged_at": "2025-07-16T19:46:29Z",
+      "closed_at": "2025-07-16T19:46:29Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/64\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-16T19:46:10Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-16T19:46:30Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-16T19:46:10Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 64
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-16T19:46:30Z"
+        }
+      ]
+    },
+    {
+      "number": 63,
+      "branch": "fix/tests",
+      "created_at": "2025-07-14T14:41:19Z",
+      "merged_at": "2025-07-14T14:45:59Z",
+      "closed_at": "2025-07-14T14:45:59Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/63\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-14T14:45:04Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-14T14:46:00Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-14T14:45:04Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 63
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-14T14:46:00Z"
+        }
+      ]
+    },
+    {
+      "number": 61,
+      "branch": "add/parse-svg-zip",
+      "created_at": "2025-07-11T12:37:31Z",
+      "merged_at": "2025-07-11T22:00:13Z",
+      "closed_at": "2025-07-11T22:00:13Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-api/pull/13993\n\n* https://github.com/tactivos/pdf-import/pull/61\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-11T21:38:36Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-11T22:00:13Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-11T21:38:36Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-api",
+              "pr_number": 13993
+            },
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 61
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-11T22:00:13Z"
+        }
+      ]
+    },
+    {
+      "number": 60,
+      "branch": "master-fix/conflict-ba84fc0-7cf6205",
+      "created_at": "2025-07-10T19:52:07Z",
+      "merged_at": "2025-07-10T19:59:31Z",
+      "closed_at": "2025-07-10T19:59:31Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 59,
+      "branch": "stable-fix/add-logging",
+      "created_at": "2025-07-10T19:45:12Z",
+      "merged_at": "2025-07-10T19:51:14Z",
+      "closed_at": "2025-07-10T19:51:14Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 58,
+      "branch": "add/import-unzip",
+      "created_at": "2025-07-01T21:41:36Z",
+      "merged_at": "2025-07-03T15:18:25Z",
+      "closed_at": "2025-07-03T15:18:25Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 57,
+      "branch": "implement-svg-entrypoint",
+      "created_at": "2025-06-25T15:47:21Z",
+      "merged_at": "2025-06-30T15:52:05Z",
+      "closed_at": "2025-06-30T15:52:05Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 56,
+      "branch": "add/cli-entrypoint",
+      "created_at": "2025-06-19T05:54:14Z",
+      "merged_at": "2025-07-01T16:36:14Z",
+      "closed_at": "2025-07-01T16:36:14Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/pdf-import/pull/56\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-07-01T16:35:28Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-07-01T16:36:15Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-07-01T16:35:28Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/pdf-import",
+              "pr_number": 56
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-07-01T16:36:15Z"
+        }
+      ]
+    },
+    {
+      "number": 55,
+      "branch": "fix/filter-re-drawing-before-complex-detect",
+      "created_at": "2025-06-19T05:41:22Z",
+      "merged_at": "2025-06-25T21:34:10Z",
+      "closed_at": "2025-06-25T21:34:10Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 54,
+      "branch": "add-idea-friendly",
+      "created_at": "2025-06-17T13:25:22Z",
+      "merged_at": "2025-06-17T13:47:04Z",
+      "closed_at": "2025-06-17T13:47:04Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 53,
+      "branch": "add/inspect-logs-for-element-detector",
+      "created_at": "2025-06-12T02:17:02Z",
+      "merged_at": "2025-06-12T14:28:39Z",
+      "closed_at": "2025-06-12T14:28:39Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 52,
+      "branch": "add/fixes-and-dev-ux-enhancements",
+      "created_at": "2025-06-06T06:23:19Z",
+      "merged_at": "2025-06-10T14:34:09Z",
+      "closed_at": "2025-06-10T14:34:09Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 51,
+      "branch": "master-fix/conflict-950ceee-c884bd0",
+      "created_at": "2025-05-30T14:15:10Z",
+      "merged_at": "2025-05-30T14:19:25Z",
+      "closed_at": "2025-05-30T14:19:25Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 50,
+      "branch": "stable-fix/table-extractor-logic",
+      "created_at": "2025-05-30T13:54:21Z",
+      "merged_at": "2025-05-30T14:13:52Z",
+      "closed_at": "2025-05-30T14:13:52Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 49,
+      "branch": "master-fix/conflict-4fb4347-7a2946c",
+      "created_at": "2025-05-29T14:55:40Z",
+      "merged_at": "2025-05-29T15:00:04Z",
+      "closed_at": "2025-05-29T15:00:04Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 48,
+      "branch": "stable-fix/increase-buff-size",
+      "created_at": "2025-05-29T14:36:35Z",
+      "merged_at": "2025-05-29T14:54:26Z",
+      "closed_at": "2025-05-29T14:54:26Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 47,
+      "branch": "master-fix/conflict-b71d38b-3bd10a8",
+      "created_at": "2025-05-28T15:45:40Z",
+      "merged_at": "2025-05-28T15:51:40Z",
+      "closed_at": "2025-05-28T15:51:40Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 46,
+      "branch": "stable-fix/table-detector-fns",
+      "created_at": "2025-05-28T15:28:02Z",
+      "merged_at": "2025-05-28T15:44:23Z",
+      "closed_at": "2025-05-28T15:44:23Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 45,
+      "branch": "fix/dd-env-config",
+      "created_at": "2025-05-28T14:37:32Z",
+      "merged_at": "2025-05-28T14:49:37Z",
+      "closed_at": "2025-05-28T14:49:37Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 44,
+      "branch": "master-fix/conflict-aeafa90-69005b9",
+      "created_at": "2025-05-27T21:26:24Z",
+      "merged_at": "2025-05-27T21:32:59Z",
+      "closed_at": "2025-05-27T21:32:59Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 43,
+      "branch": "stable-fix/ensure-text-ocr-filter-applies",
+      "created_at": "2025-05-27T20:31:27Z",
+      "merged_at": "2025-05-27T21:25:08Z",
+      "closed_at": "2025-05-27T21:25:08Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 42,
+      "branch": "master-fix/conflict-58bfb8c-6b79e24",
+      "created_at": "2025-05-27T20:09:41Z",
+      "merged_at": "2025-05-27T20:25:20Z",
+      "closed_at": "2025-05-27T20:25:20Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 41,
+      "branch": "master-fix/conflict-bf57b8c-5ebae8c",
+      "created_at": "2025-05-27T17:51:41Z",
+      "merged_at": "2025-05-27T18:08:30Z",
+      "closed_at": "2025-05-27T18:08:30Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 40,
+      "branch": "stable-fix/table-cells-and-polygon-calc",
+      "created_at": "2025-05-27T16:09:47Z",
+      "merged_at": "2025-05-27T17:50:49Z",
+      "closed_at": "2025-05-27T17:50:49Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 39,
+      "branch": "stable-fix/page-width-accumulated",
+      "created_at": "2025-05-27T14:53:34Z",
+      "merged_at": "2025-05-27T20:08:25Z",
+      "closed_at": "2025-05-27T20:08:25Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 37,
+      "branch": "add/parsing-improvements",
+      "created_at": "2025-05-23T13:12:09Z",
+      "merged_at": "2025-05-23T16:45:57Z",
+      "closed_at": "2025-05-23T16:45:57Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 36,
+      "branch": "master-fix/conflict-eed2e99-fc389f6",
+      "created_at": "2025-05-23T13:09:17Z",
+      "merged_at": "2025-05-23T13:15:29Z",
+      "closed_at": "2025-05-23T13:15:29Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 35,
+      "branch": "stable-fix/alpha-and-svg-position",
+      "created_at": "2025-05-22T16:52:40Z",
+      "merged_at": "2025-05-23T13:08:16Z",
+      "closed_at": "2025-05-23T13:08:16Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 34,
+      "branch": "feature/check-branch-private-action",
+      "created_at": "2025-05-15T20:53:06Z",
+      "merged_at": "2025-05-20T14:31:01Z",
+      "closed_at": "2025-05-20T14:31:01Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 30,
+      "branch": "add/respond-with-sets-of-widgets-per-page",
+      "created_at": "2025-05-08T14:58:41Z",
+      "merged_at": "2025-05-16T15:53:54Z",
+      "closed_at": "2025-05-16T15:53:54Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 29,
+      "branch": "fix/png-with-alpha",
+      "created_at": "2025-04-21T13:05:33Z",
+      "merged_at": "2025-04-21T19:26:16Z",
+      "closed_at": "2025-04-21T19:26:16Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 28,
+      "branch": "fix/coerce-dd-statsd-port-to-int",
+      "created_at": "2025-04-17T16:55:50Z",
+      "merged_at": "2025-04-17T17:50:14Z",
+      "closed_at": "2025-04-17T17:50:14Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 27,
+      "branch": "refine/logging",
+      "created_at": "2025-04-15T18:26:10Z",
+      "merged_at": "2025-04-16T14:00:13Z",
+      "closed_at": "2025-04-16T14:00:13Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 26,
+      "branch": "fix/text-underline",
+      "created_at": "2025-04-15T18:00:43Z",
+      "merged_at": "2025-04-16T17:05:54Z",
+      "closed_at": "2025-04-16T17:05:54Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 25,
+      "branch": "refine/arrow-connections",
+      "created_at": "2025-04-11T17:41:15Z",
+      "merged_at": "2025-04-16T16:11:09Z",
+      "closed_at": "2025-04-16T16:11:09Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 24,
+      "branch": "refine/tables-and-text-association",
+      "created_at": "2025-04-09T19:00:48Z",
+      "merged_at": "2025-04-11T18:13:00Z",
+      "closed_at": "2025-04-11T18:13:00Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 22,
+      "branch": "fix/image-upload-403",
+      "created_at": "2025-04-04T18:47:04Z",
+      "merged_at": "2025-04-04T18:53:22Z",
+      "closed_at": "2025-04-04T18:53:22Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 21,
+      "branch": "fix/inking-widgets",
+      "created_at": "2025-04-04T13:39:19Z",
+      "merged_at": "2025-04-04T18:51:20Z",
+      "closed_at": "2025-04-04T18:51:20Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 20,
+      "branch": "add/profiling-documentation",
+      "created_at": "2025-04-03T19:40:14Z",
+      "merged_at": "2025-04-04T19:34:17Z",
+      "closed_at": "2025-04-04T19:34:17Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 18,
+      "branch": "beta-fix/tables",
+      "created_at": "2025-04-03T16:22:10Z",
+      "merged_at": "2025-04-03T16:25:17Z",
+      "closed_at": "2025-04-03T16:25:17Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 17,
+      "branch": "fix/requirements-txt",
+      "created_at": "2025-04-02T19:15:36Z",
+      "merged_at": "2025-04-02T19:41:19Z",
+      "closed_at": "2025-04-02T19:41:19Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 16,
+      "branch": "refactor/v2",
+      "created_at": "2025-03-30T00:38:38Z",
+      "merged_at": "2025-04-02T18:13:27Z",
+      "closed_at": "2025-04-02T18:13:27Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 12,
+      "branch": "refactor/use-in-memory-approach",
+      "created_at": "2025-03-26T14:43:34Z",
+      "merged_at": "2025-03-26T15:49:55Z",
+      "closed_at": "2025-03-26T15:49:55Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 11,
+      "branch": "improve/logging",
+      "created_at": "2025-03-25T20:37:31Z",
+      "merged_at": "2025-03-25T22:14:20Z",
+      "closed_at": "2025-03-25T22:14:20Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 10,
+      "branch": "add/pdf-import-endpoints",
+      "created_at": "2025-03-25T13:29:09Z",
+      "merged_at": "2025-03-25T16:33:13Z",
+      "closed_at": "2025-03-25T16:33:14Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 9,
+      "branch": "add/manifests-dir",
+      "created_at": "2025-03-10T17:56:30Z",
+      "merged_at": "2025-03-10T18:23:55Z",
+      "closed_at": "2025-03-10T18:23:55Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 8,
+      "branch": "add/image-upload-handling",
+      "created_at": "2025-02-24T12:48:41Z",
+      "merged_at": "2025-02-28T18:07:54Z",
+      "closed_at": "2025-02-28T18:07:54Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    }
+  ]
+}

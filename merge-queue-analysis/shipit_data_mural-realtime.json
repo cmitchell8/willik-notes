@@ -1,0 +1,355 @@
+{
+  "repository": "mural-realtime",
+  "fetched_at": "2026-02-18T18:43:48.092877Z",
+  "bot_username": "mural-shipit2",
+  "date_range": {
+    "start": "2025-02-18T00:00:00",
+    "end": "2026-02-18T00:00:00"
+  },
+  "pull_requests": [
+    {
+      "number": 301,
+      "branch": "node-update-2-26-realtime-mjeff",
+      "created_at": "2026-02-11T17:01:12Z",
+      "merged_at": "2026-02-11T23:56:21Z",
+      "closed_at": "2026-02-11T23:56:21Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-realtime/pull/301\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-02-11T23:55:49Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-02-11T23:56:23Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-02-11T23:55:49Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-realtime",
+              "pr_number": 301
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-02-11T23:56:23Z"
+        }
+      ]
+    },
+    {
+      "number": 297,
+      "branch": "remove/kubeval-realtime",
+      "created_at": "2026-01-12T13:49:33Z",
+      "merged_at": "2026-01-12T14:07:46Z",
+      "closed_at": "2026-01-12T14:07:46Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-realtime/pull/297\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-12T14:06:58Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-12T14:07:48Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-12T14:06:58Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-realtime",
+              "pr_number": 297
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-12T14:07:48Z"
+        }
+      ]
+    },
+    {
+      "number": 296,
+      "branch": "feature/recall-ai-v3",
+      "created_at": "2026-01-08T15:04:01Z",
+      "merged_at": "2026-01-15T21:28:08Z",
+      "closed_at": "2026-01-15T21:28:08Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/mural-api#15029](https://github.com/tactivos/mural-api/pull/15029) is a draft \n\n\u274c [Pull request tactivos/mural-api#15029](https://github.com/tactivos/mural-api/pull/15029)has 1 or more outstanding required reviews\n\n\u274c [Pull request tactivos/murally#46409](https://github.com/tactivos/murally/pull/46409) is a draft \n\n\u274c [Pull request tactivos/murally#46409](https://github.com/tactivos/murally/pull/46409)has 1 or more outstanding required reviews\n",
+          "created_at": "2026-01-09T19:58:38Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2026-01-09T19:58:38Z"
+        }
+      ]
+    },
+    {
+      "number": 293,
+      "branch": "node-update-12-25-realtime",
+      "created_at": "2025-12-18T16:42:51Z",
+      "merged_at": "2026-01-08T18:18:47Z",
+      "closed_at": "2026-01-08T18:18:47Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-realtime/pull/293\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2026-01-08T17:43:43Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2026-01-08T18:18:49Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2026-01-08T17:43:43Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-realtime",
+              "pr_number": 293
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2026-01-08T18:18:49Z"
+        }
+      ]
+    },
+    {
+      "number": 288,
+      "branch": "fix/unhandled-ex",
+      "created_at": "2025-10-06T13:03:31Z",
+      "merged_at": "2025-10-06T13:30:51Z",
+      "closed_at": "2025-10-06T13:30:51Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-realtime/pull/288\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-06T13:29:51Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-06T13:30:53Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-06T13:29:51Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-realtime",
+              "pr_number": 288
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-06T13:30:53Z"
+        }
+      ]
+    },
+    {
+      "number": 287,
+      "branch": "sec-update-1025-03",
+      "created_at": "2025-10-01T16:22:12Z",
+      "merged_at": "2025-10-08T18:05:09Z",
+      "closed_at": "2025-10-08T18:05:10Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-realtime/pull/287\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-10-08T17:41:11Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-10-08T18:05:12Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-10-08T17:41:11Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-realtime",
+              "pr_number": 287
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-10-08T18:05:12Z"
+        }
+      ]
+    },
+    {
+      "number": 286,
+      "branch": "feat/bump-percibir",
+      "created_at": "2025-09-25T21:44:38Z",
+      "merged_at": "2025-09-29T13:57:44Z",
+      "closed_at": "2025-09-29T13:57:44Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-realtime/pull/286\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-29T13:57:19Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-29T13:57:46Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-29T13:57:19Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-realtime",
+              "pr_number": 286
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-29T13:57:46Z"
+        }
+      ]
+    },
+    {
+      "number": 283,
+      "branch": "del/push-test-envs-realtime",
+      "created_at": "2025-09-17T19:04:13Z",
+      "merged_at": "2025-09-17T19:39:55Z",
+      "closed_at": "2025-09-17T19:39:55Z",
+      "state": "MERGED",
+      "bot_comments": [
+        {
+          "body": "\u23f1 Your Pull Requests has been enqueued\n\nPRs in this effort:\n\n* https://github.com/tactivos/mural-realtime/pull/283\n\n\n[Merge Queue](https://platform.mural.engineering/merge-queue)",
+          "created_at": "2025-09-17T19:22:04Z",
+          "author": "mural-shipit2"
+        },
+        {
+          "body": "\u2705 Your Pull Requests has been merged",
+          "created_at": "2025-09-17T19:39:57Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "enqueued",
+          "timestamp": "2025-09-17T19:22:04Z",
+          "effort_prs": [
+            {
+              "repository": "tactivos/mural-realtime",
+              "pr_number": 283
+            }
+          ]
+        },
+        {
+          "type": "merged",
+          "timestamp": "2025-09-17T19:39:57Z"
+        }
+      ]
+    },
+    {
+      "number": 280,
+      "branch": "fix/codeowners-mural-realtime",
+      "created_at": "2025-07-29T14:36:20Z",
+      "merged_at": "2025-08-05T17:40:43Z",
+      "closed_at": "2025-08-05T17:40:43Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 277,
+      "branch": "feature/check-branch-private-action",
+      "created_at": "2025-05-15T20:53:54Z",
+      "merged_at": "2025-05-20T14:35:33Z",
+      "closed_at": "2025-05-20T14:35:33Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 276,
+      "branch": "improve-cors-multiline",
+      "created_at": "2025-05-09T15:57:07Z",
+      "merged_at": "2025-05-12T18:34:26Z",
+      "closed_at": "2025-05-12T18:34:26Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 275,
+      "branch": "add/iam-1852-authd-visitor",
+      "created_at": "2025-04-29T15:32:42Z",
+      "merged_at": null,
+      "closed_at": "2025-04-30T21:29:21Z",
+      "state": "CLOSED",
+      "bot_comments": [
+        {
+          "body": "### \ud83d\udd34  Your pull request was not enqueued.\n\n\n\u274c [Pull request tactivos/murally#43855](https://github.com/tactivos/murally/pull/43855) is a draft \n\n\u274c [Pull request tactivos/murally#43855](https://github.com/tactivos/murally/pull/43855)has 1 or more outstanding required reviews\n",
+          "created_at": "2025-04-30T18:27:04Z",
+          "author": "mural-shipit2"
+        }
+      ],
+      "shipit_events": [
+        {
+          "type": "not_enqueued",
+          "timestamp": "2025-04-30T18:27:04Z"
+        }
+      ]
+    },
+    {
+      "number": 274,
+      "branch": "update/node-version",
+      "created_at": "2025-04-04T17:14:11Z",
+      "merged_at": "2025-04-10T14:29:48Z",
+      "closed_at": "2025-04-10T14:29:49Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    },
+    {
+      "number": 272,
+      "branch": "update/node-version-22.14.0",
+      "created_at": "2025-03-20T17:05:46Z",
+      "merged_at": "2025-04-10T14:29:47Z",
+      "closed_at": "2025-04-10T14:29:47Z",
+      "state": "MERGED",
+      "bot_comments": [],
+      "shipit_events": []
+    }
+  ]
+}
