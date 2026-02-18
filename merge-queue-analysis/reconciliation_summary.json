@@ -1,0 +1,14 @@
+{
+  "shipit_effort_pairs_murally_api": 351,
+  "branch_matched_pairs": 420,
+  "overlap": 318,
+  "branch_match_not_effort": 102,
+  "effort_not_branch_match": 33,
+  "effort_not_branch_match_reasons": {
+    "different_branches": 0,
+    "same_branch_outside_window_or_missing": 33,
+    "pr_not_in_branch_data": 0
+  },
+  "branch_match_rate_of_efforts": "90.6%",
+  "effort_rate_of_branch_matches": "75.7%"
+}

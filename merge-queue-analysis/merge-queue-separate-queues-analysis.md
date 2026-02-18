@@ -91,7 +91,25 @@ In the proposed model, cross-repo efforts become separate queue entries — one 
 | % increase in queue entries | 2.3% |
 | Net impact | 16.2 min saved per PR despite 2.3% more entries |
 
-The 8.0% effort rate detected from shipit comment links is lower than the 14.4% found via branch-name matching in the [cross-repo branch analysis](cross-repo-branch-match-analysis.md). This gap is likely because effort link parsing from enqueued comments is more conservative — it only counts PRs explicitly listed in the shipit comment, while branch matching captures all same-named branches regardless of whether they shipped as an effort.
+#### Reconciliation: Shipit Efforts vs. Branch-Name Matching
+
+The 8.0% effort rate from shipit comment links is lower than the 14.4% found via branch-name matching in the [cross-repo branch analysis](cross-repo-branch-match-analysis.md). A reconciliation cross-referencing both datasets (restricted to their common date range, Feb 18 2025 – Feb 3 2026) explains the gap:
+
+| Category | Count |
+|----------|------:|
+| Shipit effort pairs (murally + mural-api only) | 351 |
+| Branch-matched pairs (3-day window) | 420 |
+| **Overlap** (appear in both datasets) | 318 |
+| Branch match but NOT shipped as effort | 102 |
+| Shipped as effort but NOT branch-matched | 33 |
+
+**Why branch matches exceed efforts (102 pairs).** These 102 pairs had the same branch name in both repos within 3 days, but were shipped independently — separate shipit invocations rather than a single bundled effort. Branch matching is a *structural* signal (developer intent to do cross-repo work), while effort linking is a *behavioral* signal (developer chose to bundle). About 24% of branch-matched pairs were never bundled.
+
+**Why some efforts aren't branch-matched (33 pairs).** All 33 had the same branch name in both repos, but the PRs fell outside the 3-day creation window used by the branch analysis (or one PR was outside the branch analysis date range). Zero efforts used different branch names across repos.
+
+**Impact on the analysis:** Only the 318 truly bundled efforts affect queue modeling. The 102 branch-match-only pairs were shipped independently and would remain separate queue entries in both the current and proposed models — they do not inflate the effort overhead. Even if all 420 branch-matched pairs were treated as efforts, the additional queue entries would increase by ~4–5%, still negligible compared to the **94.7% wait time reduction** from queue separation.
+
+See [reconciliation_report.md](reconciliation_report.md) for full detail including sample PR pairs.
 
 ### Event Outcomes
 
