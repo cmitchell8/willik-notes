@@ -118,6 +118,7 @@ def expand_efforts_to_separate_entries(
                     "proposed_repo": repo,
                     "proposed_processing_time_s": proposed_time,
                     "was_effort": False,
+                    "current_wait_attributed_s": event["queue_wait_s"],
                 }
             )
             continue
@@ -128,6 +129,7 @@ def expand_efforts_to_separate_entries(
         else:
             time_per_repo = None
 
+        attributed_wait = event["queue_wait_s"] / event["effort_size"]
         for repo in repos:
             if time_per_repo is not None:
                 proc_time = time_per_repo
@@ -139,6 +141,7 @@ def expand_efforts_to_separate_entries(
                     "proposed_repo": repo,
                     "proposed_processing_time_s": proc_time,
                     "was_effort": True,
+                    "current_wait_attributed_s": attributed_wait,
                 }
             )
 
@@ -191,23 +194,50 @@ def simulate_separate_queues(
     return results
 
 
-def compute_comparison(results: list[dict[str, Any]]) -> dict[str, Any]:
-    """Compute comparison metrics between single queue and separate queues."""
-    current_waits = [r["queue_wait_s"] for r in results]
+def compute_comparison(
+    results: list[dict[str, Any]], timeline: list[dict[str, Any]]
+) -> dict[str, Any]:
+    """Compute comparison metrics between single queue and separate queues.
+
+    Uses the original timeline (before effort expansion) for current-state
+    baseline metrics to avoid double-counting effort waits. Proposed metrics
+    come from the expanded simulation results.
+    """
+    current_waits = [e["queue_wait_s"] for e in timeline]
     proposed_waits = [r["proposed_wait_s"] for r in results]
     time_saved = [r["time_saved_s"] for r in results]
 
-    current_totals = [r["total_time_s"] for r in results]
+    current_totals = [e["total_time_s"] for e in timeline]
     proposed_totals = [r["proposed_total_s"] for r in results]
 
-    repo_stats: dict[str, dict[str, Any]] = defaultdict(
-        lambda: {"current_waits": [], "proposed_waits": [], "count": 0}
-    )
+    current_by_repo: dict[str, list[float]] = defaultdict(list)
+    for e in timeline:
+        attributed = (
+            e["queue_wait_s"] / e["effort_size"]
+            if e.get("is_effort") and e.get("effort_size", 1) > 1
+            else e["queue_wait_s"]
+        )
+        repos = (
+            e["effort_repos"]
+            if e.get("is_effort") and e.get("effort_repos")
+            else [e["repo"]]
+        )
+        for repo in repos:
+            current_by_repo[repo].append(attributed)
+
+    proposed_by_repo: dict[str, list[float]] = defaultdict(list)
     for r in results:
-        repo = r["proposed_repo"]
-        repo_stats[repo]["current_waits"].append(r["queue_wait_s"])
-        repo_stats[repo]["proposed_waits"].append(r["proposed_wait_s"])
-        repo_stats[repo]["count"] += 1
+        proposed_by_repo[r["proposed_repo"]].append(r["proposed_wait_s"])
+
+    all_repos = sorted(set(current_by_repo) | set(proposed_by_repo))
+    repo_stats = {
+        repo: {
+            "current_waits": current_by_repo.get(repo, []),
+            "proposed_waits": proposed_by_repo.get(repo, []),
+            "count": len(proposed_by_repo.get(repo, [])),
+        }
+        for repo in all_repos
+    }
 
     effort_entries = sum(1 for r in results if r.get("was_effort", False))
     non_effort_entries = sum(1 for r in results if not r.get("was_effort", False))
@@ -322,6 +352,7 @@ def write_simulation_csv(results: list[dict[str, Any]], output_dir: str) -> str:
         "branch",
         "terminal_type",
         "current_wait_s",
+        "current_wait_attributed_s",
         "proposed_wait_s",
         "time_saved_s",
         "current_total_s",
@@ -345,6 +376,7 @@ def write_simulation_csv(results: list[dict[str, Any]], output_dir: str) -> str:
                     "branch": r["branch"],
                     "terminal_type": r["terminal_type"],
                     "current_wait_s": round(r["queue_wait_s"], 1),
+                    "current_wait_attributed_s": round(r["current_wait_attributed_s"], 1),
                     "proposed_wait_s": round(r["proposed_wait_s"], 1),
                     "time_saved_s": round(r["time_saved_s"], 1),
                     "current_total_s": round(r["total_time_s"], 1),
@@ -369,7 +401,7 @@ def write_weekly_summary(results: list[dict[str, Any]], output_dir: str) -> str:
     for r in results:
         iso_year, iso_week, _ = r["enqueue_time"].isocalendar()
         week_key = f"{iso_year}-W{iso_week:02d}"
-        weeks[week_key]["current_waits"].append(r["queue_wait_s"])
+        weeks[week_key]["current_waits"].append(r["current_wait_attributed_s"])
         weeks[week_key]["proposed_waits"].append(r["proposed_wait_s"])
         weeks[week_key]["time_saved"].append(r["time_saved_s"])
 
@@ -502,7 +534,7 @@ def write_wait_time_distribution(
     proposed_counts = [0] * len(bucket_labels)
 
     for r in results:
-        curr_min = r["queue_wait_s"] / 60
+        curr_min = r["current_wait_attributed_s"] / 60
         prop_min = r["proposed_wait_s"] / 60
 
         for i in range(len(bucket_labels)):
@@ -624,7 +656,7 @@ def main():
     results = simulate_separate_queues(expanded)
 
     print(f"\nComputing comparison metrics...")
-    comparison = compute_comparison(results)
+    comparison = compute_comparison(results, timeline)
 
     sim_csv = write_simulation_csv(results, args.output_dir)
     print(f"\nSimulation CSV: {sim_csv}")

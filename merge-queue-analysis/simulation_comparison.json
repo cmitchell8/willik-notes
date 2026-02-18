@@ -7,27 +7,27 @@
   },
   "wait_time_comparison": {
     "mean": {
-      "current_min": 23.0,
+      "current_min": 19.9,
       "proposed_min": 3.7,
-      "improvement_min": 19.2,
-      "improvement_pct": 83.8
+      "improvement_min": 16.2,
+      "improvement_pct": 81.3
     },
     "median": {
-      "current_min": 3.8,
+      "current_min": 3.7,
       "proposed_min": 0.0,
-      "improvement_min": 3.8,
+      "improvement_min": 3.7,
       "improvement_pct": 100.0
     },
     "p95": {
-      "current_min": 54.0,
+      "current_min": 50.9,
       "proposed_min": 15.7,
-      "improvement_min": 38.3,
-      "improvement_pct": 70.8
+      "improvement_min": 35.2,
+      "improvement_pct": 69.1
     }
   },
   "total_time_comparison": {
     "mean": {
-      "current_min": 32.0,
+      "current_min": 29.0,
       "proposed_min": 15.4
     },
     "median": {
@@ -44,19 +44,19 @@
   "repo_breakdown": {
     "murally": {
       "count": 3686,
-      "current_mean_min": 21.1,
+      "current_mean_min": 19.0,
       "proposed_mean_min": 4.7,
       "current_median_min": 3.8,
       "proposed_median_min": 0.0,
-      "improvement_pct": 77.7
+      "improvement_pct": 75.1
     },
     "mural-api": {
       "count": 1320,
-      "current_mean_min": 27.9,
+      "current_mean_min": 21.9,
       "proposed_mean_min": 1.7,
-      "current_median_min": 3.7,
+      "current_median_min": 3.6,
       "proposed_median_min": 0.0,
-      "improvement_pct": 93.9
+      "improvement_pct": 92.3
     },
     "mural-integrations": {
       "count": 85,
@@ -68,7 +68,7 @@
     },
     "pdf-import": {
       "count": 76,
-      "current_mean_min": 37.7,
+      "current_mean_min": 29.1,
       "proposed_mean_min": 0.0,
       "current_median_min": 0.4,
       "proposed_median_min": 0.0,
@@ -76,11 +76,11 @@
     },
     "mural-render": {
       "count": 55,
-      "current_mean_min": 35.3,
+      "current_mean_min": 24.0,
       "proposed_mean_min": 0.1,
       "current_median_min": 9.7,
       "proposed_median_min": 0.0,
-      "improvement_pct": 99.8
+      "improvement_pct": 99.7
     },
     "mural-upload": {
       "count": 14,
