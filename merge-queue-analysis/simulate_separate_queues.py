@@ -108,25 +108,36 @@ def expand_efforts_to_separate_entries(
     for event in events:
         if not event["is_effort"] or event["effort_size"] <= 1:
             repo = event["repo"]
-            ci_time = ci_estimates.get(repo, FALLBACK_CI_SECONDS)
+            if event["terminal_type"] in ("failed", "cancelled"):
+                proposed_time = event["total_time_s"]
+            else:
+                proposed_time = ci_estimates.get(repo, FALLBACK_CI_SECONDS)
             expanded.append(
                 {
                     **event,
                     "proposed_repo": repo,
-                    "proposed_processing_time_s": ci_time,
+                    "proposed_processing_time_s": proposed_time,
                     "was_effort": False,
                 }
             )
             continue
 
         repos = event["effort_repos"]
+        if event["terminal_type"] in ("failed", "cancelled"):
+            time_per_repo = event["total_time_s"] / len(repos) if repos else event["total_time_s"]
+        else:
+            time_per_repo = None
+
         for repo in repos:
-            ci_time = ci_estimates.get(repo, FALLBACK_CI_SECONDS)
+            if time_per_repo is not None:
+                proc_time = time_per_repo
+            else:
+                proc_time = ci_estimates.get(repo, FALLBACK_CI_SECONDS)
             expanded.append(
                 {
                     **event,
                     "proposed_repo": repo,
-                    "proposed_processing_time_s": ci_time,
+                    "proposed_processing_time_s": proc_time,
                     "was_effort": True,
                 }
             )

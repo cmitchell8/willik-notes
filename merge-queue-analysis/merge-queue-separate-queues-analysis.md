@@ -6,19 +6,19 @@
 
 ## Executive Summary
 
-Separate merge queues for each repo would reduce mean queue wait time by **92.9%** (from 23.0 min to 1.6 min). The parallelism gains massively outweigh the overhead of splitting cross-repo efforts into separate queue entries.
+Separate merge queues for each repo would reduce mean queue wait time by **83.8%** (from 23.0 min to 3.7 min). The parallelism gains massively outweigh the overhead of splitting cross-repo efforts into separate queue entries.
 
 | Metric | Current (Single Queue) | Proposed (Separate Queues) | Improvement |
 |--------|:---:|:---:|:---:|
-| Mean queue wait time | 23.0 min | 1.6 min | 92.9% |
+| Mean queue wait time | 23.0 min | 3.7 min | 83.8% |
 | Median queue wait time | 3.8 min | 0.0 min | 100.0% |
-| P95 queue wait time | 54.0 min | 9.8 min | 81.9% |
-| Total time saved (12 months) | — | 1,872 hours | — |
+| P95 queue wait time | 54.0 min | 15.7 min | 70.8% |
+| Total time saved (12 months) | — | 1,688 hours | — |
 | Queue entries (effort overhead) | 5,146 | 5,264 (+2.3%) | — |
 
 **Key insight**: The single queue forces 5,204 items through one pipe serially. murally (70% of volume) and mural-api (25%) block each other despite having independent CI pipelines. Separating them eliminates nearly all cross-repo blocking. The 118 additional queue entries from expanding cross-repo efforts are negligible at 2.3% overhead.
 
-**Recommendation**: Proceed with queue separation. The ~8.0% of queue events that are cross-repo efforts will require two separate shipit invocations, but developers save an average of 21.3 minutes of wait time per PR — totaling 1,872 hours of eliminated developer wait time over the past year.
+**Recommendation**: Proceed with queue separation. The ~8.0% of queue events that are cross-repo efforts will require two separate shipit invocations, but developers save an average of 19.2 minutes of wait time per PR — totaling 1,688 hours of eliminated developer wait time over the past year.
 
 ---
 
@@ -30,7 +30,7 @@ Separate merge queues for each repo would reduce mean queue wait time by **92.9%
 
 **Proposed state**: Each repo gets its own parallel merge queue. The effort concept is removed — every PR ships independently. Cross-repo changes require two separate shipit invocations instead of one bundled effort.
 
-**Stakes**: If the parallelism gains are marginal (e.g., <10% wait time reduction), the operational cost of losing bundled efforts may not be justified. If gains are substantial (>30%), the case for separation is clear. The data shows a **92.9% improvement** — well beyond the threshold.
+**Stakes**: If the parallelism gains are marginal (e.g., <10% wait time reduction), the operational cost of losing bundled efforts may not be justified. If gains are substantial (>30%), the case for separation is clear. The data shows an **83.8% improvement** — well beyond the threshold.
 
 ---
 
@@ -40,17 +40,17 @@ Separate merge queues for each repo would reduce mean queue wait time by **92.9%
 
 | Metric | Current | Proposed | Saved | Improvement |
 |--------|:---:|:---:|:---:|:---:|
-| Mean wait | 23.0 min | 1.6 min | 21.3 min | 92.9% |
+| Mean wait | 23.0 min | 3.7 min | 19.2 min | 83.8% |
 | Median wait | 3.8 min | 0.0 min | 3.8 min | 100.0% |
-| P95 wait | 54.0 min | 9.8 min | 44.2 min | 81.9% |
+| P95 wait | 54.0 min | 15.7 min | 38.3 min | 70.8% |
 
-The median wait drops from 3.8 min to 0 — meaning most PRs would be processed immediately with no queue. Even at the P95 (worst 1-in-20 PRs), wait drops from ~54 minutes to ~10 minutes.
+The median wait drops from 3.8 min to 0 — meaning most PRs would be processed immediately with no queue. Even at the P95 (worst 1-in-20 PRs), wait drops from ~54 minutes to ~16 minutes.
 
 ### Total Shipit Time (enqueue to merge)
 
 | Metric | Current | Proposed |
 |--------|:---:|:---:|
-| Mean total time | 32.0 min | 12.1 min |
+| Mean total time | 32.0 min | 15.4 min |
 | Median total time | 14.8 min | 9.8 min |
 
 ### Queue Utilization by Repository
@@ -72,8 +72,8 @@ Every repo benefits from queue separation. Smaller repos see near-total eliminat
 
 | Repository | Count | Current Mean Wait | Proposed Mean Wait | Improvement |
 |------------|:---:|:---:|:---:|:---:|
-| murally | 3,686 | 21.1 min | 1.9 min | 90.8% |
-| mural-api | 1,320 | 27.9 min | 1.1 min | 96.1% |
+| murally | 3,686 | 21.1 min | 4.7 min | 77.7% |
+| mural-api | 1,320 | 27.9 min | 1.7 min | 93.9% |
 | mural-integrations | 85 | 10.6 min | 0.0 min | 99.9% |
 | pdf-import | 76 | 37.7 min | 0.0 min | 100.0% |
 | mural-render | 55 | 35.3 min | 0.1 min | 99.8% |
@@ -89,7 +89,7 @@ In the proposed model, cross-repo efforts become separate queue entries — one 
 | Cross-repo efforts detected | 415 (8.0% of events) |
 | Additional queue entries in proposed model | 118 |
 | % increase in queue entries | 2.3% |
-| Net impact | 21.3 min saved per PR despite 2.3% more entries |
+| Net impact | 19.2 min saved per PR despite 2.3% more entries |
 
 The 8.0% effort rate detected from shipit comment links is lower than the 14.4% found via branch-name matching in the [cross-repo branch analysis](cross-repo-branch-match-analysis.md). This gap is likely because effort link parsing from enqueued comments is more conservative — it only counts PRs explicitly listed in the shipit comment, while branch matching captures all same-named branches regardless of whether they shipped as an effort.
 
@@ -115,19 +115,19 @@ Queue congestion varies significantly week to week. The simulation accounts for 
 
 | Week | Events | Current Mean Wait | Proposed Mean Wait | Time Saved |
 |------|:---:|:---:|:---:|:---:|
-| 2025-W46 | 116 | 83.5 min | 1.7 min | 158.1 hours |
-| 2026-W05 | 91 | 83.3 min | 1.2 min | 124.5 hours |
-| 2025-W12 | 147 | 81.5 min | 2.7 min | 193.2 hours |
-| 2025-W15 | 118 | 81.5 min | 1.4 min | 157.4 hours |
-| 2025-W41 | 98 | 69.3 min | 1.2 min | 111.1 hours |
+| 2025-W46 | 116 | 83.5 min | 4.7 min | 152.2 hours |
+| 2026-W05 | 91 | 83.3 min | 1.4 min | 124.2 hours |
+| 2025-W12 | 147 | 81.5 min | 2.7 min | 193.1 hours |
+| 2025-W15 | 118 | 81.5 min | 1.5 min | 157.2 hours |
+| 2025-W41 | 98 | 69.3 min | 1.5 min | 110.7 hours |
 
-During the worst week (W46), PRs waited an average of **83.5 minutes** in the single queue. With separate queues, wait would have been 1.7 minutes — a 98.0% improvement.
+During the worst week (W46), PRs waited an average of **83.5 minutes** in the single queue. With separate queues, wait would have been 4.7 minutes — a 94.4% improvement.
 
 **Quietest weeks** (lowest current mean wait):
 
 | Week | Events | Current Mean Wait | Proposed Mean Wait |
 |------|:---:|:---:|:---:|
-| 2025-W27 | 51 | 1.9 min | 0.8 min |
+| 2025-W27 | 51 | 1.9 min | 0.9 min |
 | 2025-W35 | 102 | 4.7 min | 1.0 min |
 | 2025-W08 | 73 | 5.0 min | 0.8 min |
 
@@ -135,18 +135,18 @@ Even during quiet weeks, separate queues still reduce wait times.
 
 ### Wait Time Distribution
 
-The distribution shifts dramatically. Under separate queues, 85.8% of PRs experience less than 5 minutes of wait (vs 56.9% currently), and PRs waiting more than 45 minutes are eliminated entirely.
+The distribution shifts dramatically. Under separate queues, 83.3% of PRs experience less than 5 minutes of wait (vs 56.9% currently), and PRs waiting more than 2 hours are nearly eliminated.
 
 | Wait Time Bucket | Current | Proposed |
 |------------------|:---:|:---:|
-| 0–5 min | 56.9% | 85.8% |
-| 5–15 min | 22.8% | 12.3% |
-| 15–30 min | 10.5% | 1.6% |
-| 30–60 min | 5.7% | 0.2% |
-| 60–120 min | 2.6% | 0.0% |
-| 120+ min | 1.6% | 0.0% |
+| 0–5 min | 56.9% | 83.3% |
+| 5–15 min | 22.8% | 11.4% |
+| 15–30 min | 10.5% | 2.7% |
+| 30–60 min | 5.7% | 1.5% |
+| 60–120 min | 2.6% | 0.8% |
+| 120+ min | 1.6% | 0.3% |
 
-Currently, **9.9%** of PRs wait more than 30 minutes. With separate queues, that drops to **0.2%**.
+Currently, **9.9%** of PRs wait more than 30 minutes. With separate queues, that drops to **2.6%**.
 
 ---
 
@@ -160,7 +160,7 @@ Currently, **9.9%** of PRs wait more than 30 minutes. With separate queues, that
 
 3. **Timeline Analysis** (`analyze_queue_timeline.py`): Extracted 5,204 enqueue→terminal event pairs. Enqueue-to-terminal pairing uses a chronological LIFO algorithm: events are walked in order, and each terminal (merged/failed/cancelled) pairs with the most recent unmatched enqueue before it. This correctly handles PRs with multiple enqueue cycles (e.g., enqueue→failed→re-enqueue→merged) without double-counting. 118 unpaired enqueues (no terminal in data) were dropped. Cross-repo efforts (identified by linked PRs in enqueued comments) were grouped as single queue items (415 efforts detected). CI processing time was estimated per repo using the 25th percentile of total shipit time among successfully merged events. Queue wait was derived as `total_shipit_time - estimated_ci_time`.
 
-4. **Queue Simulation** (`simulate_separate_queues.py`): Compared single queue (current) vs separate per-repo queues (proposed). Cross-repo efforts were expanded into separate entries per repo, with processing time set to the data-estimated CI time for each repo. Each repo's queue was simulated as an independent FIFO queue.
+4. **Queue Simulation** (`simulate_separate_queues.py`): Compared single queue (current) vs separate per-repo queues (proposed). Cross-repo efforts were expanded into separate entries per repo. For merged events, processing time uses the data-estimated CI time for each repo. For failed and cancelled events (526 total, 9.9% of events), processing time uses the actual observed duration (`total_time_s`) rather than the full CI estimate, since these events resolve without completing a full CI run. For failed/cancelled cross-repo efforts, the observed duration is split equally across the expanded repo entries. Each repo's queue was simulated as an independent FIFO queue.
 
 ### CI Processing Time Estimation
 
