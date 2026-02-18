@@ -1,13 +1,13 @@
 {
-  "murally": 593.0,
-  "mural-api": 861.5,
+  "murally": 589.0,
+  "mural-api": 852.5,
   "mural-integrations": 50.0,
   "mural-notifier": 58.2,
   "mural-upload": 62.5,
   "mural-render": 63.0,
-  "pdf-import": 47.0,
+  "pdf-import": 49.0,
   "mural-lb": 30.0,
-  "mural-seeder": 65.0,
+  "mural-seeder": 63.0,
   "haproxy-realtime": 34.0,
   "mural-realtime": 42.0
 }

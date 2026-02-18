@@ -2,12 +2,12 @@
 MERGE QUEUE TIMELINE SUMMARY
 ============================================================
 
-Total queue events: 5310
+Total queue events: 5204
 Date range: 365.2 days
 
 --- Estimated CI Processing Times (P25 of merged-only shipit time) ---
-  mural-api: 14.4 min
-  murally: 9.9 min
+  mural-api: 14.2 min
+  murally: 9.8 min
   mural-render: 1.1 min
   mural-seeder: 1.1 min
   mural-notifier: 1.0 min
@@ -19,40 +19,40 @@ Date range: 365.2 days
   mural-lb: 0.5 min
 
 --- Queue Wait Time (total_time - ci_estimate) ---
-  Mean:   32.8 min
-  Median: 3.8 min
-  P95:    57.1 min
-  Max:    11610.6 min
+  Mean:   19.9 min
+  Median: 3.7 min
+  P95:    50.9 min
+  Max:    6940.4 min
 
 --- Processing Time (estimated CI time, capped by total time) ---
-  Mean:   9.1 min
-  Median: 9.9 min
-  P95:    14.4 min
+  Mean:   9.0 min
+  Median: 9.8 min
+  P95:    14.2 min
 
 --- Total Shipit Time (enqueue -> terminal, directly observed) ---
-  Mean:   41.9 min
-  Median: 14.9 min
-  P95:    67.6 min
-  Max:    11620.5 min
+  Mean:   29.0 min
+  Median: 14.8 min
+  P95:    60.9 min
+  Max:    6954.6 min
 
 --- Repository Breakdown ---
-  murally: 3714 events (69.9%), CI ~9.9min, mean wait 33.1min
-  mural-api: 1339 events (25.2%), CI ~14.4min, mean wait 33.4min
-  mural-integrations: 85 events (1.6%), CI ~0.8min, mean wait 10.7min
-  pdf-import: 75 events (1.4%), CI ~0.8min, mean wait 20.9min
-  mural-render: 53 events (1.0%), CI ~1.1min, mean wait 36.9min
+  murally: 3630 events (69.8%), CI ~9.8min, mean wait 17.1min
+  mural-api: 1320 events (25.4%), CI ~14.2min, mean wait 27.9min
+  mural-integrations: 84 events (1.6%), CI ~0.8min, mean wait 10.7min
+  pdf-import: 75 events (1.4%), CI ~0.8min, mean wait 20.8min
+  mural-render: 53 events (1.0%), CI ~1.1min, mean wait 36.6min
   mural-upload: 14 events (0.3%), CI ~1.0min, mean wait 4.4min
-  mural-seeder: 12 events (0.2%), CI ~1.1min, mean wait 136.0min
+  mural-seeder: 10 events (0.2%), CI ~1.1min, mean wait 9.2min
   mural-notifier: 8 events (0.2%), CI ~1.0min, mean wait 6.3min
   mural-realtime: 7 events (0.1%), CI ~0.7min, mean wait 10.8min
   mural-lb: 2 events (0.0%), CI ~0.5min, mean wait 60.2min
   haproxy-realtime: 1 events (0.0%), CI ~0.6min, mean wait 0.0min
 
 --- Terminal Types ---
-  merged: 4784
+  merged: 4678
   failed: 500
   cancelled: 26
 
 --- Efforts ---
-  Standalone: 4894
-  Cross-repo efforts: 416 (7.8%)
+  Standalone: 4789
+  Cross-repo efforts: 415 (8.0%)

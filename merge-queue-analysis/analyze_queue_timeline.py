@@ -68,6 +68,7 @@ def extract_queue_events(all_repo_data: list[dict]) -> list[dict[str, Any]]:
     """
     effort_groups: dict[str, dict[str, Any]] = {}
     standalone_events: list[dict[str, Any]] = []
+    unpaired_enqueues_dropped = 0
 
     for repo_data in all_repo_data:
         repo = repo_data["repository"]
@@ -77,24 +78,27 @@ def extract_queue_events(all_repo_data: list[dict]) -> list[dict[str, Any]]:
             if not events:
                 continue
 
-            enqueue_events = [e for e in events if e["type"] == "enqueued"]
-            terminal_events = [
-                e for e in events if e["type"] in ("merged", "failed", "cancelled")
-            ]
+            # Pair enqueues with terminals using chronological LIFO:
+            # each terminal pairs with the most recent enqueue before it.
+            enqueue_stack: list[dict] = []
+            pairs: list[tuple[dict, dict]] = []
 
-            for i, enqueue in enumerate(enqueue_events):
-                terminal = terminal_events[i] if i < len(terminal_events) else None
-                if not terminal:
-                    if terminal_events:
-                        terminal = terminal_events[-1]
-                    elif pr.get("merged_at"):
-                        terminal = {
-                            "type": "merged",
-                            "timestamp": pr["merged_at"],
-                        }
-                    else:
-                        continue
+            for e in events:
+                if e["type"] == "enqueued":
+                    enqueue_stack.append(e)
+                elif e["type"] in ("merged", "failed", "cancelled"):
+                    if enqueue_stack:
+                        enqueue = enqueue_stack.pop()
+                        pairs.append((enqueue, e))
 
+            if not pairs and enqueue_stack and pr.get("merged_at"):
+                enqueue = enqueue_stack[-1]
+                pairs.append((enqueue, {"type": "merged", "timestamp": pr["merged_at"]}))
+
+            if enqueue_stack:
+                unpaired_enqueues_dropped += len(enqueue_stack)
+
+            for enqueue, terminal in pairs:
                 enqueue_time = parse_ts(enqueue["timestamp"])
                 terminal_time = parse_ts(terminal["timestamp"])
                 effort_prs = enqueue.get("effort_prs", [])
@@ -154,6 +158,9 @@ def extract_queue_events(all_repo_data: list[dict]) -> list[dict[str, Any]]:
                 "effort_repos": sorted(group["repos"]),
             }
         )
+
+    if unpaired_enqueues_dropped:
+        print(f"  Note: {unpaired_enqueues_dropped} unpaired enqueue(s) dropped (no terminal event in data)")
 
     queue_events.sort(key=lambda e: e["enqueue_time"])
     return queue_events

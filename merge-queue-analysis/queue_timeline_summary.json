@@ -1,9 +1,9 @@
 {
-  "total_events": 5310,
+  "total_events": 5204,
   "date_range_days": 365.2,
   "ci_estimates_min": {
     "haproxy-realtime": 0.6,
-    "mural-api": 14.4,
+    "mural-api": 14.2,
     "mural-integrations": 0.8,
     "mural-lb": 0.5,
     "mural-notifier": 1.0,
@@ -11,53 +11,53 @@
     "mural-render": 1.1,
     "mural-seeder": 1.1,
     "mural-upload": 1.0,
-    "murally": 9.9,
+    "murally": 9.8,
     "pdf-import": 0.8
   },
   "queue_wait": {
-    "mean_s": 1967.4,
-    "median_s": 225.2,
-    "p95_s": 3426.2,
-    "max_s": 696635.0,
-    "mean_min": 32.8,
-    "median_min": 3.8,
-    "p95_min": 57.1,
-    "max_min": 11610.6
+    "mean_s": 1195.3,
+    "median_s": 223.5,
+    "p95_s": 3054.8,
+    "max_s": 416426.5,
+    "mean_min": 19.9,
+    "median_min": 3.7,
+    "p95_min": 50.9,
+    "max_min": 6940.4
   },
   "processing_time": {
-    "mean_s": 548.1,
-    "median_s": 593.0,
-    "p95_s": 861.5,
-    "max_s": 861.5,
-    "mean_min": 9.1,
-    "median_min": 9.9,
-    "p95_min": 14.4
+    "mean_s": 541.7,
+    "median_s": 589.0,
+    "p95_s": 852.5,
+    "max_s": 852.5,
+    "mean_min": 9.0,
+    "median_min": 9.8,
+    "p95_min": 14.2
   },
   "total_time": {
-    "mean_min": 41.9,
-    "median_min": 14.9,
-    "p95_min": 67.6,
-    "max_min": 11620.5
+    "mean_min": 29.0,
+    "median_min": 14.8,
+    "p95_min": 60.9,
+    "max_min": 6954.6
   },
   "repo_breakdown": {
     "murally": {
-      "count": 3714,
-      "pct_of_total": 69.9,
-      "ci_estimate_min": 9.9,
-      "processing_hours": 540.9,
-      "pct_of_processing": 66.9,
-      "mean_wait_min": 33.1
+      "count": 3630,
+      "pct_of_total": 69.8,
+      "ci_estimate_min": 9.8,
+      "processing_hours": 523.0,
+      "pct_of_processing": 66.8,
+      "mean_wait_min": 17.1
     },
     "mural-api": {
-      "count": 1339,
-      "pct_of_total": 25.2,
-      "ci_estimate_min": 14.4,
-      "processing_hours": 263.2,
+      "count": 1320,
+      "pct_of_total": 25.4,
+      "ci_estimate_min": 14.2,
+      "processing_hours": 255.6,
       "pct_of_processing": 32.6,
-      "mean_wait_min": 33.4
+      "mean_wait_min": 27.9
     },
     "mural-integrations": {
-      "count": 85,
+      "count": 84,
       "pct_of_total": 1.6,
       "ci_estimate_min": 0.8,
       "processing_hours": 1.2,
@@ -70,7 +70,7 @@
       "ci_estimate_min": 0.8,
       "processing_hours": 0.9,
       "pct_of_processing": 0.1,
-      "mean_wait_min": 20.9
+      "mean_wait_min": 20.8
     },
     "mural-render": {
       "count": 53,
@@ -78,7 +78,7 @@
       "ci_estimate_min": 1.1,
       "processing_hours": 1.4,
       "pct_of_processing": 0.2,
-      "mean_wait_min": 36.9
+      "mean_wait_min": 36.6
     },
     "mural-upload": {
       "count": 14,
@@ -89,12 +89,12 @@
       "mean_wait_min": 4.4
     },
     "mural-seeder": {
-      "count": 12,
+      "count": 10,
       "pct_of_total": 0.2,
       "ci_estimate_min": 1.1,
       "processing_hours": 0.2,
       "pct_of_processing": 0.0,
-      "mean_wait_min": 136.0
+      "mean_wait_min": 9.2
     },
     "mural-notifier": {
       "count": 8,
@@ -130,13 +130,13 @@
     }
   },
   "terminal_types": {
-    "merged": 4784,
+    "merged": 4678,
     "failed": 500,
     "cancelled": 26
   },
   "efforts": {
-    "standalone": 4894,
-    "effort": 416,
-    "effort_pct": 7.8
+    "standalone": 4789,
+    "effort": 415,
+    "effort_pct": 8.0
   }
 }
