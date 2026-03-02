@@ -6,7 +6,7 @@
 
 ## Executive Summary
 
-Auto-provisioning test environments for all PRs would result in approximately **41 concurrent environments on average**, with peaks reaching **69 environments**. This is within infrastructure capacity of ~89 environments, provided auto-provisioned environments are provisioned without multigeo (see [Appendix D](#appendix-d-cluster-capacity-estimate)).
+Auto-provisioning test environments for all PRs would result in approximately **41 concurrent environments on average**, with peaks reaching **69 environments**. This is within infrastructure capacity of ~89 environments, provided auto-provisioned environments are provisioned without multigeo.
 
 | Metric | Value |
 |--------|-------|
@@ -15,7 +15,7 @@ Auto-provisioning test environments for all PRs would result in approximately **
 | P95 concurrent environments | 55 |
 | Cluster capacity (without multigeo) | ~89 |
 
-**Key assumptions**: Environments expire after 7 days of inactivity (current TTL policy, see [Appendix B](#appendix-b-ttl-configuration-and-impact)). Auto-provisioned environments do not include multigeo — multigeo nearly doubles the per-environment pod footprint and would reduce cluster capacity to ~54, below the projected peak.
+**Key assumptions**: Environments expire after 7 days of inactivity (current TTL policy). Auto-provisioned environments do not include multigeo — multigeo nearly doubles the per-environment pod footprint and would reduce cluster capacity to ~54, below the projected peak.
 
 **Baseline validation**: Current cluster has 32 legitimate environments (28 PR-linked + 4 pinned). At ~50% opt-in, this aligns with projections showing 41 average at 100% opt-in.
 
