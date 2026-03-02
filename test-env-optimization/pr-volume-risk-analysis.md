@@ -277,3 +277,49 @@ The `test-envs-operator` successfully deletes TestEnv CRDs when environments bec
 1. **Investigate operator** — determine why namespace deletion fails after CRD cleanup
 2. **Clean up orphans** — delete the 24 orphan namespaces to recover resources
 3. **Add monitoring** — alert when namespace count diverges from active CRD count
+
+---
+
+## Appendix D: Cluster Capacity Estimate
+
+Cluster: testing-envs-v2-aks (20 nodes, `Standard_E4as_v5`)
+Analysis date: March 2, 2026
+Sources: Terraform config (`terraform-mural-testing-envs/main.tf`), template definitions (`mural-test-envs-templates`), live kubectl measurements
+
+### Summary
+
+The cluster can support approximately 54 concurrent test environments under the default configuration, where every environment includes EU multigeo and most include banksy (~36 pods each). Pod count -- not CPU or memory -- is the binding constraint, with compute resources at roughly 2x headroom beyond the pod limit.
+
+Multigeo is the single largest driver of per-environment cost, nearly doubling the pod footprint from ~22 to ~35 by adding EU-zone duplicates of the API, Redis, realtime, upload, and 7 worker types. Making multigeo optional and off by default would raise capacity to ~89 environments. Scaling beyond ~89 would require adding nodes or implementing other pod reduction strategies like single-worker.
+
+### Layer 1: Pod-Based Estimate
+
+AKS with kubenet networking caps each node at 110 pods. With 20 nodes, the cluster has 2,200 pod slots.
+
+Infrastructure consumes 232 of those. The bulk is 9 DaemonSets (180 pods: Datadog, two ingress-nginx controllers, kube-proxy, azure-ip-masq-agent, cloud-node-manager, two CSI drivers, kured). The remaining 52 are spread across kube-system controllers, the backing namespace (operator, dashboard, mgmt, sso-proxy, smooth-operator, flaky-monitor), ArgoCD, cert-manager, and Rancher.
+
+That leaves 1,968 slots for test environments. The templates provision multigeo by default and most environments also include banksy, yielding ~36 pods per environment. Core services alone account for ~22 pods (API, 10 workers, Elasticsearch, Redis, and supporting services); multigeo adds ~11 EU-zone duplicates, and banksy adds one more.
+
+| Configuration | Pods/env | Capacity | Notes |
+|---------------|----------|----------|-------|
+| Default (multigeo + banksy) | ~36 | ~54 | Current standard |
+| Multigeo without banksy | ~35 | ~56 | |
+| Core-only (multigeo off) | ~22 | ~89 | Requires making multigeo optional |
+
+### Layer 2: Resource Validation
+
+The cluster has 77.2 allocatable CPU cores and 581 GiB memory (3,860m CPU and ~29 GiB per node). After infrastructure overhead (~14 cores, ~12 GiB), approximately 63 cores and 569 GiB remain for test environments.
+
+Each default environment requests ~0.61 CPU cores and ~4.3 GiB memory. At those rates, CPU could support ~103 environments and memory ~132 -- both well above the pod-based limit of ~54. Pods are the bottleneck; increasing capacity requires more pod slots, not larger VMs.
+
+### Layer 3: Live Validation (March 2, 2026)
+
+29 test environments were running, consuming ~1,106 pods (56% of available slots). The model predicts room for ~24 more, consistent with 862 remaining slots at ~36 pods each.
+
+26 of the 29 environments had 33-37 pods, confirming the default multigeo configuration. Three outliers (55-64 pods) were inflated by accumulated failed Job pods, not additional services. About 12% of tenv pod slots were occupied by non-running pods (failed jobs, image pull errors); cleaning these up would recover 1-2 additional environment slots.
+
+### Caveats
+
+- Pod fragmentation means pods can't split across nodes, so real capacity is somewhat below the theoretical maximum.
+- This analysis uses Kubernetes resource *requests* (scheduling basis), not runtime consumption.
+- All measurements are point-in-time (March 2, 2026) and will drift as cluster services change.
