@@ -39,7 +39,7 @@ Auto-provisioning test environments for all PRs would result in approximately **
 
 ### Concurrent Environment Projections
 
-Analysis of 8,746 hourly data points projects the following concurrent environment counts:
+PR open and close timestamps were analyzed for the last year, factoring in current cleanup policies of test environments. The result is 8,746 hourly data points that projects the following concurrent environment counts:
 
 | Metric | Value | Interpretation |
 |--------|-------|----------------|
@@ -78,7 +78,7 @@ A point-in-time measurement (February 3, 2026) cross-referenced cluster namespac
 
 ### PR Volume
 
-Over 52 weeks, both repositories show consistent PR creation patterns:
+Over 52 weeks, both repositories show these PR creation patterns:
 
 | Metric | murally | mural-api | Combined |
 |--------|---------|-----------|----------|
@@ -170,7 +170,7 @@ With concurrent environments similar to current levels, cost increase is minimal
 
 1. **Proceed with auto-provisioning** — infrastructure risk is low
 2. **Maintain current TTL** — 7-day inactivity TTL is effective
-3. **Optional opt-out** — support `[skip-env]` label for PRs that don't need environments
+3. **Optional opt-out** — support `[no-tenv]` label for PRs that don't need environments
 
 ### Rollout
 
@@ -250,7 +250,11 @@ The TTL reduces concurrent environments by approximately 68%, making auto-provis
 
 ---
 
-## Appendix C: Orphan Namespace Cleanup
+## Appendix C: Orphan Test Env Cleanup
+
+Update: Mar 2, 2026
+
+After this analysis was done, Platform Engineering cleaned up orphan environments. A couple of causes were at play. First, long branch names resulted in provision/deprovision failures due to resource name length restrictions in Azure. Second, test-env-operator wasn't resilient to failures. If there was a failure, the custom resource (CR) for the env would still be deleted. This meant on subsequent reconciliation loops, the operator wouldn't clean up previously failed resources for that env (since there was no CR for it anymore).
 
 ### Problem
 
@@ -265,12 +269,12 @@ The baseline measurement identified 24 orphan test envs—envs where the test en
 ### Impact
 
 - These namespaces consume cluster resources unnecessarily
-- They do not affect the auto-provisioning analysis (projections are based on legitimate environments only)
+- They do not affect the auto-provisioning analysis (projections are based on legitimate environments only), but the cleanup needs to be fixed before enabling auto-provisioning.
 - The discrepancy between namespace count (56) and CRD count (32) initially suggested the model might be underestimating, but investigation confirmed the model is accurate
 
 ### Root Cause
 
-The `test-envs-operator` successfully deletes TestEnv CRDs when environments become stale, but namespace deletion is failing. This is a separate operational issue from auto-provisioning.
+The `test-envs-operator` successfully deletes TestEnv lifecycle documents when environments become stale, but namespace deletion is failing. This is a separate operational issue from auto-provisioning.
 
 ### Recommendations
 
