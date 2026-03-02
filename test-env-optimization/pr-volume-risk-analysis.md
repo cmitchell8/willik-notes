@@ -6,20 +6,20 @@
 
 ## Executive Summary
 
-Auto-provisioning test environments for all PRs would result in approximately **41 concurrent environments on average**, with peaks reaching **69 environments**. This is well within current infrastructure capacity.
+Auto-provisioning test environments for all PRs would result in approximately **41 concurrent environments on average**, with peaks reaching **69 environments**. This is within infrastructure capacity of ~89 environments, provided auto-provisioned environments are provisioned without multigeo (see [Appendix D](#appendix-d-cluster-capacity-estimate)).
 
 | Metric | Value |
 |--------|-------|
 | Average concurrent environments | 41 |
 | Peak concurrent environments | 69 |
 | P95 concurrent environments | 55 |
-| Cross-repo deduplication savings | 9.4% |
+| Cluster capacity (without multigeo) | ~89 |
 
-**Key assumption**: Environments expire after 7 days of inactivity (current TTL policy). See [Appendix B](#appendix-b-ttl-configuration-and-impact) for details.
+**Key assumptions**: Environments expire after 7 days of inactivity (current TTL policy, see [Appendix B](#appendix-b-ttl-configuration-and-impact)). Auto-provisioned environments do not include multigeo — multigeo nearly doubles the per-environment pod footprint and would reduce cluster capacity to ~54, below the projected peak.
 
 **Baseline validation**: Current cluster has 32 legitimate environments (28 PR-linked + 4 pinned). At ~50% opt-in, this aligns with projections showing 41 average at 100% opt-in.
 
-**Recommendation**: Proceed with auto-provisioning. No infrastructure scaling required.
+**Recommendation**: Proceed with auto-provisioning. Disable multigeo by default for auto-provisioned environments. No infrastructure scaling required.
 
 ---
 
@@ -31,7 +31,7 @@ Auto-provisioning test environments for all PRs would result in approximately **
 
 **Proposed state**: 100% of PRs receive test environments automatically.
 
-**Stakes**: If concurrent environment count exceeds infrastructure capacity (~70-100 environments), we would face provisioning delays, increased costs, or service degradation.
+**Stakes**: If concurrent environment count exceeds infrastructure capacity (~89 environments), we would face provisioning delays, increased costs, or service degradation.
 
 ---
 
@@ -52,7 +52,7 @@ PR open and close timestamps were analyzed for the last year, factoring in curre
 
 | Resource | Current Capacity | Required (peak + 25% headroom) | Status |
 |----------|------------------|--------------------------------|--------|
-| K8s nodes | ~70-100 envs | ~85 envs | ✓ Sufficient |
+| K8s nodes | ~89 envs | ~85 envs | ✓ Sufficient |
 | MongoDB | ~100 connections | ~85 connections | ✓ Sufficient |
 | Azure resources | Current allocation | Minimal increase | ✓ Sufficient |
 
@@ -127,7 +127,7 @@ Cross-repo branches represent features spanning both repositories—typically la
 | **Severity** | Low |
 | **Likelihood** | Low |
 
-Peak concurrent environments (69) are well within infrastructure capacity (~70-100 environments).
+Peak concurrent environments (69) are within infrastructure capacity (~89 environments).
 
 **Monitoring recommendations**:
 1. Track concurrent environment count in real-time
@@ -184,7 +184,7 @@ With concurrent environments similar to current levels, cost increase is minimal
 
 | Metric | Target | Confidence |
 |--------|--------|------------|
-| Peak concurrent envs | <85 | High |
+| Peak concurrent envs | <89 | High |
 | Average concurrent envs | <50 | High |
 | Provisioning queue time | <5 min | High |
 | Infrastructure scaling needed | No | High |
