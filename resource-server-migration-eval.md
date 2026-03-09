@@ -50,7 +50,7 @@ Banksy supports three auth modes (configured via `AUTH_MODE`, one per deployment
 
 A security audit in early 2026 produced eight tickets (critical, high, medium) targeting sso-proxy and a design preamble recommending Banksy adopt an OAuth Resource Server posture under FastMCP. The mural-oauth mode was introduced after the audit; this analysis covers both modes.
 
-The audit's central recommendation — and the MCP specification's normative requirement — is the migration from Authorization Server to Resource Server. This document evaluates that migration: what it means, what it costs, what decisions remain, and what risks exist.
+The audit’s central recommendation is that Banksy stop operating its own MCP OAuth authorization server surface and instead adopt a resource-server posture under FastMCP. The MCP authorization specification defines MCP servers as OAuth resource servers and requires them to publish Protected Resource Metadata (PRM), which MCP clients use to discover the authorization server. [reference:MCP-Roles](https://modelcontextprotocol.io/specification/latest/basic/authorization#roles) This document evaluates that migration: what it means, what it costs, what decisions remain, and what risks exist.
 
 ---
 
@@ -66,7 +66,7 @@ The RS migration replaces Layer 1 only:
 - **Added:** `/.well-known/oauth-protected-resource` (RFC 9728) pointing IDEs to an external IdP. JWT validation (signature via JWKS, issuer, audience, expiration). Scope-based authorization.
 - **Unchanged:** Layer 2. Banksy still stores and uses Mural API tokens. The IDE-presented JWT answers "is this a legitimate user?" but doesn't provide Mural tokens.
 
-The rationale is both security and compliance. Running an AS exposes confused-deputy attacks, DCR abuse, and authorization code interception; eliminating the AS eliminates those surfaces. The MCP specification (2025-11-25 revision) makes this normative: servers MUST implement Protected Resource Metadata (PRM, RFC 9728), clients MUST use it for AS discovery. No spec-defined path remains for MCP servers as authorization servers. Banksy's current AS model works only because IDEs still attempt legacy discovery as fallback — this will erode.
+The rationale is both security and compliance. Running an AS exposes confused-deputy attacks, DCR abuse, and authorization code interception; eliminating the AS eliminates those surfaces. The MCP authorization specification requires servers to implement OAuth 2.0 Protected Resource Metadata (RFC 9728), which MCP clients must use to discover the authorization server.[reference:MCP-overview](https://modelcontextprotocol.io/specification/latest/basic/authorization#overview) Under the MCP authorization model, the MCP server is defined as the OAuth resource server and must publish Protected Resource Metadata so clients can discover the appropriate authorization server. The authorization server may still be hosted alongside the resource server, but it remains a logically separate OAuth role. Banksy’s current authorization-server implementation may still function in some MCP clients because of existing client behavior or compatibility paths, but the specification defines PRM-based authorization server discovery as the standard mechanism going forward.[referece-MCP Authorization Server Discovery](https://modelcontextprotocol.io/specification/latest/basic/authorization#authorization-server-discovery)
 
 Post-migration flow (both modes):
 
@@ -160,11 +160,11 @@ Without token storage, the dedicated IdP still solves user coverage. Layer 2 rev
 
 The choice of external IdP determines which FastMCP auth class Banksy uses:
 
-**`RemoteAuthProvider`** requires DCR (RFC 7591) — IDEs auto-register with the IdP. Supported by WorkOS AuthKit, Descope, Auth0 (if configured). Composes `JWTVerifier` + automatic PRM endpoints = pure RS with no AS surface. Architecturally cleanest.
+**`RemoteAuthProvider`** If the chosen authorization server supports OAuth Dynamic Client Registration (RFC 7591), MCP clients can automatically register. If the authorization server does not support DCR, a proxy or pre-registered client configuration may be required. [reference-MCP Dynamic Client Registration](https://modelcontextprotocol.io/specification/latest/basic/authorization#dynamic-client-registration) Supported by WorkOS AuthKit, Descope, Auth0 (if configured). Composes `JWTVerifier` + automatic PRM endpoints = pure RS with no AS surface. Architecturally cleanest.
 
 **`OAuthProxy`** bridges non-DCR IdPs (Google, Azure AD, GitHub) by presenting a DCR interface to IDEs while holding pre-registered upstream credentials. Reintroduces some AS surface (DCR registrations, proxied tokens) but far less than Better Auth, and token validation is still delegated to the IdP.
 
-Bare `JWTVerifier` does not serve PRM — IDEs would have no discovery metadata. Must use one of the two classes above. Both serve PRM and produce spec-compliant resource servers. DCR + `RemoteAuthProvider` is architecturally cleanest (highest setup cost). Google + `OAuthProxy` is lowest friction (no scope control).
+A JWT verification layer alone is insufficient for MCP interoperability unless the server also serves Protected Resource Metadata (PRM), because MCP clients rely on PRM to discover authorization servers.[reference:MCP overview](https://modelcontextprotocol.io/specification/latest/basic/authorization#overview) Must use one of the two classes above. Both serve PRM and produce spec-compliant resource servers. DCR + `RemoteAuthProvider` is architecturally cleanest (highest setup cost). Google + `OAuthProxy` is lowest friction (no scope control).
 
 ---
 
@@ -274,7 +274,7 @@ Six of eight tickets apply to mural-oauth with varying severity.
 
 ### Appendix B: IDE Client Support Details
 
-The RS model is the only auth model in the current MCP spec. PR #338 (April 2025) separated MCP servers from authorization servers; the 2025-11-25 revision made it normative: servers MUST implement PRM (RFC 9728), clients MUST use it for AS discovery. No spec-defined path remains for MCP servers as authorization servers.
+The RS model is the only auth model in the current MCP spec. PR #338 (April 2025) separated MCP servers from authorization servers; the 2025-11-25 revision made it normative: servers MUST implement PRM (RFC 9728), clients MUST use it for AS discovery. As defined in the MCP authorization model, the MCP server acts as the OAuth resource server and publishes Protected Resource Metadata (PRM) so clients can discover the appropriate authorization server.
 
 **Cursor** (v1.0+, June 2025): Full PRM discovery, follows `authorization_servers` links, OAuth 2.1 + PKCE. Known bug: `resource_metadata` URL from `WWW-Authenticate` header lost after redirect — only affects non-standard metadata paths, not `/.well-known/oauth-protected-resource`.
 
@@ -312,7 +312,7 @@ Auth endpoints exist (`api/src/api/authenticate/oauth2/authorization/`) but no m
 
 #### Blocker 3: MCP Token Passthrough Prohibition
 
-The MCP spec states: "The MCP server MUST NOT pass through the token it received from the MCP client." Using Mural-as-IdP does exactly this. RFC 8707 audience binding makes the prohibition structural:
+The MCP spec states: "The MCP server MUST NOT pass through the token it received from the MCP client." [reference MCP-TokenPassthrough](https://modelcontextprotocol.io/docs/security-best-practices#token-passthrough) Using Mural-as-IdP does exactly this. RFC 8707 audience binding makes the prohibition structural:
 
 - A token with `resource=https://banksy.example.com` is audience-bound to Banksy — Mural rejects it.
 - A Mural-audience token fails Banksy's validation.
